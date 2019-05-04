@@ -1,12 +1,13 @@
 # TECH-LAB
-CRONOGRAMA PESSOAL DE ESTUDO
 
-## Tecnologias
+
+## CRONOGRAMA PESSOAL DE ESTUDO
 
 | **Nível**  | **Nome**  | **Atual**  |  **Next**  |
 |---|---|---|---|
 | **_6_** |    [Core PHP]  | Intermediário | Certificação Zend  |
 | **_3_** |    [Docker]  | Newbie  | Intermediário  |
+| **_1_** |    [OpenCart]  | Newbie  | Intermediário  |
 | **_1_** |    [AWS]  | Newbie  | Intermediário  |
 | **_2_** |    [Passport]  | Newbie  | Avançado  |
 | **_1_** |    [Swoole]  | Newbie  | Intermediário  |
@@ -15,8 +16,7 @@ CRONOGRAMA PESSOAL DE ESTUDO
 | **_1_** |    [Flutter]  | Newbie  | Intermediário  |
 | **_1_** |    [VUE]  | Newbie  | Intermediário  |
 | **_5_** |    [GIT]  | Intermediário  | Avançado  |
-|Anterior: Core PHP|   |   |**Prazo Agosto 2019**|
-|Atual: Docker|   |   |**É Verdade Esse Bilhete**|
+
 
 ------------
 
