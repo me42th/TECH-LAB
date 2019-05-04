@@ -4,7 +4,7 @@ CRONOGRAMA PESSOAL DE ESTUDO
 ## Tecnologias
 
 | **Nível**  | **Nome**  | **Atual**  |  **Next**  |
-|---|---|---|
+|---|---|---|---|
 | **_6_** |    [Core PHP]  | Intermediário | Certificação Zend  |
 | **_3_** |    [Docker]  | Newbie  | Intermediário  |
 | **_1_** |    [AWS]  | Newbie  | Intermediário  |
