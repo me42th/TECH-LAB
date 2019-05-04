@@ -31,6 +31,17 @@ CRONOGRAMA PESSOAL DE ESTUDO
 
 ------------
 
+## Tecnologias
+
+| **Status**  | **Nome**  | **Obs.**  |
+|---|---|---|
+| **_%_** |    [Core PHP]  | Certificação Zend  |
+| **_%_** |    [Swoole]  |   |
+| **_%_** |    [Docker]  |   |
+| **_%_** |    [Docker]  |   |
+
+------------
+
 ## Lista de Cursos/Vídeo-aula
 
 | **Status**  | **Nome/Repositório**  | **Obs.**  |
@@ -48,78 +59,6 @@ CRONOGRAMA PESSOAL DE ESTUDO
 | **_5%_**   | [Laravel facilitando o desenvolvimento PHP](https://github.com/josemalcher/Curso-Laravel-facilitando-o-desenvolvimento-PHP)  |   ALURA  |
 | **_25%_**  | [PHP com Jquery](https://github.com/josemalcher/curso-php-com-jquery)  |   ASoluções Web  |
 | **_25%_**  | [AJAX COM PHP](https://github.com/josemalcher/Curso-asolucoesweb-AJAX-com-PHP)  |  Curso ASoluções Web  |
-
-------------
-
-## Livros e Apostilas
-
-| **Status**  | **Nome/Repositório**  | **Obs.**  |
-|---|---|---|
-| **_100%_** | [CodeIgniter Produtividade na criação de aplicações web em PHP](https://github.com/josemalcher/Livro-CodeIgniter-
-
-21
-
-| **_0%_** | Cotação de crypto moedas  |  -  | 50 |
-
-22
-
-| **_0%_** | Vai chover  |  -  | 70 |
-
-23
-
-| **_0%_** | Distância em músicas   |  -  | 70 |
-
-24
-
-| **_0%_** | Meu spotify  |  -  | 60 |
-
-25
-
-| **_0%_** | Meus Rádios  |  -  | 65 |
-
-26
-
-| **_0%_** | Busca de imagens  |  -  | 55 |
-
-27
-
-| **_0%_** | Controle de gastos  |  -  | 80 |
-
-28
-
-| **_0%_** | Obter twittes da sua cidade  |  -  | 55 |
-
-29
-
-|   |   |   |**Total Concluído**|
-
-30
-
-|   |   |   |**000**|
-
-31
-
-​
-
-32
-
-------------
-
-33
-
-​
-
-34
-
-## Lista de Cursos/Vídeo-aula
-
-35
-
-​Produtividade-na-Criacao-de-Aplicacoes-Web-Em-PHP)  |  Casa do Código |
-| **_0%_**   | [PHP e Laravel Crie aplicações web como um verdadeiro artesão](#)  |  Casa do Código |
-| **_0%_**   | [Test-Driven Development - Teste e Design no Mundo Real com PHP](#)  |  Casa do Código |
-| **_0%_**   | [Desenvolvimento web com PHP e MySQL](#)  |  Casa do Código |
-| **_0%_**   | [Zend Certified Engineer Descomplicando a certificação PHP](#)  |  Casa do Código |
 
 ------------
 
