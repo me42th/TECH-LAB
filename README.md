@@ -15,8 +15,8 @@ CRONOGRAMA PESSOAL DE ESTUDO
 | **_1_** |    [Flutter]  | Newbie  | Intermediário  |
 | **_1_** |    [VUE]  | Newbie  | Intermediário  |
 | **_5_** |    [GIT]  | Intermediário  | Avançado  |
-|**Prazo Agosto 2019**|   |   |   |
-|   |   |   |**É Verdade Esse Bilhete**|
+|Anterior: Core PHP|   |   |**Prazo Agosto 2019**|
+|Atual: Docker|   |   |**É Verdade Esse Bilhete**|
 
 ------------
 
