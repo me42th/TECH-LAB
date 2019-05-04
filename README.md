@@ -15,8 +15,8 @@ CRONOGRAMA PESSOAL DE ESTUDO
 | **_1_** |    [Flutter]  | Newbie  | Intermediário  |
 | **_1_** |    [VUE]  | Newbie  | Intermediário  |
 | **_5_** |    [GIT]  | Intermediário  | Avançado  |
-|   |   |   |**Prazo Agosto 2019**|
-|   |   |   |**000**|
+|**Prazo Agosto 2019**|   |   |   |
+|   |   |   |**É Verdade Esse Bilhete**|
 
 ------------
 
