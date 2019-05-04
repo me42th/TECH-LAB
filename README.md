@@ -3,13 +3,19 @@ CRONOGRAMA PESSOAL DE ESTUDO
 
 ## Tecnologias
 
-| **Status**  | **Nome**  | **Obs.**  |
+| **Nível**  | **Nome**  | **Atual**  |  **Next**  |
 |---|---|---|
-| **_%_** |    [Core PHP]  | Certificação Zend  |
-| **_%_** |    [Swoole]  |   |
-| **_%_** |    [Docker]  |   |
-| **_%_** |    [Docker]  |   |
-|   |   |   |**Total Concluído**|
+| **_6_** |    [Core PHP]  | Intermediário | Certificação Zend  |
+| **_3_** |    [Docker]  | Newbie  | Intermediário  |
+| **_1_** |    [AWS]  | Newbie  | Intermediário  |
+| **_2_** |    [Passport]  | Newbie  | Avançado  |
+| **_1_** |    [Swoole]  | Newbie  | Intermediário  |
+| **_5_** |    [Laravel]  | Intermediário  | Avançado  |
+| **_1_** |    [Redis]  | Newbie  | Intermediário  |
+| **_1_** |    [Flutter]  | Newbie  | Intermediário  |
+| **_1_** |    [VUE]  | Newbie  | Intermediário  |
+| **_5_** |    [GIT]  | Intermediário  | Avançado  |
+|   |   |   |**Prazo Agosto 2019**|
 |   |   |   |**000**|
 
 ------------
@@ -19,12 +25,14 @@ CRONOGRAMA PESSOAL DE ESTUDO
 ### [Lista de Projetos Base/Ref.](https://github.com/me42th/ListaDeDesafiosProgramacao)
 | **Status**  | **Nome/Repositório**  | **Obs.**  |  **pts.**  |
 |---|---|---|---|
-| **_0%_** | [Agenda Telefônica] |  -  | 20 |
+| **_0%_** | Agenda Telefônica |  -  | 20 |
 | **_0%_** | Coisas emprestadas  |  -  | 25 |
 | **_0%_** | Ranking dos amigos  |  -  | 25 |
+| **_0%_** | Web Service Coach  |  -  | 30 |
 | **_0%_** | Ranking de qualquer coisa  |  -  | 30 |
 | **_0%_** | Lista de tarefas  |  -  | 30 |
 | **_0%_** | Filmes favoritos  |  -  | 35 |
+| **_100%_** | Loja Virtual  |  -  | 35 |
 | **_0%_** | Bandas favoritas  |  -  | 35 |
 | **_0%_** | Livros favoritos  |  -  | 35 |
 | **_0%_** | Previsão do tempo da sua cidade  |  -  | 30 |
@@ -49,7 +57,7 @@ CRONOGRAMA PESSOAL DE ESTUDO
 
 | **Status**  | **Nome/Repositório**  | **Obs.**  |
 |---|---|---|
-| **_80%_**  | [Plano de Estudos- Iniciante em PHP](https://github.com/josemalcher/SchoolOfNet-Iniciante-em-PHP)  |  School of Net |
+| **_100%_**  | [Curso Completo de PHP 7](https://www.udemy.com/curso-php-7-online/)  |  Udemy |
 | **_100%_** | [Desenvolvimento de temas para Wordpress](https://github.com/josemalcher/SchoolOfNet-Desenvolvimento-de-temas-para-Wordpress)  |   School of Net |
 | **_100%_** | [CodeIgniter I Programando elegantemente para a web](https://github.com/josemalcher/CodeIgniter-I-Programando-elegantemente-para-a-web)  |   ALURA |
 | **_100%_** | [CodeIgniter II - Mais técnicas e boas práticas](https://github.com/josemalcher/CodeIgniter-II-MaisTecnicas-e-BoasPraticas)  |   ALURA |
