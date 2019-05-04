@@ -32,7 +32,7 @@ CRONOGRAMA PESSOAL DE ESTUDO
 | **_0%_** | Ranking de qualquer coisa  |  -  | 30 |
 | **_0%_** | Lista de tarefas  |  -  | 30 |
 | **_0%_** | Filmes favoritos  |  -  | 35 |
-| **_100%_** | Loja Virtual  |  -  | 35 |
+| **_100%_** | Loja Virtual (https://github.com/me42th/eco) |  -  | 35 |
 | **_0%_** | Bandas favoritas  |  -  | 35 |
 | **_0%_** | Livros favoritos  |  -  | 35 |
 | **_0%_** | Previsão do tempo da sua cidade  |  -  | 30 |
@@ -49,7 +49,7 @@ CRONOGRAMA PESSOAL DE ESTUDO
 | **_0%_** | Controle de gastos  |  -  | 80 |
 | **_0%_** | Obter twittes da sua cidade  |  -  | 55 |
 |   |   |   |**Total Concluído**|
-|   |   |   |**000**|
+|   |   |   |**35 pontos**|
 
 ------------
 
