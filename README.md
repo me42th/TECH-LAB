@@ -1,6 +1,20 @@
 # TECH-LAB
 CRONOGRAMA PESSOAL DE ESTUDO
 
+## Tecnologias
+
+| **Status**  | **Nome**  | **Obs.**  |
+|---|---|---|
+| **_%_** |    [Core PHP]  | Certificação Zend  |
+| **_%_** |    [Swoole]  |   |
+| **_%_** |    [Docker]  |   |
+| **_%_** |    [Docker]  |   |
+|   |   |   |**Total Concluído**|
+|   |   |   |**000**|
+
+------------
+
+
 ## Projetos Práticos | Sistemas Desenvolvidos
 ### [Lista de Projetos Base/Ref.](https://github.com/me42th/ListaDeDesafiosProgramacao)
 | **Status**  | **Nome/Repositório**  | **Obs.**  |  **pts.**  |
@@ -28,17 +42,6 @@ CRONOGRAMA PESSOAL DE ESTUDO
 | **_0%_** | Obter twittes da sua cidade  |  -  | 55 |
 |   |   |   |**Total Concluído**|
 |   |   |   |**000**|
-
-------------
-
-## Tecnologias
-
-| **Status**  | **Nome**  | **Obs.**  |
-|---|---|---|
-| **_%_** |    [Core PHP]  | Certificação Zend  |
-| **_%_** |    [Swoole]  |   |
-| **_%_** |    [Docker]  |   |
-| **_%_** |    [Docker]  |   |
 
 ------------
 
