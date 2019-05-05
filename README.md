@@ -1,6 +1,19 @@
 # TECH-LAB
 
 
+
+## Desafios
+
+| **Status**  | **Nome/Repositório**  | **Nível**  |
+|---|---|---|
+| **[]** |    [Encurtador de URL](https://github.com/me42th/desafios/tree/master/1%20-%20Easy/Encurtador%20de%20URL)  | Easy  |
+| **[]** |    [Criptografia](https://github.com/me42th/desafios/tree/master/2%20-%20Medium/Criptografia)  | Medium  |
+| **[]** |    [Pontos de Interesse por GPS](https://github.com/me42th/desafios/tree/master/3%20-%20Hard/Pontos%20de%20Interesse)  | Hard  |
+| **[]** |    [Blockchain](https://github.com/me42th/desafios/tree/master/4%20-%20Evil%20Genius/Blockchain)  | Evil Genius  |
+|  | Total Concluído  | 0 |
+
+------------
+
 ## CRONOGRAMA PESSOAL DE ESTUDO
 
 | **Nível**  | **Nome**  | **Atual**  |  **Next**  |
@@ -75,18 +88,6 @@
 
 ------------
 
-
-
-## Desafios
-
-| **Status**  | **Nome/Repositório**  | **Nível**  |
-|---|---|---|
-| **_%_** |    [Encurtador de URL](https://github.com/me42th/desafios/tree/master/1%20-%20Easy/Encurtador%20de%20URL)  | Easy  |
-| **_%_** |    [Criptografia](https://github.com/me42th/desafios/tree/master/2%20-%20Medium/Criptografia)  | Medium  |
-| **_%_** |    [Pontos de Interesse por GPS](https://github.com/me42th/desafios/tree/master/3%20-%20Hard/Pontos%20de%20Interesse)  | Hard  |
-| **_%_** |    [Blockchain](https://github.com/me42th/desafios/tree/master/4%20-%20Evil%20Genius/Blockchain)  | Evil Genius  |
-|  | Total Concluído  |   |
-------------
 
 
 
