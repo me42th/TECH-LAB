@@ -162,8 +162,19 @@ Declaro uma variável de ambiente e uso a mesma para seta a opção WORKDIR
 <pre><code>
     sudo su
     docker build -t docker_env
-    docker run -it --rm docker_env
-    
+    docker run -it --rm docker_env    
+</pre></code>
+
+#CENÁRIO 8
+
+##Dockerfile
+
+<pre><code>
+</pre></code>
+
+##Terminal
+
+<pre><code>
 </pre></code>
 
 #CENÁRIO NULL

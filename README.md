@@ -19,7 +19,7 @@
 | **Nível**  | **Nome**  | **Atual**  |  **Next**  |
 |---|---|---|---|
 | **_6_** |    [Core PHP]  | Intermediário | Certificação Zend  |
-| **_3_** |    [Docker]  | Newbie  | Intermediário  |
+| **_4_** |    [Docker](./DOCKER-LAB)  | Newbie++  | Intermediário  |
 | **_1_** |    [OpenCart]  | Newbie  | Intermediário  |
 | **_1_** |    [AWS]  | Newbie  | Intermediário  |
 | **_2_** |    [Passport]  | Newbie  | Avançado  |
