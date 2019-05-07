@@ -1,6 +1,6 @@
-#CENÁRIO 1
+# CENÁRIO 1
 
-##Dockerfile
+##  Dockerfile
 
 Um container ubuntu atualizado e com o tree instalado
 
@@ -9,7 +9,7 @@ Um container ubuntu atualizado e com o tree instalado
     RUN apt-get update && apt-get install tree
 </pre></code>
 
-##Terminal
+##  Terminal
 
 A maquina ubuntu é criada com o nome hello_docker_word, após a execução o cache é removido.
 
@@ -19,9 +19,9 @@ A maquina ubuntu é criada com o nome hello_docker_word, após a execução o ca
     docker run -it --rm hello_docker_word
 </pre></code>
 
-#CENÁRIO 2
+# CENÁRIO 2
 
-##Dockerfile
+##  Dockerfile
 
 Mesma maquina é criada porem com a mensagem "HELLO, you are now running a containe" printada no terminal
 
@@ -31,7 +31,7 @@ Mesma maquina é criada porem com a mensagem "HELLO, you are now running a conta
     CMD echo "HELLO, you are now running a container"; ls
 </pre></code>
 
-##Terminal
+##  Terminal
 
 Sem o -it ele não entra no shell do container
 
@@ -41,9 +41,9 @@ Sem o -it ele não entra no shell do container
     docker run --rm docker_cmd
 </pre></code>
 
-#CENÁRIO 3
+# CENÁRIO 3
 
-##Dockerfile
+##  Dockerfile
 
 Crio uma máquina com uma cópia somente leitura de todos os arquivos da pasta copy_folder
 
@@ -53,7 +53,7 @@ Crio uma máquina com uma cópia somente leitura de todos os arquivos da pasta c
     COPY ./copy_folder /root/copy_folder
 </pre></code>
 
-##Terminal
+##  Terminal
 
 Docker images exibe todas as imagens da maquina em um dado momento
 
@@ -64,9 +64,9 @@ Docker images exibe todas as imagens da maquina em um dado momento
     docker run -it --rm docker_copy
 </pre></code>
 
-#CENÁRIO 4
+# CENÁRIO 4
 
-##Dockerfile
+##  Dockerfile
 
 Extraio o zip no root com o comando ADD, por default apenas .tar.gz com .zip não funciona
 
@@ -77,7 +77,7 @@ Extraio o zip no root com o comando ADD, por default apenas .tar.gz com .zip nã
     CMD if test -d "/root/copy_folder"; then echo "The folder has been extracted"; fi
 </pre></code>
 
-##Terminal
+##  Terminal
 
 Executo o container e abro o arquivo 'a' no nano
 
@@ -87,9 +87,9 @@ Executo o container e abro o arquivo 'a' no nano
     docker run -it --rm docker_zip nano /root/copy_folder/a
 </pre></code>
 
-#CENÁRIO 5
+# CENÁRIO 5
 
-##Dockerfile
+##  Dockerfile
 
 Seto a pasta root como a pasta de trabalho e as alterações serão feitas nesta pasta
 
@@ -109,7 +109,7 @@ Seto a pasta root como a pasta de trabalho e as alterações serão feitas nesta
     
 </pre></code>
 
-##Terminal
+##  Terminal
 
 Executo o container e abro o arquivo 'a' no nano
 
@@ -120,9 +120,9 @@ Executo o container e abro o arquivo 'a' no nano
 </pre></code>
 
 
-#CENÁRIO 6
+# CENÁRIO 6
 
-##Dockerfile
+##  Dockerfile
 
 Determino a execução de um comando por default ao instanciar um conteiner. Há diferenças entre invocar um comando com CMD e com ENTRYPOINT;
 O PRIMEIRO NÃO SERÁ EXECUTADO CASO AJA UM ARGUMENTO NA FUNCTION DO SHELL, O SEGUNDO É EXECUTADO OBRIGATORIAMENTE 
@@ -130,11 +130,11 @@ O PRIMEIRO NÃO SERÁ EXECUTADO CASO AJA UM ARGUMENTO NA FUNCTION DO SHELL, O SE
 <pre><code>
     FROM ubuntu
     RUN apt-get update
-    #ENTRYPOINT ls
+    # ENTRYPOINT ls
     CMD ls
 </pre></code>
 
-##Terminal
+##  Terminal
 
 Primeiro o entrypoint é executado e somente após é executada a instrução passada como argumento
 
@@ -144,9 +144,9 @@ Primeiro o entrypoint é executado e somente após é executada a instrução pa
     docker run --rm docker_entrypoint pwd; cd root; ls
 </pre></code>
 
-#CENÁRIO 7
+# CENÁRIO 7
 
-##Dockerfile
+##  Dockerfile
 
 Declaro uma variável de ambiente e uso a mesma para seta a opção WORKDIR
 
@@ -157,7 +157,7 @@ Declaro uma variável de ambiente e uso a mesma para seta a opção WORKDIR
     WORKDIR $workdir
 </pre></code>
 
-##Terminal
+##  Terminal
 
 <pre><code>
     sudo su
@@ -165,26 +165,26 @@ Declaro uma variável de ambiente e uso a mesma para seta a opção WORKDIR
     docker run -it --rm docker_env    
 </pre></code>
 
-#CENÁRIO 8
+# CENÁRIO 8
 
-##Dockerfile
-
-<pre><code>
-</pre></code>
-
-##Terminal
+##  Dockerfile
 
 <pre><code>
 </pre></code>
 
-#CENÁRIO NULL
-
-##Dockerfile
+##  Terminal
 
 <pre><code>
 </pre></code>
 
-##Terminal
+# CENÁRIO NULL
+
+##  Dockerfile
+
+<pre><code>
+</pre></code>
+
+##  Terminal
 
 <pre><code>
 </pre></code>
