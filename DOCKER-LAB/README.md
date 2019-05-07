@@ -218,6 +218,30 @@ Healthcheck verifica se está tudo bem com o container
     docker kill a8d60f3c7a94
 </pre></code>
 
+# CENÁRIO 10
+
+##  Dockerfile
+
+Finalizar o docker
+
+<pre><code>
+    FROM ubuntu
+    RUN apt-get update
+    STOPSIGNAL SIGKILL
+</pre></code>
+
+##  Terminal
+
+- Flag --name a coluna "name" do "docker stats" passa a ser ocupada pelo valor passado 
+- Command docker stop [name container] finaliza a execução do container indexado pelo name
+
+<pre><code>
+    sudo su
+    docker build -t stop_signal .
+    docker run -it --name stop_signal stop_signal
+    docker stop docker_stop
+</pre></code>
+
 # CENÁRIO NULL
 
 ##  Dockerfile
