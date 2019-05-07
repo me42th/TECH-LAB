@@ -1,3 +1,4 @@
-FROM ubuntu
-RUN apt-get update && apt-get install tree && apt-get install nano
-COPY ./copy_folder /root/copy_folder
+    FROM ubuntu
+    RUN apt-get update
+    ADD ./copy_folder.zip /root/
+    CMD if test -d "/root/copy_folder"; then echo "The folder has been extracted"; fi
