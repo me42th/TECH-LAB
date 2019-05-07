@@ -68,23 +68,22 @@ Docker images exibe todas as imagens da maquina em um dado momento
 
 ##Dockerfile
 
-Extraio o zip no root com o comando ADD
+Extraio o zip no root com o comando ADD, por default apenas .tar.gz com .zip não funciona
 
 <pre><code>
     FROM ubuntu
-    RUN apt-get update
-    ADD ./copy_folder.zip /root/
+    RUN apt-get update && apt-get install nano
+    ADD ./copy_folder.tar.gz /root/
     CMD if test -d "/root/copy_folder"; then echo "The folder has been extracted"; fi
 </pre></code>
 
 ##Terminal
 
-
+Executo o container e abro o arquivo 'a' no nano
 
 <pre><code>
     sudo su
     docker build -t docker_zip .
-    docker run --rm docker_zip
-
+    docker run -it --rm docker_zip nano /root/copy_folder/a
 </pre></code>
 
