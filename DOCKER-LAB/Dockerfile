@@ -1,3 +1,4 @@
     FROM ubuntu
     RUN apt-get update
-    LABEL Description="This is th Docker Image to showcase the usage of Label Docker Command"
+    # RUN mkdir labels_cd
+    HEALTHCHECK --interval=5s --timeout=3s --retries=2 CMD cd ./labels_cd || exit 1

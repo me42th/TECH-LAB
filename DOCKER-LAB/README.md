@@ -185,6 +185,39 @@ Declaro uma variável de ambiente e uso a mesma para seta a opção WORKDIR
     docker run -it --rm docker_label
 </pre></code>
 
+# CENÁRIO 9
+
+##  Dockerfile
+
+Healthcheck verifica se está tudo bem com o container 
+
+- Flag --interval determina a cada quantos segundos o script deve rodar
+- Flag --timeout se o comando não ter um retorno no tempo determinado é pq deu ruim
+- Flag --retries ele irá tentar executar x vezes
+- Flag CMD aqui este comando atua parcialmente como flag, a instrução que ele invoca é que é responsável pela validação 
+
+<pre><code>
+    FROM ubuntu
+    RUN apt-get update
+    RUN mkdir labels_cd
+    HEALTHCHECK --interval=5s --timeout=3s --retries=2 CMD cd ./labels_cd || exit 1
+</pre></code>
+
+##  Terminal
+
+- docker ps -a ==> exibe os containners e seu histórico e se estão "saudáveis" pelo critério em HEALTHCHECK
+- docker kill [CONTAINER ID] ==> encerro a execução de um determinado container  
+- docker inspect [CONTAINER NAME] ==> retorna um json com informações do container
+
+<pre><code>
+    sudo su
+    docker build -t docker_health .
+    docker run -it --rm docker_health
+    docker ps -a
+    docker inspect docker_health
+    docker kill a8d60f3c7a94
+</pre></code>
+
 # CENÁRIO NULL
 
 ##  Dockerfile
