@@ -1,4 +1,4 @@
-    FROM ubuntu
+    FROM  ubuntu
     RUN apt-get update
-    #ENTRYPOINT ls
-    CMD ls
+    ENV workdir=/root/
+    WORKDIR $workdir

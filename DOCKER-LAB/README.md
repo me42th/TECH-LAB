@@ -144,6 +144,28 @@ Primeiro o entrypoint é executado e somente após é executada a instrução pa
     docker run --rm docker_entrypoint pwd; cd root; ls
 </pre></code>
 
+#CENÁRIO 7
+
+##Dockerfile
+
+Declaro uma variável de ambiente e uso a mesma para seta a opção WORKDIR
+
+<pre><code>
+    FROM  ubuntu
+    RUN apt-get update
+    ENV workdir=/root/
+    WORKDIR $workdir
+</pre></code>
+
+##Terminal
+
+<pre><code>
+    sudo su
+    docker build -t docker_env
+    docker run -it --rm docker_env
+    
+</pre></code>
+
 #CENÁRIO NULL
 
 ##Dockerfile
