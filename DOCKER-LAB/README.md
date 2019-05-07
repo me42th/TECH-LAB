@@ -87,3 +87,34 @@ Executo o container e abro o arquivo 'a' no nano
     docker run -it --rm docker_zip nano /root/copy_folder/a
 </pre></code>
 
+#CENÁRIO 5
+
+##Dockerfile
+
+Seto a pasta root como a pasta de trabalho e as alterações serão feitas nesta pasta
+
+<pre><code>
+    FROM ubuntu
+    WORKDIR /root/
+
+    RUN touch ./test.txt
+    RUN touch ./test_2.txt
+    RUN touch ./test_3.txt
+
+    RUN mkdir -p ./testfolder
+    WORKDIR /root/testfolder
+
+    RUN mkdir -p ./child
+    RUN mkdir -p ./child_1    
+    
+</pre></code>
+
+##Terminal
+
+Executo o container e abro o arquivo 'a' no nano
+
+<pre><code>
+    sudo su
+    docker build -t docker_zip .
+    docker run -it --rm docker_zip nano /root/copy_folder/a
+</pre></code>
