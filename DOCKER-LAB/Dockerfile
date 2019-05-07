@@ -1,4 +1,3 @@
-    FROM  ubuntu
+    FROM ubuntu
     RUN apt-get update
-    ENV workdir=/root/
-    WORKDIR $workdir
+    LABEL Description="This is th Docker Image to showcase the usage of Label Docker Command"

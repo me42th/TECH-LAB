@@ -169,12 +169,20 @@ Declaro uma variável de ambiente e uso a mesma para seta a opção WORKDIR
 
 ##  Dockerfile
 
+    Informo metadados com a palavra LABEL
+
 <pre><code>
+    FROM ubuntu
+    RUN apt-get update
+    LABEL Description="This is th Docker Image to showcase the usage of Label Docker Command"
 </pre></code>
 
 ##  Terminal
 
 <pre><code>
+    sudo su
+    docker build --label "key"="value" -t docker_label .
+    docker run -it --rm docker_label
 </pre></code>
 
 # CENÁRIO NULL
