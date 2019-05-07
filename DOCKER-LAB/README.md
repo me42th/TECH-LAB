@@ -118,3 +118,40 @@ Executo o container e abro o arquivo 'a' no nano
     docker build -t docker_zip .
     docker run -it --rm docker_zip nano /root/copy_folder/a
 </pre></code>
+
+
+#CENÁRIO 6
+
+##Dockerfile
+
+Determino a execução de um comando por default ao instanciar um conteiner. Há diferenças entre invocar um comando com CMD e com ENTRYPOINT;
+O PRIMEIRO NÃO SERÁ EXECUTADO CASO AJA UM ARGUMENTO NA FUNCTION DO SHELL, O SEGUNDO 
+
+<pre><code>
+    FROM ubuntu
+    RUN apt-get update
+    #ENTRYPOINT ls
+    CMD ls
+</pre></code>
+
+##Terminal
+
+Primeiro o entrypoint é executado e somente após é executada a instrução passada como argumento
+
+<pre><code>
+    sudo su
+    docker build -t docker_entrypoint
+    docker run --rm docker_entrypoint pwd; cd root; ls
+</pre></code>
+
+#CENÁRIO NULL
+
+##Dockerfile
+
+<pre><code>
+</pre></code>
+
+##Terminal
+
+<pre><code>
+</pre></code>
