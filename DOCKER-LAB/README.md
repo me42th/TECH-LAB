@@ -125,7 +125,7 @@ Executo o container e abro o arquivo 'a' no nano
 ##Dockerfile
 
 Determino a execução de um comando por default ao instanciar um conteiner. Há diferenças entre invocar um comando com CMD e com ENTRYPOINT;
-O PRIMEIRO NÃO SERÁ EXECUTADO CASO AJA UM ARGUMENTO NA FUNCTION DO SHELL, O SEGUNDO 
+O PRIMEIRO NÃO SERÁ EXECUTADO CASO AJA UM ARGUMENTO NA FUNCTION DO SHELL, O SEGUNDO É EXECUTADO OBRIGATORIAMENTE 
 
 <pre><code>
     FROM ubuntu
