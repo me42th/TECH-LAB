@@ -1,3 +1,4 @@
-    FROM ubuntu
-    RUN apt-get update && apt-get install nano
-    STOPSIGNAL SIGKILL
+    # FROM php:7.2-fpm
+    FROM tutum/lamp
+    EXPOSE 80
+ 

@@ -285,6 +285,30 @@ Alem de persistir os dados edito os mesmos que estão salvos na maquina local
     docker run -it -v "$(pwd)/copy_folder":/folder docker_mount
 </pre></code>
 
+
+# CENÁRIO 13
+
+##  Dockerfile
+
+- Command **EXPOSE** passa a usar uma porta do hospedeiro, 80 é a porta do container
+
+<pre><code>
+    # FROM php:7.2-fpm
+    FROM tutum/lamp
+    EXPOSE 80
+    ENTRYPOINT echo "welcome"
+</pre></code>
+
+##  Terminal
+
+- Flag **-p 4242:80** a porta 80 do container poderá ser acessada pela porta 4242 do host
+
+<pre><code>
+    sudo su
+    docker build -t docker_expose .
+    docker run -it --rm -p 4242:80 docker_expose
+</pre></code>
+
 # CENÁRIO NULL
 
 ##  Dockerfile
