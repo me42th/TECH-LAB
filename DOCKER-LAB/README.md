@@ -191,10 +191,10 @@ Declaro uma variável de ambiente e uso a mesma para seta a opção WORKDIR
 
 Healthcheck verifica se está tudo bem com o container 
 
-- Flag --interval determina a cada quantos segundos o script deve rodar
-- Flag --timeout se o comando não ter um retorno no tempo determinado é pq deu ruim
-- Flag --retries ele irá tentar executar x vezes
-- Flag CMD aqui este comando atua parcialmente como flag, a instrução que ele invoca é que é responsável pela validação 
+- Flag **--interval** determina a cada quantos segundos o script deve rodar
+- Flag **--timeout** se o comando não ter um retorno no tempo determinado é pq deu ruim
+- Flag **--retries** ele irá tentar executar x vezes
+- Flag **CMD** aqui este comando atua parcialmente como flag, a instrução que ele invoca é que é responsável pela validação 
 
 <pre><code>
     FROM ubuntu
@@ -205,9 +205,9 @@ Healthcheck verifica se está tudo bem com o container
 
 ##  Terminal
 
-- docker ps -a ==> exibe os containners e seu histórico e se estão "saudáveis" pelo critério em HEALTHCHECK
-- docker kill [CONTAINER ID] ==> encerro a execução de um determinado container  
-- docker inspect [CONTAINER NAME] ==> retorna um json com informações do container
+- **docker ps -a** ==> exibe os containners e seu histórico e se estão "saudáveis" pelo critério em HEALTHCHECK
+- **docker kill [CONTAINER ID]** ==> encerro a execução de um determinado container  
+- **docker inspect [CONTAINER NAME]** ==> retorna um json com informações do container
 
 <pre><code>
     sudo su
@@ -232,14 +232,37 @@ Finalizar o docker
 
 ##  Terminal
 
-- Flag --name a coluna "name" do "docker stats" passa a ser ocupada pelo valor passado 
-- Command docker stop [name container] finaliza a execução do container indexado pelo name
+- Flag **--name** a coluna "name" do "docker stats" passa a ser ocupada pelo valor passado 
+- Command **docker stop [name container]** finaliza a execução do container indexado pelo name
 
 <pre><code>
     sudo su
     docker build -t stop_signal .
     docker run -it --name stop_signal stop_signal
     docker stop docker_stop
+</pre></code>
+
+# CENÁRIO 11
+
+##  Dockerfile
+
+<pre><code>
+    FROM ubuntu
+    RUN apt-get update
+</pre></code>
+
+##  Terminal
+
+- Flag **--name docker_volume_1** nome da instancia
+- Flag **-v /data** volume que será persistido
+- Flag **rm [conteiner name]** apago um container 
+- Flag **--volumes-from docker_vol_1** persisto os dados dos volumes usados no conteiner setado com esse nome
+
+<pre><code>
+    docker build -t docker_vol .
+    docker run -it --name docker_vol_1 -v /data docker_volume 
+    docker run -it --name docker_vol_2 --volumes-from docker_vol_1
+    docker rm docker_vol_1
 </pre></code>
 
 # CENÁRIO NULL
