@@ -265,6 +265,26 @@ Finalizar o docker
     docker rm docker_vol_1
 </pre></code>
 
+# CENÁRIO 12
+
+##  Dockerfile
+
+<pre><code>
+    FROM ubuntu
+    RUN apt-get update && apt-get install nano
+</pre></code>
+
+##  Terminal
+
+Alem de persistir os dados edito os mesmos que estão salvos na maquina local 
+
+- Flag **-v "$(pwd)/copy_folder":/folder** onde copy_folder é a pasta no host e folder a pasta no conteiner
+
+<pre><code>
+    docker build -t docker_mount .
+    docker run -it -v "$(pwd)/copy_folder":/folder docker_mount
+</pre></code>
+
 # CENÁRIO NULL
 
 ##  Dockerfile
