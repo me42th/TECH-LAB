@@ -296,7 +296,6 @@ Alem de persistir os dados edito os mesmos que estão salvos na maquina local
     # FROM php:7.2-fpm
     FROM tutum/lamp
     EXPOSE 80
-    ENTRYPOINT echo "welcome"
 </pre></code>
 
 ##  Terminal
@@ -314,7 +313,9 @@ Alem de persistir os dados edito os mesmos que estão salvos na maquina local
 ##  Dockerfile
 
 <pre><code>
-
+    # FROM php:7.2-fpm
+    FROM tutum/lamp
+    EXPOSE 80
 </pre></code>
 
 ##  Terminal
@@ -323,12 +324,29 @@ Alem de persistir os dados edito os mesmos que estão salvos na maquina local
     - CMD **create** cria coisas de rede
     - CMD **ls** exibe as redes e informações básicas sobre as mesmas
     - FLAG **--subnet 172.28.0.0/16 Bird** cria a subrede Bird com a/b para rede e c/d host    
+    - FLAG **--ip 172.28.0.10** atribui o endereço ip 172.28.0.10 ao container
+    - FLAG **--net Bird** vincula o container a subrede Bird
+
+<pre><code>
+    sudo su
+    docker network create --subnet 172.28.0.0/16 Bird
+    docker network ls
+    docker build -t docker_network .
+    docker run -it --name docker_network --ip 172.28.0.10 --net Bird docker_network    
+</pre></code>
+
+# CENÁRIO 15
+
+##  Dockerfile
 
 <pre><code>
 
-    docker network create --subnet 172.28.0.0/16 Bird
-    docker network ls
+</pre></code>
 
+##  Terminal
+
+<pre><code>
+    sudo su
 </pre></code>
 
 # CENÁRIO NULL
