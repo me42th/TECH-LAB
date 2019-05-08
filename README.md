@@ -19,7 +19,7 @@
 | **Nível**  | **Nome**  | **Atual**  |  **Next**  |
 |---|---|---|---|
 | **_6_** |    [Core PHP]  | Intermediário | Certificação Zend  |
-| **_4_** |    [Docker](./DOCKER-LAB)  | Newbie++  | Intermediário  |
+| **_5_** |    [Docker](./DOCKER-LAB)  | Not Newbie  | Intermediário  |
 | **_1_** |    [OpenCart]  | Newbie  | Intermediário  |
 | **_1_** |    [AWS]  | Newbie  | Intermediário  |
 | **_2_** |    [Passport]  | Newbie  | Avançado  |
@@ -72,7 +72,7 @@
 | **Status**  | **Nome/Repositório**  | **Obs.**  |
 |---|---|---|
 | **_100%_**  | [Curso Completo de PHP 7](https://www.udemy.com/curso-php-7-online/)  |  Udemy |
-| **_5%_** | [Docker for Beginner](https://www.udemy.com/docker-for-beginner)  |   Udemy |
+| **_100%_** | [Docker for Beginner](https://www.udemy.com/docker-for-beginner)  |   Udemy |
 | **_0%_** | [Learn AJAX with PHP](https://www.udemy.com/learn-ajax-with-php/)  |   Udemy |
 | **_0%_** | [Controle de Estoque Em PHP](https://www.udemy.com/controle-de-estoque-em-php/)  |   Udemy |
 | **_0%_** | [Sistema de Estoque e Vendas com PHP 7 ](https://www.udemy.com/sistema-de-estoque-e-vendas-com-php-7/)  |   Udemy  |
