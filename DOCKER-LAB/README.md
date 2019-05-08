@@ -309,6 +309,28 @@ Alem de persistir os dados edito os mesmos que estão salvos na maquina local
     docker run -it --rm -p 4242:80 docker_expose
 </pre></code>
 
+# CENÁRIO 14
+
+##  Dockerfile
+
+<pre><code>
+
+</pre></code>
+
+##  Terminal
+
+    - CMD **network** executa as operação de rede do docker
+    - CMD **create** cria coisas de rede
+    - CMD **ls** exibe as redes e informações básicas sobre as mesmas
+    - FLAG **--subnet 172.28.0.0/16 Bird** cria a subrede Bird com a/b para rede e c/d host    
+
+<pre><code>
+
+    docker network create --subnet 172.28.0.0/16 Bird
+    docker network ls
+
+</pre></code>
+
 # CENÁRIO NULL
 
 ##  Dockerfile
