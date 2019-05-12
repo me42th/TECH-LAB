@@ -319,15 +319,13 @@ Alem de persistir os dados edito os mesmos que estão salvos na maquina local
 </pre></code>
 
 ##  Terminal
-
     - CMD **network** executa as operação de rede do docker
     - CMD **create** cria coisas de rede
     - CMD **ls** exibe as redes e informações básicas sobre as mesmas
     - FLAG **--subnet 172.28.0.0/16 Bird** cria a subrede Bird com a/b para rede e c/d host    
     - FLAG **--ip 172.28.0.10** atribui o endereço ip 172.28.0.10 ao container
     - FLAG **--net Bird** vincula o container a subrede Bird
-
-<pre><code>
+<pre><code>sudo su
     sudo su
     docker network create --subnet 172.28.0.0/16 Bird
     docker network ls
@@ -340,13 +338,20 @@ Alem de persistir os dados edito os mesmos que estão salvos na maquina local
 ##  Dockerfile
 
 <pre><code>
-
+    FROM ubuntu
+    RUN apt-get update && apt-get install net-tools && apt-get install inetutils-ping
 </pre></code>
 
 ##  Terminal
 
 <pre><code>
     sudo su
+    docker build -t docker_network .
+    docker run -it --name docker_network_0_10 --ip 172.28.0.10 --net Bird docker_network    
+    docker run -it --name docker_network_0_11 --ip 172.28.0.11 --net Bird docker_network
+        apt-get install net-tools 
+        apt-get install inetutils-ping
+            
 </pre></code>
 
 # CENÁRIO NULL
