@@ -39,7 +39,7 @@
 ### [Lista de Projetos Base/Ref.](https://github.com/me42th/ListaDeDesafiosProgramacao)
 | **Status**  | **Nome/Repositório**  | **Obs.**  |  **pts.**  |
 |---|---|---|---|
-| **_0%_** | Agenda Telefônica |  -  | 20 |
+| **_20%_** | [Agenda Telefônica](https://github.com/me42th/TECH-LAB/tree/master/CONTACTS-CHALLANGE) |  -  | 20 |
 | **_0%_** | Coisas emprestadas  |  -  | 25 |
 | **_0%_** | Ranking dos amigos  |  -  | 25 |
 | **_0%_** | Web Service Coach  |  -  | 30 |
