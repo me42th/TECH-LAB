@@ -33,3 +33,15 @@ Route::get('/regra/{nome}/{n}', function($nome, $n){
 Route::get('/optional/{nome?}', function($nome = 'David'){
     echo $nome."\n";
 });
+
+Route::prefix('app')->group(function(){
+    Route::get("/",function(){
+        return "Página principal do APP \n";
+    });
+    Route::get("/perfil",function(){
+        return "Seu perfil no APP \n";
+    });
+    Route::get("/sobre",function(){
+        return "Sobre o APP \n";
+    });
+});
