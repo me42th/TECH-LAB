@@ -34,6 +34,20 @@ Route::get('/optional/{nome?}', function($nome = 'David'){
     echo $nome."\n";
 });
 
+Route::redirect('/david','/app/perfil',308);
+
+Route::get('/hello', function(){
+    return view('hello');
+});
+
+Route::view('/relou','hello');
+
+Route::view('/hello_nome','hello_nome', ['nome' => 'Joao', 'sobrenome' => 'Silva']);
+
+Route::get('/relou_nome/{n}/{sn}', function($n,$sn){
+    return view('hello_nome',['nome' => $n,'sobrenome' => $sn]);
+});
+
 Route::prefix('app')->group(function(){
     Route::get("/",function(){
         return "Página principal do APP \n";
@@ -46,4 +60,4 @@ Route::prefix('app')->group(function(){
     });
 });
 
-Route
+
