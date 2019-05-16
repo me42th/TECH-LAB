@@ -45,3 +45,5 @@ Route::prefix('app')->group(function(){
         return "Sobre o APP \n";
     });
 });
+
+Route
