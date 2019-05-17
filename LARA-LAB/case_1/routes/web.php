@@ -74,3 +74,11 @@ Route::options('/rest/hello', function(){
 Route::post('/rest/print', function(Request $req){
     return "$req->var \n";
 });
+
+Route::match(['get','post'],'/rest/relou', function(){
+    return "Hello World 2 \n";
+});
+
+Route::any('/rest/any', function(){
+    return "Seja quem for, de onde for \n";
+});
