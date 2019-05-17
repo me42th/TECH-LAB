@@ -82,3 +82,16 @@ Route::match(['get','post'],'/rest/relou', function(){
 Route::any('/rest/any', function(){
     return "Seja quem for, de onde for \n";
 });
+
+Route::get('/produtos', function(){
+    echo "\n imagine um bocado de produtos aqui \n";
+})->name('prod');
+
+Route::get('/linkprodutos',function(){
+    $url = route('prod');
+    echo "<a href='$url'>LINK</a> \n";
+});
+
+Route::get('/redirectprodutos',function(){
+    return redirect()->route('prod');
+});

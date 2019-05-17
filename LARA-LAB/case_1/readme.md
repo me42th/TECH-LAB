@@ -19,6 +19,6 @@
 - **Route::view('/relou','hello')** forma abreviada de invocar uma view
 - **Route::view('/hello_nome','hello_nome', ['nome' => 'Joao', 'sobrenome' => 'Silva'])** forma abreviada de invocar uma view com argumentos
 - **Route::get('/relou_nome/{n}', function($n){ return view('h_n',['nome' => $n])})** invocar view com args na url 
-
+- **Route::get('/prod', function(){ })->name('prod');** imuniza o sistema de mudanças nos endpoints
 
 <hr>
