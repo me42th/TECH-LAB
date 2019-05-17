@@ -60,4 +60,24 @@ Route::prefix('app')->group(function(){
     });
 });
 
+Route::post('/rest/hello', function(){
+    return "Hello (POST) \n";
+});
+
+Route::delete('/rest/hello', function(){
+    return "Hello (DELETE) \n";
+});
+
+Route::put('/rest/hello', function(){
+    return "Hello (PUT) \n";
+});
+
+Route::patch('/rest/hello', function(){
+    return "Hello (PATCH) \n";
+});
+
+Route::options('/rest/hello', function(){
+    return "Hello (OPTIONS) \n";
+});
+
 
