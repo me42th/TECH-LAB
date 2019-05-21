@@ -34,7 +34,8 @@ class ClienteController extends Controller
      */
     public function store(Request $request)
     {
-        return "store\n";
+        echo "store \n";
+        return response($request->nome.' '.$request->sobrenome." \n", 201);
     }
 
     /**
