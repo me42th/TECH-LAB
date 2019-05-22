@@ -15,9 +15,9 @@
 - **Route::any('/rest/relou',function(){** capturo qualquer método com um determinado endpoint
 - **Route::get('/optional/{nome?}', function($nome = 'David')** parâmetro nome opcional
 - **Route::prefix('app')->group(function(){ Route::get("/",function(){ return ':D';})})** agrupa rotas com prefixos comuns
-- **Route::redirect('/david','/app/perfil',301)** redireciona para uma outra rota, exige o código HTTP 3XX
-- **Route::view('/relou','hello')** forma abreviada de invocar uma view
-- **Route::view('/hello_nome','hello_nome', ['nome' => 'Joao', 'sobrenome' => 'Silva'])** forma abreviada view c/ args
+- **Route::redirect('/david','/app/perfil',301)** redirect exige código HTTP 3XX
+- **Route::view('/relou','hello')** abreviação invocar view
+- **Route::view('/hello_nome','hello_nome', ['nome' => 'Joao', 'sobrenome' => 'Silva'])** abreviação invocar view c/ args
 - **Route::get('/relou_nome/{n}', function($n){ return view('h_n',['nome' => $n])})** invocar view com args na url 
 - **Route::get('/prod', function(){ })->name('prod');** imuniza o sistema de mudanças nos endpoints
 
