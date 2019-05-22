@@ -28,3 +28,9 @@ Route::get('/email/{email}',function($email){
     return view('error');
 
 });
+
+Route::get('/',function(){
+
+    return view('filho');
+
+});
