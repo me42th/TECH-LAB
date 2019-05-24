@@ -20,6 +20,8 @@ Route::get('/relou/{nome}/{sobrenome}', function($nome, $sobrenome){
     return view("MinhaView", compact('nome','sobrenome'));
 });
 
+Route::view('/npm','pag');
+
 Route::get('/email/{email}',function($email){
     if (View::exists('email'))
     {
