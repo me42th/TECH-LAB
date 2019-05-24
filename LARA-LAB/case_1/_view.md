@@ -23,6 +23,8 @@
 - **<link href="{{URL::to('css/app.css')}}" rel="stylesheet"**css compilado npm
 - **<script href="{{asset('js/app.js')}}" type="text/javascript"** js compilado npm
 - **<script href="{{URL::to('js/app.js')}}" type="text/javascript"** js compilado npm
+- **@component('alert') <b> ERROR </b> @endcomponent** html stripado c/ args
+- **<div> {{$slot}} </div>** inserção args componente
 
 ## CODE
 
