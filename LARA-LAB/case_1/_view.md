@@ -29,6 +29,8 @@
 - **<div>{{$titulo}}</div>** inserção args componente
 - **@slot('type','danger')** inserção args componente
 - **@alert(['type' => 'danger','titulo' => 'Erro Fatal'])** tag personalizada function boot
+- **@if(condition) @ifelse(condition) @else @endif** autoexplicativo 
+- **@empty($var) @endempty** autoexplicativo 
 
 ## CODE
 

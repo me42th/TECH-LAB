@@ -22,6 +22,8 @@ Route::get('/relou/{nome}/{sobrenome}', function($nome, $sobrenome){
 
 Route::view('/npm','pag');
 
+Route::get('/produtos','ProdutoControlador@listar');
+
 Route::get('/email/{email}',function($email){
     if (View::exists('email'))
     {
