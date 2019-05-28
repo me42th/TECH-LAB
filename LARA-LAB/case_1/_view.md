@@ -4,7 +4,7 @@
 
 - **package.json** config npm
 - **resources/js/app.js** config ??
-
+- **app/Providers/AppServiceProvider.php** function boot registro componentes
 
 ## NPM 
 
@@ -28,11 +28,13 @@
 - **@slot('name') <br> @endslot** args para componente
 - **<div>{{$titulo}}</div>** inserção args componente
 - **@slot('type','danger')** inserção args componente
+- **@alert(['type' => 'danger','titulo' => 'Erro Fatal'])** tag personalizada function boot
 
 ## CODE
 
 - **return view("MinhaView")->with('nome',$nome)->with('sobrenome',$sobrenome);**
 - **$args = ["arg" => $var]; return view("view", $args);**
 - **return view("MinhaView", compact('nome','sobrenome'));**
+- **public function boot()   {  Blade::component('components.alert','alert'); }** 
 
 <hr>

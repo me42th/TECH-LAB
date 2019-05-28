@@ -5,14 +5,14 @@
     </head>
     <body>
 
-        @component('components.alert', ['type' => 'danger','titulo' => 'Erro Fatal'])
+        @alert(['type' => 'danger','titulo' => 'Erro Fatal'])
             <strong> ERROR </strong>
             <!--@ slot('titulo')
                 Erro Fatal
             @ endslot
             @ slot('type','danger')-->
-        @endcomponent
-        
+        @endalert
+
 
         <!--<script href="{{asset('js/app.js')}}" type="text/javascript"></script>-->
         <script href="{{URL::to('js/app.js')}}" type="text/javascript"></script>
