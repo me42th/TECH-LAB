@@ -25,6 +25,9 @@
 - **<script href="{{URL::to('js/app.js')}}" type="text/javascript"** js compilado npm
 - **@component('alert') <b> ERROR </b> @endcomponent** html stripado c/ args
 - **<div> {{$slot}} </div>** inserção args componente
+- **@slot('name') <br> @endslot** args para componente
+- **<div>{{$titulo}}</div>** inserção args componente
+- **@slot('type','danger')** inserção args componente
 
 ## CODE
 
