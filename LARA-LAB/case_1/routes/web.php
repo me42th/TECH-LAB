@@ -38,3 +38,6 @@ Route::get('/',function(){
 });
 
 Route::get('/secao/{palavra}','ProdutoControlador@secao');
+
+Route::get('/switch/{palavra}','ProdutoControlador@switch_case');
+

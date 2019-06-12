@@ -32,6 +32,7 @@
 - **@if(condition) @ifelse(condition) @else @endif** autoexplicativo 
 - **@empty($var) @endempty** autoexplicativo 
 - **@hasSection('section') ... @endif** so imprime uma zona se for passada uma section
+- **@switch($var) @case(1) @break @default @endswitch** autoexplicativo
 
 ## CODE
 

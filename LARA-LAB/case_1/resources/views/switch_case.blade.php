@@ -1,0 +1,20 @@
+@extends('layouts.app')
+
+@section('content')
+    @switch($palavra)
+        @case(1)
+            'UM'
+            @break
+        @case(2)
+            'DOIS'
+            @break
+        @case(3)
+            'TRÊS'
+            @break
+        @case(4)
+            'QUATRO'
+            @break
+        @default
+            ':('
+    @endswitch
+@endsection

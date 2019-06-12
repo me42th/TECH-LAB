@@ -10,7 +10,9 @@
             @yield("content")
         </div>
         <div>
+        @hasSection ('my_section')
             @yield("my_section")
+        @endif
         </div>
     </body>
 

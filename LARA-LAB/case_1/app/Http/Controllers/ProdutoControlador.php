@@ -51,4 +51,7 @@ class ProdutoControlador extends Controller
     public function secao($palavra){
         return view('section', compact('palavra'));
     }
+    public function switch_case($palavra){
+        return view('switch_case',compact('palavra'));
+    }
 }
