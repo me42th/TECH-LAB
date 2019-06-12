@@ -34,7 +34,7 @@ Route::get('/email/{email}',function($email){
 });
 
 Route::get('/',function(){
-
     return view('filho');
-
 });
+
+Route::get('/secao/{palavra}','ProdutoControlador@secao');

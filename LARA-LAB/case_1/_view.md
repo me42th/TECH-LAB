@@ -7,7 +7,7 @@
 - **app/Providers/AppServiceProvider.php** function boot registro componentes
 
 ## NPM 
-
+ 
 - **npm i** install
 - **npm run dev** compila js e css num unico arquivo
 
@@ -31,6 +31,7 @@
 - **@alert(['type' => 'danger','titulo' => 'Erro Fatal'])** tag personalizada function boot
 - **@if(condition) @ifelse(condition) @else @endif** autoexplicativo 
 - **@empty($var) @endempty** autoexplicativo 
+- **@hasSection('section') ... @endif** so imprime uma zona se for passada uma section
 
 ## CODE
 

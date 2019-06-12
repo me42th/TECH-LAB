@@ -47,4 +47,8 @@ class ProdutoControlador extends Controller
 
         return $retorno;
     }
+
+    public function secao($palavra){
+        return view('section', compact('palavra'));
+    }
 }

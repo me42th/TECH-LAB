@@ -9,6 +9,10 @@
         <div>
             @yield("content")
         </div>
+        <div>
+            @yield("my_section")
+        </div>
     </body>
+
 
 </html>
