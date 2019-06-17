@@ -30,6 +30,26 @@ class ProdutoControlador extends Controller
 
     }
 
+    public function foreachBlade(){
+       $cont = 1;
+        $retorno = [
+           "A" => ["id" => $cont++, "nome" => "PRODUTO A"],
+           "B" => ["id" => $cont++, "nome" =>"PRODUTO B"],
+           "C" => ["id" => $cont++, "nome" =>"PRODUTO C"],
+           "D" => ["id" => $cont++, "nome" =>"PRODUTO D"],
+           "E" => ["id" => $cont++, "nome" =>"PRODUTO E"],
+           "F" => ["id" => $cont++, "nome" =>"PRODUTO F"],
+           "G" => ["id" => $cont++, "nome" =>"PRODUTO G"],
+           "H" => ["id" => $cont++, "nome" =>"PRODUTO H"],
+           "I" => ["id" => $cont++, "nome" =>"PRODUTO I"],
+           "J" => ["id" => $cont++, "nome" =>"PRODUTO J"]
+
+        ];
+
+        return view("retorno",compact("retorno"));
+
+    }
+
     public function one(){
 
         $retorno = [

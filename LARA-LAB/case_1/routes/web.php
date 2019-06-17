@@ -20,6 +20,14 @@ Route::get('/relou/{nome}/{sobrenome}', function($nome, $sobrenome){
     return view("MinhaView", compact('nome','sobrenome'));
 });
 
+Route::get('/loop/{n}', function($n){
+    return view('loop',compact('n'));
+}
+);
+
+Route::get('/foreach','ProdutoControlador@foreachBlade');
+
+
 Route::view('/npm','pag');
 
 Route::get('/produtos','ProdutoControlador@listar');
