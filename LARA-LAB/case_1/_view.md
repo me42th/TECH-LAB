@@ -33,6 +33,12 @@
 - **@empty($var) @endempty** autoexplicativo 
 - **@hasSection('section') ... @endif** so imprime uma zona se for passada uma section
 - **@switch($var) @case(1) @break @default @endswitch** autoexplicativo
+- **$loop->index** posicao atual
+- **$loop->count** total de interações 
+- **$loop->remaining** quantas faltam
+- **$loop->first** se primeiro elemento
+- **$loop->last** se ultimo elemento
+- **$loop->iteration** qual a iteração atual
 
 ## CODE
 
