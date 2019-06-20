@@ -6,3 +6,4 @@
 - [CURL](./case_1/_curl.md)
 - [ROUTE](./case_1/_route.md)
 - [VIEWS](./case_1/_view.md)
+- [MIGRATIONS](./case_2/_migrations.md)
