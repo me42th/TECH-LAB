@@ -6,10 +6,11 @@
 - **php artisan make:migration adcionar_categoria_id_em_produto --table=categoria** edit
 - **php artisan migrate:rollback**
 - **php artisan migrate:refresh**
-
+- **php artisan migrate:fresh** drop 4all with create
+- **php artisan migrate:reset** only drop
+- **php artisan migrate:status** status of scripts
 
 ## FILE
-
 
 
 
