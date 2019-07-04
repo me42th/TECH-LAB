@@ -7,7 +7,7 @@ Route::get('/', function () {
 });
 
 
-Route::get('novascategorias',function(){
+Route::get('novas',function(){
     DB::table('categorias')->insert(
         ['nome' => 'crystal'],
         ['nome' => 'greve'],
@@ -16,4 +16,17 @@ Route::get('novascategorias',function(){
     echo DB::table('categorias')->insertGetId(
         ['nome' => 'carro']
     );
+});
+
+Route::get('update', function(){
+    $cats = DB::table('categorias')->where('id','1')->first();
+    print_r($cats);
+    echo "<hr>";
+    $cats = DB::table('categorias')->where('id','1')->update(['nome' => 'Roupas Infantis']);
+    print_r($cats);
+    echo "<hr>";
+    $cats = DB::table('categorias')->where('id','1')->first();
+    print_r($cats);
+    echo "<hr>";
+
 });
