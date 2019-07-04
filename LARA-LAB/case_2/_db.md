@@ -12,5 +12,7 @@
 **DB::table('cat')->where('id',1)->orWhere('id',2)->get()**
 **DB::table('cat')->whereBetween('id',[1,2])->get()**
 **DB::table('cat')->whereNotBetween('id',[1,2])->get()**
+**DB::table('cat')->where([['id',1],['nome','like','R%s']])->get()**
+**DB::table('cat')->where([['nome','like','%']])->orderBy('nome','desc')->get();** array[array[]] where++ 
 
 <hr>

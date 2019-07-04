@@ -34,4 +34,10 @@ Route::get("categorias",function(){
     $cats = DB::table('categorias')->whereNotIn('id',[1,3,4])->get();
     print_r($cats);
     echo "<hr>";
+    $cats = DB::table('categorias')->where([['id',1],['nome','like','R%s']])->get();
+    print_r($cats);
+    echo "<hr>";
+    $cats = DB::table('categorias')->where([['nome','like','%']])->orderBy('nome','desc')->get();
+    print_r($cats);
+    echo "<hr>";
 });
