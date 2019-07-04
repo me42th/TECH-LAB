@@ -1,4 +1,4 @@
-#SUMÁRIO
+# SUMÁRIO
 
 ## CURSO LARAVEL, O MAIS PODEROSO FRAMEWORK PHP
 
@@ -7,3 +7,4 @@
 - [ROUTE](./case_1/_route.md)
 - [VIEWS](./case_1/_view.md)
 - [MIGRATIONS](./case_2/_migrations.md)
+- [DB QUERY](./case_2/_db.md)

@@ -3,7 +3,7 @@
 ## ARTISAN 
 
 - **php artisan make:migration criar_produtos --create=produtos** new
-- **php artisan make:migration adcionar_categoria_id_em_produto --table=categoria** edit
+- **php artisan make:migration adcionar_categoria_id_em_produto --table=categoria** edit 
 - **php artisan migrate:rollback**
 - **php artisan migrate:refresh**
 - **php artisan migrate:fresh** drop 4all with create
