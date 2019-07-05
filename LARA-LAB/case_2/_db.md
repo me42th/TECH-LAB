@@ -16,4 +16,5 @@
 **DB::table('cat')->where([['nome','like','%']])->orderBy('nome','desc')->get()** array[array[]] where++ 
 **DB::table('cat')->insert(['var'=>'A'],['var'=>'B'],['var'=>'C'])**
 **DB::table('cat')->insertGetId(['var' => 'D'])** return ID
+**DB::table('cat')->whereBetween('id',['1','9'])->delete();**
 <hr>

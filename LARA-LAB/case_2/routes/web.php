@@ -30,3 +30,13 @@ Route::get('update', function(){
     echo "<hr>";
 
 });
+
+Route::get('del',function(){
+   $cats = DB::table('categorias')->get();
+   print_r($cats);
+   echo '<hr>';
+   DB::table('categorias')->whereBetween('id',['1','9'])->delete();
+   $cats = DB::table('categorias')->get();
+   print_r($cats);
+   echo '<hr>';
+});
