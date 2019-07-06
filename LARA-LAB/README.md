@@ -8,3 +8,4 @@
 - [VIEWS](./case_1/_view.md)
 - [MIGRATIONS](./case_2/_migrations.md)
 - [DB QUERY](./case_2/_db.md)
+- [ELOQUENT](./case_3/_eloquent.md)
