@@ -14,7 +14,7 @@
 - **<script src="cordova.js"></script>** /src/index.html
 - **src/app/tab2/tab2.page.html**
 
-<code>
+```
 
 <ion-content>
 <img>
@@ -26,5 +26,4 @@
 </ion-fab>
 </ion-content>
 
-
-</code>
+```
