@@ -1,5 +1,7 @@
 {
   "name": "yourApp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
