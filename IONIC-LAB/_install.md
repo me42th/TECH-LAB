@@ -21,8 +21,12 @@
 - npm cache clean --force
 - npm install
 
+## Unhandled rejection Error: EACCES: permission denied, mkdir '/home/davidmeth/.npm/[...]'
+
+- chmod -R 777 .
+
 # INSTALL
 
-- ionic start myApp tabs
-- cd myApp
-- ionic serve
+- **npm install -g ionic**
+- **ionic start myApp tabs**
+- **ionic serve**
