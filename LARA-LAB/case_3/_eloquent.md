@@ -12,9 +12,11 @@
 
 ## Insert
 
-```Route::get('/inserir/{nome}',function($nome){
+``` 
+Route::get('/inserir/{nome}',function($nome){
     $cat = new Cat;
     $cat->nome = $nome;
     $cat->save();
-}); ```  
+}); 
+```
 <hr>
