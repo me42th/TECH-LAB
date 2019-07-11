@@ -16,5 +16,5 @@
     $cat = new Cat;
     $cat->nome = $nome;
     $cat->save();
-});```  
+}); ```  
 <hr>
