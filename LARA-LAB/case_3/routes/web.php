@@ -15,3 +15,7 @@ Route::get('/inserir/{nome}',function($nome){
     $cat->save();
     return redirect('/');
 });
+
+Route::get('/categoria/{id}',function($id){
+    echo Cat::find($id)->nome."\n";
+});
