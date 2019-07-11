@@ -1,16 +1,17 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+use App\Cat;
 
 Route::get('/', function () {
-    return view('welcome');
+    $cats = Cat::all();
+    foreach($cats as $cat){
+        echo $cat->nome."\n";
+    }
+});
+
+Route::get('/inserir/{nome}',function($nome){
+    $cat = new Cat;
+    $cat->nome = $nome;
+    $cat->save();
+    return redirect('/');
 });
