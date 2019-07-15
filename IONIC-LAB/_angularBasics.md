@@ -15,6 +15,45 @@
 
 # Code
 
+## ROUTING
+
+- **ADD FILE /src/app/app-routing.module.ts**
+
+### APP-ROUTING.MODULE.TS
+
+```
+import { NgModule } from "@angular/core";
+import { Routes, RouterModule } from "@angular/router"; 
+
+import { XXXComponent } from "./XXX/XXX.component";
+import { XXXInputComponent } from "./XXX/XXX-input.component";
+
+const routes: Routes = [
+  {path: '', component: XXXComponent},  
+  {path: 'input', component: XXXInputComponent}
+];
+
+@NgModule({
+imports: [RouterModule.forRoot(routes)],
+exports:[RouterModule]
+})
+
+export class AppRoutingModule {}
+```
+### APP.MODULE.TS
+```
+import { AppRoutingModule } from './app-routing.module';
+[...]
+@NgModule({
+[...]
+  imports: [
+    BrowserModule, FormsModule, AppRoutingModule
+  ],
+```
+### APP.COMPONENT.HTML
+```
+<router-outlet></router-outlet>
+```
 ## PASS DATA WITH CUSTOM EVENTS
 
 ### XXX.COMPONET.TS
