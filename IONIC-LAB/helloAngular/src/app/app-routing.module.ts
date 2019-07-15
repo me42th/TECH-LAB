@@ -15,4 +15,4 @@ imports: [RouterModule.forRoot(routes)],
 exports: [RouterModule]
 })
 
-export class AppRouteModule{}
+export class AppRouteModule{ }
