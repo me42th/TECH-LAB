@@ -11,7 +11,6 @@ export class PersonsComponent implements OnInit{
   personsList: string[];
 
   constructor(private prsService: PersonsService){
-
   }
 
   ngOnInit(){

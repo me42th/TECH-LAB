@@ -14,6 +14,20 @@
 
 # Code
 
+## LIFE HOOK CICLE
+```
+import { Component, OnInit } from '@angular/core';
+import { XXXService } from './xxx.service';
+[...]
+export class XXXComponent implements OnInit{
+  xxxList: string[];
+  constructor(private prsService: XXXService){ // dependency injection with autovar
+  }
+  ngOnInit(){ // run at object init
+    this.xxxList = this.prsService.xxx; // var create in constructor with autovar
+  }
+}
+```
 ## SERVICES
 
 - **ADD NEW FILE /src/app/XXX/XXX.services.ts**
