@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
 })
 
 export class PersonInputComponent {
-
+  onClick(personInputComponent: string){
+    console.log(personInputComponent);
+  }
 }

@@ -15,6 +15,23 @@
 
 # Code
 
+## LISTENERS AND EVENTS
+
+### XXX.COMPONENT.TS
+
+```
+export class XXXComponent {
+  onClick(inputEl){ // here we go
+    console.log(inputEl);  // :D
+  }
+```
+
+### XXX.COMPONENT.HTML
+```
+<label for="name">Label</label>
+<input type="text" id="name" #inputEl> // local reference
+<input type="submit" (click)="onClick(inputEl.value)" value="OK"> //sendo to .ts
+```
 ## ANGULAR DIRECTIVES
 
 ```
