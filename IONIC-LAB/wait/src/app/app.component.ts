@@ -6,9 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  persons = ['Maria', 'Antonio', 'João'];
 
-  changePersons($var: string){
-    this.persons.push($var);
-  }
 }

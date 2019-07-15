@@ -1,8 +1,8 @@
-import { NgModule } from "@angular/core";
-import { Routes, RouterModule } from "@angular/router";
+import { NgModule } from '@angular/core' ;
+import { Routes, RouterModule } from '@angular/router' ;
 
-import { PersonsComponent } from "./persons/persons.component";
-import { PersonInputComponent } from "./persons/person-input.component";
+import { PersonsComponent } from './persons/persons.component' ;
+import { PersonInputComponent } from './persons/person-input.component' ;
 
 const routes: Routes = [
   {path: '', component: PersonsComponent},
@@ -11,7 +11,7 @@ const routes: Routes = [
 
 @NgModule({
 imports: [RouterModule.forRoot(routes)],
-exports:[RouterModule]
+exports: [RouterModule]
 })
 
 export class AppRoutingModule {}

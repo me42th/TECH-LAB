@@ -4,7 +4,6 @@
 - ng new helloAngular
 - ng serve
 
-
 # Files
 
 - **src\main.ts** boot file
@@ -15,9 +14,27 @@
 
 # Code
 
+## SERVICES
+
+- **ADD NEW FILE /src/app/XXX/XXX.services.ts**
+
+### XXX.SERVICES.TS
+```
+import { Injectable } from '@angular/core';
+
+@Injectable({ providedIn: 'root' })
+export class xxxService {
+  xxx = ['abc', '123', 'III'];
+
+  addXXX($var: string) {
+    this.xxx.push($var);
+  }
+}
+
+```
 ## ROUTING
 
-- **ADD FILE /src/app/app-routing.module.ts**
+- **ADD NEW FILE /src/app/app-routing.module.ts**
 
 ### APP-ROUTING.MODULE.TS
 
