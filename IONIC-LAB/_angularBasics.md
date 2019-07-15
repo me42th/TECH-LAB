@@ -15,7 +15,72 @@
 
 # Code
 
-## LISTENERS AND EVENTS
+## PASS DATA WITH CUSTOM EVENTS
+
+### XXX.COMPONET.TS
+```
+import { Component, Output, EventEmitter } from '@angular/core';
+[...]
+export class XXXComponent {
+  @Output() xxxEmitter = new EventEmitter<string>();
+  xxxInput;
+  onClick(){
+    console.log(this.xxxInput);
+    this.xxxEmitter.emit(this.xxxInput);
+    this.xxxInput = '';
+  }
+```
+### XXX.COMPONENT.HTML
+```
+<label for="name">Label</label>
+<input type="text" id="name" [(ngModel)]="personInputComponent">
+<input type="submit" (click)="onClick()" value="OK">
+```
+### APP.COMPONENT.TS
+```
+export class AppComponent {
+  xxx = ['Maria', 'Antonio', 'João'];
+
+  changeXXX($var){
+    this.xxx.push($var);
+  }
+}
+```
+### APP.COMPONENT.HTML
+```
+<app-input-xxx (xxxEmitter)="changeXXX($event)"> </app-input-person>
+```
+
+## TWO WAY BINDING
+
+### XXX.COMPONENT.TS
+```
+export class XXXComponent {
+  dataFromVar = '';
+  onClick(){
+    console.log(this.dataFromVar);
+  }
+}
+```
+### XXX.COMPONENT.HTML
+```
+<label for="name">Label</label>
+<input type="text" id="name" [(ngModel)]="dataFromVar">  
+<input type="submit" (click)="onClick()" value="OK">  
+```
+### APP.MODULE.TS
+```
+import { FormsModule } from '@angular/forms';   
+[...]
+@NgModule({
+[...]
+  imports: [
+    BrowserModule, FormsModule
+  ],
+[...]
+```
+
+## EVENTS BINDING
 
 ### XXX.COMPONENT.TS
 
@@ -24,13 +89,15 @@ export class XXXComponent {
   onClick(inputEl){ // here we go
     console.log(inputEl);  // :D
   }
+      
+
 ```
 
 ### XXX.COMPONENT.HTML
 ```
 <label for="name">Label</label>
 <input type="text" id="name" #inputEl> // local reference
-<input type="submit" (click)="onClick(inputEl.value)" value="OK"> //sendo to .ts
+<input type="submit" (click)="onClick(inputEl.value)" [value]="1 + 1"> // send to component/ print 2 
 ```
 ## ANGULAR DIRECTIVES
 

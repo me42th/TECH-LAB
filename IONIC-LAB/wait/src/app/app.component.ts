@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   persons = ['Maria', 'Antonio', 'João'];
+
+  changePersons($var: string){
+    this.persons.push($var);
+  }
 }
