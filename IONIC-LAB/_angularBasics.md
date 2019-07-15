@@ -25,13 +25,24 @@ import { Injectable } from '@angular/core';
 @Injectable({ providedIn: 'root' })
 export class xxxService {
   xxx = ['abc', '123', 'III'];
-
   addXXX($var: string) {
     this.xxx.push($var);
   }
 }
 
 ```
+### XXX.COMPONENT.TS
+```
+import { xxxService } from './xxx.service';
+[...]
+export class xxxComponent {
+  xxxList: string[];
+  constructor(prsService: xxxService){
+    this.xxxList = prsService.xxx;
+  }
+}
+```
+
 ## ROUTING
 
 - **ADD NEW FILE /src/app/app-routing.module.ts**
