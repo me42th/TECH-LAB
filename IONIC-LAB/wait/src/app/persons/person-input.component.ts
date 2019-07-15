@@ -1,5 +1,5 @@
-import { Component, Output, EventEmitter } from '@angular/core';
-
+import { Component } from '@angular/core';
+import { PersonsService } from './persons.service';
 @Component({
   selector: 'app-input-person',
   templateUrl: './person-input.component.html',
@@ -7,11 +7,14 @@ import { Component, Output, EventEmitter } from '@angular/core';
 })
 
 export class PersonInputComponent {
-  @Output() personEmitter = new EventEmitter<string>();
+  constructor(private prsService: PersonsService){}
+
   personInputComponent;
+
   onClick(){
     console.log(this.personInputComponent);
-    this.personEmitter.emit(this.personInputComponent);
+
+    this.prsService.addPersons(this.personInputComponent);
     this.personInputComponent = '';
   }
 }
