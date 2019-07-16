@@ -14,11 +14,35 @@
 
 # Code
 
-## NAVIGATIN BETWEEN COMPONENTS
+## REMOVE ITEMS UPON A CLICK
+
+### XXX.SERVICE.TS
+```
+rmvXXX(xxx: string){
+  this.XXX = this.XXX.filter(xx => { return xx !== xxx}); //rmv every item be equals xx
+  console.log(this.XXX);
+}
+```
+### XXX.COMPONENT.TS
+```
+[...]
+onClick(xxx: string){
+  this.xxxService.rmvXXX(xxx);
+}
+[...]
+```
+### XXX.COMPONENT.HTML
+```
+<ul>
+  <li *ngFor="let xxx of xxxList" (click)="onClick(xxx)"> {{ xxx }} </li>
+</ul>
+```
+
+## NAVIGATING BETWEEN COMPONENTS
 
 ### APP.COMPONENT.HTML
 ```
-<a routerLink="/" >Persons List</a> | <a [routerLink]="'/input'">Input Person</a> // with [] = "''"
+<a routerLink="/" >XXX List</a> | <a [routerLink]="'/input'">Input XXX</a> // with [] = "''"
 <hr>
 <router-outlet></router-outlet>
 ```

@@ -13,4 +13,7 @@ export class PersonsComponent implements OnInit{
   ngOnInit(){
     this.personsList = this.prsService.persons;
   }
+  onClick(person: string){
+    this.prsService.rmvPerson(person);
+  }
 }
