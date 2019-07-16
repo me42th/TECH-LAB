@@ -14,6 +14,50 @@
 
 # Code
 
+## PUSHING DATA AROUND WITH SUBJECTS
+
+### XXX.COMPONENT.TS
+```
+import { Component, OnInit, OnDestroy } from '@angular/core';
+[...]
+import { Subscription } from 'rxjs';
+[...]
+export class XXXComponent implements OnInit, OnDestroy{
+  xxxList: string[];
+  private prsSubs: Subscription;
+  ngOnInit(){
+  [...]
+    this.prsSubs = this.prsService.xxxChanged.subscribe(xxx => {
+      this.xxxList = xxx;
+    });
+  }
+  [...]
+  ngOnDestroy(){
+    this.prsSubs.unsubscribe();
+  }
+  [...]
+```
+### XXX.SERVICE.TS
+```
+[...]
+import { Subject } from 'rxjs';
+[...]
+export class XXXService {
+  xxxChanged = new Subject<string[]>();
+  xxx = ["123", "111", "aaa"];
+
+  addXXX(prs: string) {
+    this.xxx.push(prs);
+    this.xxxChanged.next(this.xxx);
+  }
+
+  rmvXXX(prs: string){
+    this.xxx = this.xxx.filter(xxx => { return xxx !== prs});
+    this.xxxChanged.next(this.xxx);
+  }
+}
+
+```
 ## REMOVE ITEMS UPON A CLICK
 
 ### XXX.SERVICE.TS
