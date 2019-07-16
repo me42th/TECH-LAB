@@ -14,6 +14,14 @@
 
 # Code
 
+## NAVIGATIN BETWEEN COMPONENTS
+
+### APP.COMPONENT.HTML
+```
+<a routerLink="/" >Persons List</a> | <a [routerLink]="'/input'">Input Person</a> // with [] = "''"
+<hr>
+<router-outlet></router-outlet>
+```
 ## LIFE HOOK CICLE
 ```
 import { Component, OnInit } from '@angular/core';
@@ -28,7 +36,7 @@ export class XXXComponent implements OnInit{
   }
 }
 ```
-## SERVICES
+## BASIC OF SERVICES
 
 - **ADD NEW FILE /src/app/XXX/XXX.services.ts**
 
@@ -190,7 +198,7 @@ export class XXXComponent {
 
 ## PROPERTY BINDING
 
-### XXX.MODULE.TS
+### XXX.COMPONENT.TS
 
 ```
 import { Component, Input } from '@angular/core';
