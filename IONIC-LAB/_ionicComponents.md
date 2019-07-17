@@ -1,4 +1,5 @@
 # INPUT
+
 ```
 <ion-button>
 <ion-input>
@@ -9,7 +10,8 @@
 <ion-fab>
 <ion-toggle>
 ```
-## ION-BUTTON
+#### ION-BUTTON
+
 ```
 <ion-button fill="outline" color="danger"><ion-icon name="trash" slot="start"></ion-icon>Clear</ion-button>
 <ion-button> <ion-icon name="add" slot="start"></ion-icon>Add Expense</ion-button>
@@ -35,13 +37,23 @@
 <ion-infinite-scroll>
 <ion-tabs>
 ```
-## ION-GRID
+#### ION-GRID
 ```
 <ion-grid>
     <ion-row>
         <ion-col size-md="6" offset-md="3">
-                    
+
         </ion-col>
     </ion-row>
 </ion-grid>
-```          
+```
+#### CUSTOM CSS && HTML
+```
+    <div margin-vertical text-right>
+        <ion-button>Clear</ion-button>
+    </div>
+```
+#### VANILA JS
+* cjdyeag
+* * app.js
+* * index.html
