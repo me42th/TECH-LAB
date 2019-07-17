@@ -1,3 +1,4 @@
+/*
 new Vue ({
     el: "#teste",
     data: {
@@ -12,7 +13,7 @@ new Vue ({
         }
     }
 })
-/*
+*/
 const reasonInput = document.querySelector("#input-reason");
 const amountInput = document.querySelector("#input-amount");
 const cancelBtn = document.querySelector("#btn-cancel");
@@ -57,4 +58,3 @@ confirmBtn.addEventListener("click", () => {
 });
 
 confirmBtn.addEventListener("click", clear);
-*/
