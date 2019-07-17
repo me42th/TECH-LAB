@@ -12,11 +12,11 @@
     <title>Document</title>
   </head>
   <body>
-    <ion-app>
+    <ion-app id="teste">
       <ion-header>
         <ion-toolbar color="primary">
           <ion-title>
-            Budget Planner
+            Budget Planner {{testeData}}
           </ion-title>
         </ion-toolbar>
       </ion-header>
@@ -40,7 +40,7 @@
                     <ion-input type="number" id="input-amount"></ion-input>
                   </ion-item>
                   <div margin-vertical text-right>
-                    <ion-button fill="outline" color="danger" id="btn-cancel"><ion-icon name="trash" slot="start"></ion-icon>
+                    <ion-button v-on:click="testeMetodo()" fill="outline" color="danger" id="btn-cancel"><ion-icon name="trash" slot="start"></ion-icon>
                       Clear</ion-button>
                     <ion-button id="btn-confirm">
                       <ion-icon name="add" slot="start"></ion-icon>Add
@@ -62,7 +62,9 @@
             </ion-row>
         </ion-grid>
       </ion-content>
+      <ion-alert-controller></ion-alert-controller>
     </ion-app>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
