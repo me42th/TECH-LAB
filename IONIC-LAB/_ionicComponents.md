@@ -9,6 +9,11 @@
 <ion-fab>
 <ion-toggle>
 ```
+## ION-BUTTON
+```
+<ion-button fill="outline" color="danger"><ion-icon name="trash" slot="start"></ion-icon>Clear</ion-button>
+<ion-button> <ion-icon name="add" slot="start"></ion-icon>Add Expense</ion-button>
+```
 # OUTPUT
 ```
 <ion-img>
@@ -30,3 +35,13 @@
 <ion-infinite-scroll>
 <ion-tabs>
 ```
+## ION-GRID
+```
+<ion-grid>
+    <ion-row>
+        <ion-col size-md="6" offset-md="3">
+                    
+        </ion-col>
+    </ion-row>
+</ion-grid>
+```          
