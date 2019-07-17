@@ -8,13 +8,10 @@
 
 # Files
 
-
-
 # Code
 
 - **<ion-title>Photo Gallery</ion-title>** title frame  
 - **<script src="cordova.js"></script>** /src/index.html
-
 
 ## ADD CAMERA
 

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://unpkg.com/@ionic/core@latest/dist/ionic.js"></script>
+    <link
+      href="https://unpkg.com/@ionic/core@latest/css/ionic.bundle.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <ion-app>
+      <ion-header>
+        <ion-toolbar color="primary">
+          <ion-title>
+            Budget Planner
+          </ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-card>
+          <ion-card-header>
+              <ion-title>
+                  New Expensive
+              </ion-title>
+          </ion-card-header>  
+          <ion-card-content>
+            <ion-item>
+              <ion-label position="floating">Expense Reason</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Expense Value</ion-label>
+              <ion-input type="number"></ion-input>
+            </ion-item>
+          </ion-card-content>
+        </ion-card>
+      </ion-content>
+    </ion-app>
+  </body>
+</html>
