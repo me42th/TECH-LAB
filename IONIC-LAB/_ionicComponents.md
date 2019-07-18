@@ -29,6 +29,13 @@
 <ion-toast>
 <ion-modal>
 ```
+#### ION-IMG
+``` 
+<ion-avatar>
+   <ion-img [src]="XXX.imageURL"></ion-img>
+</ion-avatar>
+``` 
+
 # LAYOUT
 ```
 <ion-grid>
@@ -42,7 +49,7 @@
 <ion-grid>
     <ion-row>
         <ion-col size-md="6" offset-md="3">
-
+        
         </ion-col>
     </ion-row>
 </ion-grid>
