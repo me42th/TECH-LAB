@@ -3,6 +3,7 @@
 - **ng generate component recipes**
 - **ng g c recipes**
 - **ionic generate**
+- **ionic generate page XXX/SomeXXXFunc**
 
 # Files
 

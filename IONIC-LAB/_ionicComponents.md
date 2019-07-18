@@ -48,8 +48,7 @@
 ```
 <ion-grid>
     <ion-row>
-        <ion-col size-md="6" offset-md="3">
-        
+        <ion-col size-md="6" offset-md="3">        
         </ion-col>
     </ion-row>
 </ion-grid>
