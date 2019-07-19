@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Recipe</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let recipe of recipes">
+        <ion-avatar>
+            <ion-img [src]="recipe.imgUrl"></ion-img>
+          </ion-avatar>
+      <ion-grid>
+        <ion-col> 
+          <ion-label>
+              {{ recipe.title }}
+            </ion-label>
+        </ion-col>
+        <ion-col slot="end">
+          <ul>
+            <li *ngFor="let ingredient of recipe.ingredients">
+              {{ ingredient }}
+            </li>
+          </ul>
+        </ion-col>
+      </ion-grid>
+    </ion-item>
+  </ion-list>
+</ion-content>
