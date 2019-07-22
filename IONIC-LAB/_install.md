@@ -28,5 +28,5 @@
 # INSTALL
 
 - **npm install -g ionic**
-- **ionic start myApp tabs**
+- **ionic start myApp super --type=ionic-angular**
 - **ionic serve**
