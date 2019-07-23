@@ -4,13 +4,16 @@
       <ion-back-button defaultHref="/recipe"></ion-back-button>
     </ion-buttons>
     <ion-title>{{ loadedRecipe?.title }}</ion-title>
+    <ion-buttons slot="primary">
+      <ion-button (click)="onDelRecipe()"><ion-icon name="trash" slot="icon-only" ></ion-icon></ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 <ion-content>
   <ion-grid no-padding>
     <ion-row>
-      <ion-col no-padding>
-         <ion-img  [src]="loadedRecipe?.imgURL"></ion-img>        
+      <ion-col >
+         <ion-img  [src]="loadedRecipe?.imgURL"> </ion-img>        
       </ion-col>
     </ion-row>
     <ion-row>

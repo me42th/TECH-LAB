@@ -13,17 +13,19 @@ export class DetailPage implements OnInit {
   constructor(private actRoute: ActivatedRoute, private rcpSrv: RecipeService) { }
   loadedRecipe: Recipe ;  
   flag = 'texto';
+
   ngOnInit() {
     this.actRoute.paramMap.subscribe(paramMap => {
       if(!paramMap.has('recipeid'))
         return;       
       const recipeid = paramMap.get('recipeid');
       this.loadedRecipe = this.rcpSrv.getRecipe(recipeid);
-      
-          
     });
     
     
   }
 
+  onDelRecipe(){
+    this.rcpSrv.delRecipe(this.loadedRecipe.id);
+  }
 }
