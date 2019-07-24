@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { RecipeService } from '../recipe.service';
 import { Recipe } from '../recipe.model';
 
@@ -10,22 +10,22 @@ import { Recipe } from '../recipe.model';
 })
 export class DetailPage implements OnInit {
 
-  constructor(private actRoute: ActivatedRoute, private rcpSrv: RecipeService) { }
-  loadedRecipe: Recipe ;  
+  constructor(private actRoute: ActivatedRoute, private rcpSrv: RecipeService, private router: Router) { }
+  loadedRecipe: Recipe ;
   flag = 'texto';
 
   ngOnInit() {
     this.actRoute.paramMap.subscribe(paramMap => {
       if(!paramMap.has('recipeid'))
-        return;       
+        return;
       const recipeid = paramMap.get('recipeid');
       this.loadedRecipe = this.rcpSrv.getRecipe(recipeid);
     });
-    
-    
+
   }
 
   onDelRecipe(){
     this.rcpSrv.delRecipe(this.loadedRecipe.id);
+    this.router.navigate(['/recipe']);
   }
 }

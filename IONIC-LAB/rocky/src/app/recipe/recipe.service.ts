@@ -36,8 +36,11 @@ export class RecipeService {
       return recipe.id ===  recipeId;
     })};
   }
-
+  
   delRecipe(recipeId: string){
+    /*
+      retorna o array com apenas os elementos que retornarem true 
+    */
     this.recipes = this.recipes.filter(recipe => {
       return recipe.id !== recipeId;
     });
