@@ -53,6 +53,11 @@ export class RecipeService {
     return {... this.recipes.find(recipe => {
       return recipe.id === recipeId;
     })};
-
   }
+
+  delRecipe(recipeId: string){
+    this.recipes.filter( recipe => {
+      return recipe.id !== recipeId;
+    });
+  }  
 }

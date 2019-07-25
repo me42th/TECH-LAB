@@ -12,6 +12,13 @@
 var_array.find( item => { return item.var === value_to_equals; })
 '''
 
+### DELETE ITEM
+```
+this.array.filter( item => {
+      return item.id !== otherId;
+    });
+```
+
 ## PASS WITH REFERENCE
 
 ### ARRAY

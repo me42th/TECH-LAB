@@ -14,7 +14,9 @@ export class DetailPage implements OnInit {
     private activedRoute: ActivatedRoute,
     private recipeService: RecipeService
     ) { }
-  loaddedRecipe;
+  
+  loaddedRecipe: Recipe;
+
   ngOnInit() {
     this.activedRoute.paramMap.subscribe(
       parammap => {
@@ -25,6 +27,10 @@ export class DetailPage implements OnInit {
         this.loaddedRecipe = this.recipeService.getRecipe(recipeid);
       }
     );
+  }
+
+  delRecipe(){
+    this.recipeService.delRecipe(this.loaddedRecipe.id);
   }
 
 }
