@@ -65,7 +65,38 @@
 </ion-list>
 
 ```
-
+#### ION-ALERT
+```
+import { AlertController } from '@ionic/angular';
+[...]
+ constructor(
+    private alertControler: AlertController
+    ) { }
+[...]
+  delXXX(){
+    this.alertControler.create({
+      header: 'Are you sure?',
+      message: 'Do you really want to delete the XXX?',
+      buttons: [
+        {
+          text: 'Cancel',
+          role: 'cancel'
+        },
+        {
+          text: 'Delete',
+          handler: () => {
+            this.XXXService.delXXX(this.loaddedXXX.id);
+            this.router.navigate(['/XXX']);
+         
+          }
+        }
+      ]
+    }).then(
+      alertEl => {
+        alertEl.present();
+      });
+  }    
+```
 #### ION-GRID
 ```
 <ion-grid>
