@@ -24,9 +24,11 @@ export class DetailPage implements OnInit {
     this.activedRoute.paramMap.subscribe(
       parammap => {
         // validation
-        if(!parammap.has('idrecipe'))
-          return ;
-        const recipeid = parammap.get('idrecipe');  
+        if(!parammap.has('idrecipe')){
+        this.router.navigate(['/recipe']);
+         return ;
+        }
+        const recipeid = parammap.get('idrecipe');
         this.loaddedRecipe = this.recipeService.getRecipe(recipeid);
       }
     );
