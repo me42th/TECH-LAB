@@ -5,7 +5,7 @@
     <ion-title>{{ loaddedRecipe?.title }}</ion-title>
 
     <ion-buttons slot="primary">
-      <ion-button><ion-icon name="trash" slot="icon-only"></ion-icon></ion-button>
+      <ion-button (click)="delRecipe()"><ion-icon name="trash" slot="icon-only"></ion-icon></ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>

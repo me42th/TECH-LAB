@@ -48,6 +48,15 @@ const routes: Routes = [
   },
 ];
 ```
+### CHANGE ROUTE
+```
+  import { Router } from '@angular/router';
+  [...]
+  constructor( private router: Router ) { }
+  [...]
+  this.router.navigate(['/XXX']);
+```
+
 ### URLPARAMS
 ```
   ngOnInit() {

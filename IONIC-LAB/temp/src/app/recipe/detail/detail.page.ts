@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { RecipeService } from '../recipe.service';
 import { Recipe } from '../recipe.model'; 
 
@@ -12,7 +12,8 @@ export class DetailPage implements OnInit {
 
   constructor(
     private activedRoute: ActivatedRoute,
-    private recipeService: RecipeService
+    private recipeService: RecipeService,
+    private router: Router
     ) { }
   
   loaddedRecipe: Recipe;
@@ -31,6 +32,7 @@ export class DetailPage implements OnInit {
 
   delRecipe(){
     this.recipeService.delRecipe(this.loaddedRecipe.id);
+    this.router.navigate(['/recipe']);
   }
 
 }

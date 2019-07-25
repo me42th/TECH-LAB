@@ -16,6 +16,13 @@
 <ion-button fill="outline" color="danger"><ion-icon name="trash" slot="start"></ion-icon>Clear</ion-button>
 <ion-button> <ion-icon name="add" slot="start"></ion-icon>Add Expense</ion-button>
 ```
+#### ION-BUTTON WITH EVENT
+```
+ <ion-buttons slot="primary">
+      <ion-button (click)="delRecipe()"><ion-icon name="trash" slot="icon-only"></ion-icon></ion-button>
+    </ion-buttons>
+```
+
 # OUTPUT
 ```
 <ion-img>
