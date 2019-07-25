@@ -4,6 +4,7 @@
 - **ng g c recipes**
 - **ionic generate**
 - **ionic generate page XXX/SomeXXXFunc**
+- **ionic generate service XXX/XXX**
 
 # Files
 
@@ -29,8 +30,9 @@
 
 # CODE
 
-#### BASIC ROUTING
+## BASIC ROUTING
 
+### SUBURL
 ```
 const routes: Routes = [
   // directly  
@@ -46,3 +48,22 @@ const routes: Routes = [
   },
 ];
 ```
+### URLPARAMS
+```
+  ngOnInit() {
+    this.activedRoute.paramMap.subscribe(
+      parammap => {
+        // validation
+        if(!parammap.has('idXXX'))
+          return ;
+        const XXXid = parammap.get('idXXX');  
+        this.XXX = this.XXXService.getXXX(XXXid);
+      }
+    );
+  }
+```  
+## BASIC SERVICE
+
+
+
+

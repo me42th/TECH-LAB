@@ -68,6 +68,14 @@
     </ion-row>
 </ion-grid>
 ```
+#### NAVIGATION 
+```
+[...]
+<ion-back-button defaultHref="/XXX" ></ion-back-button>
+[...]      
+<ion-item *ngFor="let item of itens" [routerLink]="['./',item.id]">
+[...]
+``` 
 #### CUSTOM CSS && HTML
 ```
     <div margin-vertical text-right>
