@@ -28,3 +28,21 @@
 > ANGULAR E IONIC IMPORTS
 
 # CODE
+
+#### BASIC ROUTING
+
+```
+const routes: Routes = [
+  // directly  
+  { path: '', redirectTo: 'XXX', pathMatch: 'full' },
+  // with suburl  
+  { 
+    path: 'XXX', 
+    children: [
+      {path: '', loadChildren: './XXX/XXX.module#XXXPageModule'},
+      {path: ':XXXid', loadChildren: './XXX/detail/detail.module#DetailPageModule' }
+    ]
+     
+  },
+];
+```
