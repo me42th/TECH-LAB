@@ -25,6 +25,16 @@
 
 - chmod -R 777 .
 
+## Ionic livereload doesnt work
+
+> on linux solved by putting in /etc/sysctl.conf
+
+- fs.inotify.max_user_watches=524288
+
+> then reboot or
+
+- sudo sysctl --system
+
 # INSTALL
 
 - **npm install -g ionic**

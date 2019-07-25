@@ -43,7 +43,22 @@
 <ion-card>
 <ion-infinite-scroll>
 <ion-tabs>
+<ion-list>
 ```
+
+#### ION-LIST
+```
+<ion-list>
+    <ion-item *ngFor="let item of itens">
+        <ion-avatar slot="start">
+            <ion-img [src]="item.imgURL"></ion-img>
+        </ion-avatar>
+        <ion-label> {{ item.title }} </ion-label>
+    </ion-item>
+</ion-list>
+
+```
+
 #### ION-GRID
 ```
 <ion-grid>
@@ -63,4 +78,3 @@
 * cjdyeag_DONT_DELETE
 * * app.js
 * * index.html
-
