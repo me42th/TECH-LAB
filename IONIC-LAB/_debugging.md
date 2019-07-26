@@ -12,3 +12,10 @@ console.log();
 * * * * src/app/[...]/file.ts 
 * * * * add breakpoint and be happy :)
 
+#### VSCODE
+
+(TUTS)[https://code.visualstudio.com/docs/nodejs/angular-tutorial#_debugging-angular]
+
+> CTRL+SHIFT+D
+
+
