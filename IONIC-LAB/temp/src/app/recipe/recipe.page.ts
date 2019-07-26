@@ -19,8 +19,17 @@ export class RecipePage implements OnInit {
   ngOnInit() {
     
     this.recipes = this.rcpSrv.getAllRecipes();
-
+    console.log('DEBBUG HERE');
+    console.log('DEBBUG HERE');
+    console.log('DEBBUG HERE');
+    console.log('DEBBUG HERE');
+    console.log('DEBBUG HERE');
     console.log(this.recipes);
+    console.log('DEBBUG HERE');
+    console.log('DEBBUG HERE');
+    console.log('DEBBUG HERE');
+    console.log('DEBBUG HERE');
+    console.log('DEBBUG HERE');
   }
 
 }

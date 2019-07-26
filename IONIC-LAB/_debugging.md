@@ -1,9 +1,14 @@
 # Debbuging
 
-## NEWBIE STUFF
+## NATIVE ANDROID
+
 ```
 console.log();
 ```
+> run in android studio
+> chrome://inspect/
+> just smile bitch :P
+
 ## CHROME DEVELOPERS TOOLS
 
 > CTRL+SHIFT+I
