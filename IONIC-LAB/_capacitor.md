@@ -13,3 +13,13 @@ ng build
 ionic capacitor copy android
 ionic capacitor run android -l
 ```
+
+## BUGS
+
+>[error] Capacitor could not find the web assets directory "/home/davidmeth/Projetos/TECH-LAB/IONIC-LAB/temp/www".
+>    Please create it, and make sure it has an index.html file. You can change
+>    the path of this directory in capacitor.config.json.
+>    More info: https://capacitor.ionicframework.com/docs/basics/configuring-your-app
+>[ERROR] An error occurred while running subprocess capacitor.
+
+**JUST SMILE, ITS NOTHING RUN ng build AND BE HAPPY**
