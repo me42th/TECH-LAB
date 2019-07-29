@@ -8,4 +8,18 @@
 
 [RANDOM APP](_firstApp.md)
 
+[CAPACITOR](_capacitor.md)
+
+[DEBBUG](_debugging.md)
+
+[IONIC COMPONENTS](_ionicComponents.md)
+
+[JAVASCRIPTO](_javascripto.md)
+
+[NAVIGATION](_navigation.md)
+
+[OBSERVABLES](_observables.md)
+
+# LINKS-LIB
+
 https://ionicthemes.com/product/ionic4-full-starter-app/live-preview
