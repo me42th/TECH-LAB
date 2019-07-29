@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Recipe } from './recipe.model';
 import { RecipeService } from './recipe.service';
 
@@ -9,7 +9,7 @@ import { RecipeService } from './recipe.service';
   styleUrls: ['./recipe.page.scss'],
 })
 
-export class RecipePage implements OnInit {
+export class RecipePage implements OnInit, OnDestroy {
   recipes: Recipe[];
 
   constructor(
@@ -17,19 +17,28 @@ export class RecipePage implements OnInit {
     ) { }
 
   ngOnInit() {
-    
     this.recipes = this.rcpSrv.getAllRecipes();
-    console.log('DEBBUG HERE');
-    console.log('DEBBUG HERE');
-    console.log('DEBBUG HERE');
-    console.log('DEBBUG HERE');
-    console.log('DEBBUG HERE');
+    console.log('NG_ON_INIT_RECIPE');
     console.log(this.recipes);
-    console.log('DEBBUG HERE');
-    console.log('DEBBUG HERE');
-    console.log('DEBBUG HERE');
-    console.log('DEBBUG HERE');
-    console.log('DEBBUG HERE');
   }
 
+  ionViewWillEnter(){
+    console.log('WILL_ENTER_RECIPE');
+  }
+
+  ionViewDidEnter(){
+    console.log('DID_ENTER_RECIPE');
+  }
+  
+  ionViewWillLeave(){
+    console.log('WILL_LEAVE_RECIPE');
+  }
+
+  ionViewDidLeave(){
+    console.log('DID_LEAVE_RECIPE');
+  }
+
+  ngOnDestroy(){
+    console.log('NG_ON_DESTROY_RECIPE');
+  }
 }
