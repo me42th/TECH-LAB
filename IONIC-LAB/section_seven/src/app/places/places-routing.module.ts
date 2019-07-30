@@ -1,43 +1,17 @@
-# NAVIGATION
-
-## INNER TABS
-
-#### src/xxx/xxx.module.ts
-```
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { IonicModule } from '@ionic/angular';
-import { XXXPage } from './XXX.page';
-import { XXXRoutingModule } from './XXX-routing.module';
-
-
-
-@NgModule({
-  imports: [
-    CommonModule,
-    XXXRoutingModule,
-    IonicModule,
-   ],
-  declarations: [XXXPage]
-})
-export class XXXPageModule {}
-```
-
-#### src/xxx/xxx-routing.module.ts
-```
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { XXXPage } from './XXX.page';
+
+import { PlacesPage } from './places.page';
 
 const routes: Routes = [
     {
         path: '',
-        redirectTo: '/XXX/tabs/discovery',
+        redirectTo: '/places/tabs/discovery',
         pathMatch: 'full'
     },
     {
         path: 'tabs',
-        component: XXXPage,
+        component: PlacesPage,
         children: [
             {
                 path: 'discovery',
@@ -47,7 +21,7 @@ const routes: Routes = [
                         loadChildren: './discovery/discovery.module#DiscoveryPageModule'
                     },
                     {
-                        path: ':XXXid',
+                        path: ':placeid',
                         loadChildren: './discovery/detail/detail.module#DetailPageModule'
                     }
                 ]
@@ -64,18 +38,18 @@ const routes: Routes = [
                         loadChildren: './offers/new/new.module#NewPageModule'
                     },
                     {
-                        path: 'edit/:XXXid',
+                        path: 'edit/:placeid',
                         loadChildren: './offers/edit/edit.module#EditPageModule'
                     },
                     {
-                        path: ':XXXid',
+                        path: ':placeid',
                         loadChildren: './offers/bookings/bookings.module#BookingsPageModule'
                     }
                 ]
             },
             {
                 path: '',
-                redirectTo: '/XXX/tabs/discovery',
+                redirectTo: '/places/tabs/discovery',
                 pathMatch: 'full'
             }
         ]
@@ -86,6 +60,6 @@ const routes: Routes = [
     imports: [RouterModule.forChild(routes)],
     exports: [RouterModule]
 })
-export class XXXRoutingModule{
+export class PlacesRoutingModule{
+
 }
-```

@@ -53,6 +53,26 @@
 <ion-list>
 ```
 
+#### ION-TABS
+```
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="xxx">
+      <ion-label>
+        XXX
+      </ion-label>
+      <ion-icon name="search"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="yyy" >
+      <ion-label>
+        YYY
+      </ion-label>
+      <ion-icon name="card"></ion-icon>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
+``` 
+
 #### ION-LIST
 ```
 <ion-list>
