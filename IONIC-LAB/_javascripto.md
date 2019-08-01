@@ -27,6 +27,15 @@ this.array.filter( item => {
 return [... XXX];
 ```
 
+### PRIVATE WITH MAGIC
+```
+ private _XXX: XXX[];
+ [...] 
+ get XXX(){
+    return [...this._XXX];
+  }
+```
+
 ### OBJECT
 
 ```

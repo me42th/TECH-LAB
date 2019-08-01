@@ -42,6 +42,7 @@ export class PlacesService implements OnInit{
   }
 
   get places(){
+    console.log('aqui');
     return [...this._places];
   }
 }
