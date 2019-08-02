@@ -17,14 +17,14 @@ export class PlacesService implements OnInit {
       'p2',
       'Segundo Lugar',
       'Outro Lugar Legal',
-      'https://picsum.photos/501/201',
+      'https://picsum.photos/500/200',
       18
     ),
     new Places(
       'p3',
       'Terceiro Lugar',
       'Mais Um Lugar Legal',
-      'https://picsum.photos/502/302',
+      'https://picsum.photos/500/200',
       27
     )
   ];
