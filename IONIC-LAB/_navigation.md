@@ -1,91 +1,9 @@
 # NAVIGATION
 
-## INNER TABS
+## HTML FILE WITHOUT ID
 
-#### src/xxx/xxx.module.ts
 ```
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { IonicModule } from '@ionic/angular';
-import { XXXPage } from './XXX.page';
-import { XXXRoutingModule } from './XXX-routing.module';
-
-
-
-@NgModule({
-  imports: [
-    CommonModule,
-    XXXRoutingModule,
-    IonicModule,
-   ],
-  declarations: [XXXPage]
-})
-export class XXXPageModule {}
+<ion-fucking-thing routerLink="/places/tabs/offers/new">
 ```
 
-#### src/xxx/xxx-routing.module.ts
-```
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { XXXPage } from './XXX.page';
-
-const routes: Routes = [
-    {
-        path: '',
-        redirectTo: '/XXX/tabs/discovery',
-        pathMatch: 'full'
-    },
-    {
-        path: 'tabs',
-        component: XXXPage,
-        children: [
-            {
-                path: 'discovery',
-                children: [
-                    {
-                        path: '',
-                        loadChildren: './discovery/discovery.module#DiscoveryPageModule'
-                    },
-                    {
-                        path: ':XXXid',
-                        loadChildren: './discovery/detail/detail.module#DetailPageModule'
-                    }
-                ]
-            },
-            {
-                path: 'offers',
-                children: [
-                    {
-                        path: '',
-                        loadChildren: './offers/offers.module#OffersPageModule'
-                    },
-                    {
-                        path: 'new',
-                        loadChildren: './offers/new/new.module#NewPageModule'
-                    },
-                    {
-                        path: 'edit/:XXXid',
-                        loadChildren: './offers/edit/edit.module#EditPageModule'
-                    },
-                    {
-                        path: ':XXXid',
-                        loadChildren: './offers/bookings/bookings.module#BookingsPageModule'
-                    }
-                ]
-            },
-            {
-                path: '',
-                redirectTo: '/XXX/tabs/discovery',
-                pathMatch: 'full'
-            }
-        ]
-    }
-];
-
-@NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule]
-})
-export class XXXRoutingModule{
-}
-```
+## HTML WITH DINAMIC PARAMETERS
