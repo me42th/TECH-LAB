@@ -12,6 +12,7 @@ ionic capacitor add android
 ng build
 ionic capacitor copy android
 ionic capacitor run android -l
+[PROJECT]/android/app/build/outputs/apk/debug
 ```
 
 ## BUGS
