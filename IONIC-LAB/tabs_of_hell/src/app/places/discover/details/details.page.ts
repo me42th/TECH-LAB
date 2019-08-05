@@ -21,7 +21,9 @@ export class DetailsPage implements OnInit {
     //this.router.navigateByUrl('/places/tabs/discover');
     //this.navCtrl.navigateBack('/places/tabs/discover');
     //this.navCtrl.pop();
-    this.modalCTRL.create({component: CreateBookingComponent})
+    this.modalCTRL.create(
+      {component: CreateBookingComponent,
+      componentProps: { selectedPlace: this.place}})
     .then(
       modalEl => {
         modalEl.present();

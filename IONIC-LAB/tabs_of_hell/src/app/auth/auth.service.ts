@@ -11,6 +11,7 @@ export class AuthService {
   constructor() { }
   login(){
     this._userIsAuthenticated = true;
+    
   }
   logout(){
     this._userIsAuthenticated = false;
