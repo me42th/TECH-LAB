@@ -36,6 +36,7 @@
 <ion-toast>
 <ion-modal>
 ```
+
 #### ION-IMG
 ``` 
 <ion-avatar>
@@ -87,7 +88,6 @@
       <ion-label>Logout</ion-label>
     </ion-item>
 </ion-list>
-
 ```
 #### ION-ALERT
 ```
