@@ -82,6 +82,10 @@
         </ion-avatar>
         <ion-label> {{ item.title }} </ion-label>
     </ion-item>
+    <ion-item lines="none">
+      <ion-icon name="exit" slot="start"></ion-icon>
+      <ion-label>Logout</ion-label>
+    </ion-item>
 </ion-list>
 
 ```
