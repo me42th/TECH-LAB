@@ -23,7 +23,7 @@ export class DetailsPage implements OnInit {
     //this.navCtrl.pop();
     this.modalCTRL.create(
       {component: CreateBookingComponent,
-      componentProps: { selectedPlace: this.place}})
+      componentProps: { selectedPlace: this.places}})
     .then(
       modalEl => {
         modalEl.present();
