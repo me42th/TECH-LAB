@@ -21,13 +21,13 @@ export class DetailsPage implements OnInit {
     //this.router.navigateByUrl('/places/tabs/discover');
     //this.navCtrl.navigateBack('/places/tabs/discover');
     //this.navCtrl.pop();
-    this.modalCTRL.create(
-      {component: CreateBookingComponent,
-      componentProps: { selectedPlace: this.places}})
-    .then(
-      modalEl => {
-        modalEl.present();
-      }
-      );
+    //this.modalCTRL.create(
+    //  {component: CreateBookingComponent,
+    //  componentProps: { selectedPlace: this.places}})
+    //.then(
+    //  modalEl => {
+    //    modalEl.present();
+    //  }
+    //  );
   }
 }

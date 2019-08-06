@@ -17,6 +17,18 @@ export class HomePage implements OnInit {
 
   constructor() {}
 
+  ionViewWillEnter(){
+    console.log('will_enter');
+  }
+  ionViewDidEnter(){
+    console.log('did_enter');
+  }
+  ionViewWillLeave(){
+    console.log('will_leave');
+  }
+  ionViewDidLeave(){
+    console.log('did_leave');
+  }
   ngOnInit() {
     this.barChart = new Chart(this.barCanvas.nativeElement, {
       type: "radar",
