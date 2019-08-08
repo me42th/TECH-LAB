@@ -1,7 +1,0 @@
-{
-  "appId": "io.ionic.starter",
-  "appName": "temp",
-  "bundledWebRuntime": false,
-  "npmClient": "npm",
-  "webDir": "www"
-}
