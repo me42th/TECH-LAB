@@ -29,7 +29,6 @@ export class DiscoverPage implements OnInit {
 
   }
 
-
   onOpenMenu(){
     this.menuCTRL.toggle();
   }
