@@ -74,6 +74,37 @@
 </ion-tabs>
 ``` 
 
+#### ION-VIRTUAL-SCROLL
+``` 
+<ion-virtual-scroll [items]="array">
+  <ion-item *virtualItem="let element"></ion-item>
+</ion-virtual-scroll> 
+```
+
+#### ION-ITEM-SLIDING
+```
+<ion-list>
+  <ion-item-sliding  *ngFor="let element of array">
+    <ion-item>
+      [...]
+    </ion-item>
+    <ion-item-options side="start">
+      <ion-item-option (click)="onFucking()">
+        <ion-icon slot="top" name="trash"></ion-icon>ABC
+      </ion-item-option>
+      <ion-item-option color="danger" >
+        <ion-icon slot="icon-only" name="contact"></ion-icon>
+      </ion-item-option>
+    </ion-item-options>
+    <ion-item-options side="end">
+      <ion-item-option (click)="onEdit()">
+        <ion-icon name="create"></ion-icon>Unread
+      </ion-item-option>
+    </ion-item-options>  
+  </ion-item-sliding>
+</ion-list>  
+```
+
 #### ION-LIST
 ```
 <ion-list>

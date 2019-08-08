@@ -1,23 +1,27 @@
-(focus)="myMethod()"
-(blur)="myMethod()" 
-(submit)="myMethod()"  
-(scroll)="myMethod()"
+# EVENTS
 
-(cut)="myMethod()"
-(copy)="myMethod()"
-(paste)="myMethod()"
+## ANGULAR EVENTS
 
-(keydown)="myMethod()"
-(keypress)="myMethod()"
-(keyup)="myMethod()"
+- (focus)="myMethod()"
+- (blur)="myMethod()" 
+- (submit)="myMethod()"  
+- (scroll)="myMethod()"
 
-(mouseenter)="myMethod()"
-(mousedown)="myMethod()"
-(mouseup)="myMethod()"
+- (cut)="myMethod()"
+- (copy)="myMethod()"
+- (paste)="myMethod()"
 
-(click)="myMethod()"
-(dblclick)="myMethod()"
+- (keydown)="myMethod()"
+- (keypress)="myMethod()"
+- (keyup)="myMethod()"
 
-(drag)="myMethod()"
-(dragover)="myMethod()"
-(drop)="myMethod()"
+- (mouseenter)="myMethod()"
+- (mousedown)="myMethod()"
+- (mouseup)="myMethod()"
+
+- (click)="myMethod()"
+- (dblclick)="myMethod()"
+
+- (drag)="myMethod()"
+- (dragover)="myMethod()"
+- (drop)="myMethod()"

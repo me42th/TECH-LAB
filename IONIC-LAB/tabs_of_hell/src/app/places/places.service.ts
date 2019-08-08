@@ -26,6 +26,342 @@ export class PlacesService implements OnInit {
       "Mais Um Lugar Legal",
       "https://picsum.photos/500/200",
       27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
+    ),
+    new Places(
+      "p3",
+      "Terceiro Lugar",
+      "Mais Um Lugar Legal",
+      "https://picsum.photos/500/200",
+      27
     )
   ];
   constructor() {}
