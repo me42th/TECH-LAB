@@ -11,15 +11,15 @@ export class AuthService {
     private router: Router
   ) { }
 
-  get canView(){
+  get canView() {
     return this._login;
   }
 
-  login (){
+  login() {
     this._login = true;
     this.router.navigateByUrl('home');
   }
-  logout (){
+  logout() {
     this._login = false;
     this.router.navigateByUrl('auth');
   }
