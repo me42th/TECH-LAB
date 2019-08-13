@@ -22,7 +22,7 @@ export class PersonsService{
     //});
 
     this.http.get<any>('https://randomuser.me/api/?results=10')
-    .pipe(map( resData =>{
+    .pipe( map( resData => {
       return resData.results.map( people => people.name.first )
     }))
     .subscribe( transData => {
