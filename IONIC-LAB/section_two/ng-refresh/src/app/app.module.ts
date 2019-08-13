@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { PersonsComponent } from './PersonsComponent/persons.component';
+import { PersonsInputComponent } from './PersonsComponent/persons-input.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PersonsComponent
+    PersonsComponent,
+    PersonsInputComponent
   ],
   imports: [
     BrowserModule
