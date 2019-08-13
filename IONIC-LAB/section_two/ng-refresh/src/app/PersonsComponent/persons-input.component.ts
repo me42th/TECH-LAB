@@ -17,7 +17,7 @@ export class PersonsInputComponent{
   ){}
 
   onCreatePerson(name: string){
-    console.log(name + '|' + this.email + '|' + this.otherEmail);
+    //console.log(name + '|' + this.email + '|' + this.otherEmail);
     this.prsService.addPerson(name);
   }
 }
