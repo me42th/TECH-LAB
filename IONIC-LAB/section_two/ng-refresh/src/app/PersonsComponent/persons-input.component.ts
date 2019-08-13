@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./persons-input.component.css']
 })
 export class PersonsInputComponent{
+  email: string = '';
+  otherEmail: string = '';
   onCreatePerson(name: string){
-    console.log('Created Person: '+ name);
+    console.log(name + '|' + this.email + '|' + this.otherEmail);
   }
 }
