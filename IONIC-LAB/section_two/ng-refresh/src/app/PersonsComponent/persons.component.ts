@@ -1,9 +1,14 @@
-import { Component, Input } from '@angular/core';
+import { Component} from '@angular/core';
+import { PersonsService } from './persons.service';
 
 @Component({
   selector: 'app-person',
   templateUrl: './persons.component.html'
 })
 export class PersonsComponent{
-  @Input() personsList: string[];
+  personsList: string[];
+
+  constructor(prsService: PersonsService){
+    this.personsList = prsService.persons;
+  }
 }
