@@ -1,13 +1,15 @@
 import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
 
 @Injectable(
   {providedIn: 'root'}
 )
 export class PersonsService{
   persons: string[] = ['Max','Anna','David'];
-
+  personsChanged = new Subject<string[]>();
   addPerson(name: string){
     this.persons.push(name);
+    this.personsChanged.next(this.persons);
     console.log(this.persons);
   }
 
@@ -17,6 +19,7 @@ export class PersonsService{
       {
         return person !== name ;
       });
+    this.personsChanged.next(this.persons);
     console.log(this.persons);
   }
 }
