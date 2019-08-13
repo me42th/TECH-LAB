@@ -12,6 +12,14 @@
 var_array.find( item => { return item.var === value_to_equals; })
 '''
 
+### ADD ITEM
+
+```
+ array: string[] = ['Max','Anna','David'];
+ array.push('name');
+
+```
+
 ### DELETE ITEM
 ```
 this.array.filter( item => {
