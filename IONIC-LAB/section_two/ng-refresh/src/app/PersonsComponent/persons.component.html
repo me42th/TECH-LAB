@@ -1,5 +1,5 @@
 <ul>
-  <li *ngFor="let person of personsList">
+  <li *ngFor="let person of personsList" (click)="onClick(person)">
     {{person}}
   </li>
 </ul>
