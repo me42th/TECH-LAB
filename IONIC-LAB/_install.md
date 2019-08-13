@@ -40,3 +40,9 @@
 - **npm install -g ionic**
 - **ionic start myApp super --type=ionic-angular**
 - **ionic serve**
+
+# VISUAL STUDIO EXTENSIONS
+
+- **browser preview**
+- **angular essentials**
+- **material icons theme**
