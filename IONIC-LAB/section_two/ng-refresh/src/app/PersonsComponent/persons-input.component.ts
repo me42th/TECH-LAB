@@ -20,4 +20,6 @@ export class PersonsInputComponent{
     //console.log(name + '|' + this.email + '|' + this.otherEmail);
     this.prsService.addPerson(name);
   }
+
+
 }
