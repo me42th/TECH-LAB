@@ -4,6 +4,7 @@
 
 {[COLOR GENERATOR](https://ionicframework.com/docs/theming/color-generator)}
 {[VAR CSS](https://ionicframework.com/docs/theming/themes)}
+
 ## Files
 
 ### ~/global.css
@@ -12,6 +13,8 @@
 ### theme/variables.scss
 > Variáveis Css
 ```
+--ion-toolbar-background: var(--ion-color-primary, black);
+
 .ios {
   --ion-toolbar-background: #59ff38; 
 }
