@@ -13,6 +13,16 @@ use Illuminate\Http\Request;
 |
 */
 
+Route::resource('autors', 'AutorAPIController');
+
 Route::get('', function(){
     return response()->json(['shell'=>'curl -X POST -H "Accept: application/json" localhost:8000/api'], 200);
 });
+
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+
