@@ -1,5 +1,9 @@
 # Styling & Theming
 
+## Color Generator
+
+{[LINK](https://ionicframework.com/docs/theming/color-generator)}
+
 ## Files
 
 ### ~/global.css
