@@ -58,19 +58,7 @@
         </ion-list>
         <ion-virtual-scroll [items]="places" approxItemHeight="170px">
           <ion-item-sliding  #slidingItem *virtualItem="let place">
-            <ion-item detail [routerLink]="['/','places','tabs','discover',place.id]">
-              <ion-thumbnail slot="start">
-                <ion-img [src]="place.imgURL"></ion-img>
-              </ion-thumbnail>
-              <ion-label>
-                <h2>
-                  {{ place.title }}
-                </h2>
-                <p>
-                  {{ place.description }}
-                </p>
-              </ion-label>
-            </ion-item>
+            <app-place-item [place]="place"></app-place-item>
             <ion-item-options side="start">
                 <ion-item-option (click)="onEdit('trash',place.id,slidingItem)">
                   <ion-icon slot="top" name="trash"></ion-icon>ABC

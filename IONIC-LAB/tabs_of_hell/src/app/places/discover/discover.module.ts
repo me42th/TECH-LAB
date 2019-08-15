@@ -6,6 +6,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { DiscoverPage } from './discover.page';
+import { PlaceItemComponent } from './place-item/place-item.component';
+
 
 const routes: Routes = [
   {
@@ -21,6 +23,6 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [DiscoverPage]
+  declarations: [DiscoverPage, PlaceItemComponent]
 })
 export class DiscoverPageModule {}
