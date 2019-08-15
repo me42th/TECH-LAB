@@ -58,7 +58,9 @@
         </ion-list>
         <ion-virtual-scroll [items]="places" approxItemHeight="170px">
           <ion-item-sliding  #slidingItem *virtualItem="let place">
+           
             <app-place-item [place]="place"></app-place-item>
+           
             <ion-item-options side="start">
                 <ion-item-option (click)="onEdit('trash',place.id,slidingItem)">
                   <ion-icon slot="top" name="trash"></ion-icon>ABC
