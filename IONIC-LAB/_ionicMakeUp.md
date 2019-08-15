@@ -2,14 +2,24 @@
 
 ## Color Generator
 
-{[LINK](https://ionicframework.com/docs/theming/color-generator)}
-
+{[COLOR GENERATOR](https://ionicframework.com/docs/theming/color-generator)}
+{[VAR CSS](https://ionicframework.com/docs/theming/themes)}
 ## Files
 
 ### ~/global.css
 > Tema Global
+
 ### theme/variables.scss
 > Variáveis Css
+```
+.ios {
+  --ion-toolbar-background: #59ff38; 
+}
+
+.md {
+  --ion-toolbar-background: #ff7938;
+}
+```
 
 ## FONT AWESOME
 
