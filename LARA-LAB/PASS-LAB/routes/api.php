@@ -13,6 +13,7 @@ use Illuminate\Http\Request;
 |
 */
 
+
 Route::post('/cadastro','UserController@registrar');
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
