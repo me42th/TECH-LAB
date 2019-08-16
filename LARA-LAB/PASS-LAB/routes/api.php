@@ -13,7 +13,7 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::resource('autors', 'AutorAPIController');
+
 Route::post('/cadastro','UserController@registrar');
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
@@ -21,8 +21,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::group(['middleware' =>['auth:api']],function(){
+    Route::prefix('v1')->group(function () {
+        Route::resource('autors', 'AutorAPIController');
 
-
+    });
 
 
     Route::any('/', function () {
@@ -34,3 +36,6 @@ Route::group(['middleware' =>['auth:api']],function(){
 
 
 
+
+
+Route::resource('textos', 'TextoAPIController');
