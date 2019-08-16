@@ -15,7 +15,7 @@ use Response;
  * @package App\Http\Controllers\API
  */
 
-class TextoAPIController extends AppBaseController
+class TextoController extends AppBaseController
 {
     /** @var  TextoRepository */
     private $textoRepository;
@@ -31,7 +31,7 @@ class TextoAPIController extends AppBaseController
      *
      * @SWG\Get(
      *      path="/textos",
-     *      summary="Get a listing of the Textos.",
+     *      summary="Lista dos textos deste autor.",
      *      tags={"Texto"},
      *      description="Get all Textos",
      *      produces={"application/json"},
@@ -118,10 +118,33 @@ class TextoAPIController extends AppBaseController
     /**
      * @param int $id
      * @return Response
+     * @SwaggerDefinition(
+     *    securityDefinition = @SecurityDefinition(
+     *   apiKeyAuthDefinitions = {
+     *    @ApiKeyAuthDefinition(key = "user", name = "Authorization", in = ApiKeyLocation.HEADER)
+     *        }
+     *        )
+     *   )
+     */
+    public function shower($id)
+    {
+        /** @var Texto $texto */
+        $texto = $this->textoRepository->find($id);
+
+        if (empty($texto)) {
+            return $this->sendError('Texto not found');
+        }
+
+        return $this->sendResponse($texto->toArray(), 'Texto retrieved successfully');
+    }
+
+    /**
+     * @param int $id
+     * @return Response
      *
      * @SWG\Get(
      *      path="/textos/{id}",
-     *      summary="Display the specified Texto",
+     *      summary="TESTE",
      *      tags={"Texto"},
      *      description="Get Texto",
      *      produces={"application/json"},

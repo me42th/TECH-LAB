@@ -81,7 +81,7 @@ return [
       | You can configure OAuth2 authorization by changing value to true
       |--------------------------------------------------------------------------
     */
-    'init-o-auth' => false,
+    'init-o-auth' => true,
 
     /*
       |--------------------------------------------------------------------------
@@ -136,8 +136,8 @@ return [
       | (Authorization header with Basic base64encoded[client_id:client_secret]).
       |--------------------------------------------------------------------------
     */
-    'use-basic-auth-with-access-code-grant' => false,
-    
+    'use-basic-auth-with-access-code-grant' => true,
+
     /*
       |--------------------------------------------------------------------------
       | Middleware settings to check for user authorization.

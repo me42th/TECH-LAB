@@ -43,11 +43,11 @@ class Autor extends Model
     use SoftDeletes;
 
     public $table = 'autor';
-    
+
     const CREATED_AT = 'created_at';
     const UPDATED_AT = 'updated_at';
 
-
+    protected $primaryKey = 'idautor';
     protected $dates = ['deleted_at'];
 
 
@@ -80,5 +80,5 @@ class Autor extends Model
         'idautor' => 'required'
     ];
 
-    
+
 }
