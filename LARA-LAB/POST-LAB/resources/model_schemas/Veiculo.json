@@ -1,0 +1,862 @@
+[
+    {
+        "name": "id",
+        "dbType": "bigInteger,true",
+        "htmlType": null,
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "id_bas_empresa",
+        "dbType": "bigInteger,false",
+        "htmlType": null,
+        "validations": "required",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "codigo",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "placa",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "capacidade",
+        "dbType": "integer,false",
+        "htmlType": null,
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "descricao",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "ano",
+        "dbType": "smallInteger,false",
+        "htmlType": null,
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "modelo",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "conservacao",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "chassi",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "prefixo",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "id_bas_veiculo_tipo",
+        "dbType": "bigInteger,false",
+        "htmlType": null,
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "revisao_preventiva",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "pneu_estado",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "sit_atual_funcionamento",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "insp_ccv",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "hor_km",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "local",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "licenciamento",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "tag_smec",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "marca",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "tipo",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "cor",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "motor",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "renavam",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "combustivel",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "empresa",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "tacografo",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "tipo_propriedade",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "observacao",
+        "dbType": "text",
+        "htmlType": "textarea",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "quantidade_em_pe",
+        "dbType": "smallInteger,false",
+        "htmlType": null,
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "quantidade_sentado",
+        "dbType": "smallInteger,false",
+        "htmlType": null,
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,BasEmpresa,id_bas_empresa"
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,BasVeiculoTipo,id_bas_veiculo_tipo"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,bas_atendimento_suporte_subservicos"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,bas_alocacao"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,bas_alocacao_sala"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,bas_colaborador_beneficio"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,bas_colaborador_dias_trabalhados"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,bas_colaborador_funcao"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,bas_colaborador_outros_documentos"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,bas_emails_enviados"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,bas_mensagem"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,bas_mensagem_usuario"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,bas_pergunta"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,bas_pessoa_juridica"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_professor_anotacao"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,seg_groups_apps"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,seg_groups_apps_acoes"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,seg_modulos_funcionalidades"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,seg_users_establishment"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sga_almoxarifado_material"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sga_compra"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sga_autorizacao_fornecimento_material"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sga_compra_material"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sga_centro_custo_colaborador"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,seg_users_groups"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sga_material_estoque"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sga_contrato_licitacao"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sga_devolucao_material"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sga_sugestao_compra"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sga_transferencia_material"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sga_venda"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sga_requisicao_material"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sga_sugestao_compra_material"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sga_venda_material"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_anotacao_tipo_perfil_soe"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_assunto"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_atendimento_soe_anotacao_tipo"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_atividade_pessoa_atendimento"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_atendimento_tipo_perfil_soe"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_atividade_pessoa_topico_resposta"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_conceito_descritivo_group"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_conceito_descritivo_item"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_aula_planejada_executada"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_aula_turma_aluno_observacao"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_conselho_classe_colaborador"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_conselho_classe"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_conteudo_planejado"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_criterio_grade_disciplina"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_grade_historico"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_ocorrencia_tipo_group"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_perfil_soe_colaborador"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_professor_disciplina"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_serie_fardamento"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_serie_graduacao"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_serie_livro"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_serie_multisseriada_serie_real"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_suspensao"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_turma_aluno_cid"
+    },
+    {
+        "type": "relation",
+        "relation": "1t1,SgeTransporteRoteiro"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_transporte_roteiro_ponto"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_transporte_roteiro_viagem"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_transporte_roteiro_viagem_pessoa"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_turma_aluno_dados_medicos"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_turma_ano"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_turma_modulo"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_turma_aluno_modulo"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sgf_plano_conta"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sgm_baixa_lote"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sgm_cae_membro"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sgm_acao_preventiva_teste_aceitabilidade_notas"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sgm_baixa_lote_material"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sgm_cardapio_receita"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sgm_configuracao"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sgm_consumo_material"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sgm_indicador_aluno_tipo_indicador"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sgm_indicador_carencia_nutriente"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sgm_indicador_tipo_indicador"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sgm_indicador_aluno"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sgm_orientacao_data_participante"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sgm_inspecao_respostas"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sgm_material_lote"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sgm_recebimento_lote"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sgm_polo"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sgm_recebimento"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sgm_tabela_referencia_nutriente"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,bas_alocacao_equipamento"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,bas_sala"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sgf_nfse_estabelecimento"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,cso_regra_disciplina"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_conceito_descritivo"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sga_centro_custo_material"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sgb_autor_livro"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sgb_tradutor_livro"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_avaliacao_inicial"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_avaliacao_inicial_log"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_conceito_descritivo_etapa"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_conceito_descritivo_turma"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_conceito_faixa"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_conceito_turma"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_conteudo_programatico_assunto_etapa"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_conteudo_programatico_serie"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_criterio_final_turma"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_cronograma_curso_serie_turma"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_cronograma_etapa"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_curso_superior_disciplina"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_diagnose_inicial"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_doc_emitido_escola"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_grade"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_nota_avaliacao_log"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_turma_aluno_etapa_mensagem"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_turma_aluno_fardamento"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sgf_acordo_parcela"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sgf_boleto_retorno"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sgf_boleto_titulo_receber"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sgf_operador"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sgf_tipo_compromisso"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sgf_configuracao"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sgf_recebimento"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sgf_recebimento_cartao"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sgf_recebimento_deposito"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sgf_recebimento_dinheiro"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sgm_acao_preventiva_agenda"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sgm_mapa_entrega_estabelecimento"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,bas_colaborador_treinamento"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,bas_ocorrencia_reclamacao"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_professor_disciplina_turma_etapa"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,,sge_atendimento_medico_ocorrencia"
+    }
+]

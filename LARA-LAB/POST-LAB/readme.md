@@ -1,0 +1,15 @@
+# POSTGRES
+
+> MUDAR DE BANCO
+\c bd_grafite_catu_20190527
+
+> LISTAR TABELAS
+\dt
+
+> CONEXÃO
+DB_CONNECTION=pgsql 
+DB_HOST=10.0.0.208 
+DB_PORT=5432 
+DB_DATABASE=bd_grafite_catu_20190527
+DB_USERNAME=postgres 
+DB_PASSWORD=1nf0@#$1nf0
