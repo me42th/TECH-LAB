@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from './auth.service';
 import { Router } from '@angular/router';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-auth',
@@ -17,6 +18,10 @@ export class AuthPage implements OnInit {
   onLogin(){
     this.authSRV.login();
     this.router.navigateByUrl('/places/tabs/discover');
+  }
+
+  onSubmit(form: NgForm){
+    console.log(form);
   }
 
 }
