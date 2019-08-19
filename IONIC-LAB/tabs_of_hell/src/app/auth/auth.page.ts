@@ -15,6 +15,8 @@ export class AuthPage implements OnInit {
   ngOnInit() {
   }
 
+  isLogin = true;
+
   onLogin(){
     this.authSRV.login();
     this.router.navigateByUrl('/places/tabs/discover');
@@ -22,6 +24,10 @@ export class AuthPage implements OnInit {
 
   onSubmit(form: NgForm) {
     console.log(form);
+  }
+
+  onSwitchAuthMode(){
+    this.isLogin = !this.isLogin;
   }
 
 }
