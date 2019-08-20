@@ -32,7 +32,7 @@ export class AuthPage implements OnInit {
     if(this.isLogin)
       console.log('login');
     else
-      console.log('signup');  
+      console.log('signup');
   }
 
   onSwitchAuthMode(){
