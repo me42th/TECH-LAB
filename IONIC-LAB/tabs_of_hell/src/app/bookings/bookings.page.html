@@ -82,11 +82,47 @@
             <ion-select-option value="1">1</ion-select-option>
             <ion-select-option value="2">2</ion-select-option>
             <ion-select-option value="3">3</ion-select-option>
-
           </ion-select>
           </ion-item>
         </ion-col>
     </ion-row>
+    <ion-row>
+        <ion-col size-sm="3" offset-sm="3">
+          <ion-item>
+            <ion-label position="floating">
+              Date From
+            </ion-label>
+            <ion-datetime 
+            display-format="MMM DD YYYY"
+            picker-format="YY MMM DD"
+            [min]=""
+            [max]=""
+            ngModel
+            name="date-from"
+            required
+            #startDateCTRL="ngModel"
+            ></ion-datetime>
+          </ion-item> 
+        </ion-col>
+        
+        <ion-col size-sm="3">
+            <ion-item>
+              <ion-label position="floating">
+                Date To
+              </ion-label>
+              <ion-datetime 
+              display-format="MMM DD YYYY"
+              picker-format="YY MMM DD"
+              [min]="startDateCTRL.value"
+              [max]=""
+              ngModel
+              name="date-to"
+              required
+              ></ion-datetime>
+            </ion-item> 
+          </ion-col>  
+     </ion-row>     
+    
   </ion-grid>
 </form>
 </ion-content>
