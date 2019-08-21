@@ -14,2618 +14,2625 @@ export class PlacesService implements OnInit {
       "Primeiro Lugar",
       "Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      9
+      9,
+      new Date('2019-05-02'),
+      new Date('2019-12-13')
+
     ),
     new Places(
       "p2",
       "Segundo Lugar",
       "Outro Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      18
-    ),
+      18,
+      new Date('2019-05-02'),
+      new Date('2019-12-13')
+),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar",
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27
+      27,
+      new Date('2019-05-02'),
+      new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     ),
     new Places(
       "p"+this.cont++,
       "Terceiro Lugar "+this.cont,
       "Mais Um Lugar Legal",
       "https://picsum.photos/"+this.cont1+++"/"+this.cont2++,
-      27+this.cont
+      27+this.cont,       new Date('2019-05-02'),       new Date('2019-12-13')
     )
   ];
   constructor() {}
