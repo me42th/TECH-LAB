@@ -19,7 +19,7 @@ export class EditPage implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private placesSRV: PlacesService,
-    private navCTRL: NavController 
+    private navCTRL: NavController  
   ) { }
     onUpdateOffer(){
       if (!this.form.valid){
