@@ -22,7 +22,7 @@ export class BookingsPage implements OnInit {
     "https://picsum.photos/300/300",
     9,
     new Date('2019-05-02'),
-    new Date('2019-12-13')
+    new Date('2019-12-13'),'pp'
 
   );
   constructor(private bookingSRV: BookingService) { }
