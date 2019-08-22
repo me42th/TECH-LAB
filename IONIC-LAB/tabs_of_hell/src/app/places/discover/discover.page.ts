@@ -22,6 +22,9 @@ export class DiscoverPage implements OnInit {
     this.places = this.placesSRV.places;
   }
 
+  ionViewWillEnter(){
+    this.places = this.placesSRV.places;
+  }
   onEdit(func: string, id: string, sliding: IonItemSliding){
     sliding.close();
     console.log(func+' | '+id+' G12');

@@ -26,7 +26,9 @@ export class PlacesService implements OnInit {
       dateFrom,
       dateTo, this.authSRV.userId
     );
-    this._places.push(newPlace);
+    console.log(newPlace);
+    //this._places.push(newPlace);
+    this._places = [newPlace, newPlace, newPlace, newPlace, newPlace, newPlace, newPlace];
   }
 
   getPlace(id: string) {
