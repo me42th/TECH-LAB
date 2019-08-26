@@ -13,7 +13,8 @@ export class NewPage implements OnInit {
 
   constructor(
     private placesService: PlacesService,
-    private router: Router) { }
+    private router: Router
+    ) { }
 
   ngOnInit() {
     this.form = new FormGroup({
@@ -53,7 +54,5 @@ export class NewPage implements OnInit {
     this.form.reset();
     this.router.navigateByUrl('/');
     console.log(this.form);
-
   }
-
 }
