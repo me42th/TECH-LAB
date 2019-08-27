@@ -1,8 +1,6 @@
 import { Injectable, OnInit } from "@angular/core";
 import { Places } from "./places.model";
 import { AuthService } from '../auth/auth.service';
-import { BehaviorSubject } from 'rxjs';
-import { take } from 'rxjs/operators';
 
 @Injectable({
   providedIn: "root"
@@ -16,9 +14,7 @@ export class PlacesService implements OnInit {
   
   get places() {
     return [...this._places];
-  } 
-
-  
+  }
 
   addPlace(title: string, description: string, price: number, dateFrom: Date, dateTo: Date){
     const newPlace = new Places(
@@ -32,15 +28,7 @@ export class PlacesService implements OnInit {
     );
     console.log(newPlace);
     //this._places.push(newPlace);
-    this.behaviorPlaces.pipe(take(1)).subscribe(
-      plc => {
-        this._behaviorPlaces.next(plc.concat(newPlace));
-      }
-    );
     this._places = [newPlace, newPlace, newPlace, newPlace, newPlace, newPlace, newPlace];
-  }
-  get behaviorPlaces(){
-    return this._behaviorPlaces.asObservable();
   }
 
   getPlace(id: string) {
@@ -48,7 +36,7 @@ export class PlacesService implements OnInit {
   }
 
   ngOnInit() {}
-  private _behaviorPlaces = new BehaviorSubject<Places[]>(this.places);
+
   private _places: Places[] = [
     new Places(
       "p1",
