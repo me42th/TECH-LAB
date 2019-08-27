@@ -42,9 +42,10 @@ export class NewPage implements OnInit {
   }
 
   onCreateOffer() {
-    if (!this.form.valid) {
-      return;
-    }
+    //if (!this.form.valid) {
+    //  return;
+    //}
+    
     const title: string = this.form.value.title;
     const description: string = this.form.value.description;
     const price: number = +this.form.value.price;
