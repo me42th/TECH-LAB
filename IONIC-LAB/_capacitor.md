@@ -15,6 +15,11 @@ ionic capacitor run android -l
 [PROJECT]/android/app/build/outputs/apk/debug
 ```
 
+## Android Studio
+```
+Build >> Rebuild Project
+```
+
 ## BUGS
 
 >[error] Capacitor could not find the web assets directory "/home/davidmeth/Projetos/TECH-LAB/IONIC-LAB/temp/www".
