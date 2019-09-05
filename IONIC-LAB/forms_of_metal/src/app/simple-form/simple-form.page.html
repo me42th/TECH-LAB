@@ -11,11 +11,40 @@
 <form #f="ngForm" (ngSubmit)="onSubmit(f)">
   <ion-item>
     <ion-label position="floating">Email</ion-label>
-    <ion-input type="email" name="email" ngModel required minLength="6"></ion-input>
+    <ion-input 
+    type="email" 
+    name="email" 
+    ngModel 
+    required 
+    email
+    #emailCtrl="ngModel"></ion-input>
+  </ion-item>
+  <ion-item 
+  lines="none" 
+  *ngIf="!emailCtrl.valid && emailCtrl.touched"
+  >
+    <p >
+      Should be a valid email address.
+    </p>
   </ion-item>
   <ion-item>
     <ion-label position="floating">Password</ion-label>
-    <ion-input type="password" name="password" ngModel required minLength="5"></ion-input>
+    <ion-input 
+    type="password" 
+    name="password" 
+    ngModel 
+    required 
+    minLength="5"
+    #passwordCtrl="ngModel"
+    ></ion-input>
+  </ion-item>
+  <ion-item 
+  lines="none" 
+  *ngIf="!passwordCtrl.valid && passwordCtrl.touched"
+  >
+    <p>
+      Should at least be 6 characters long.
+    </p>
   </ion-item>
   <ion-button 
   color="primary" 
@@ -25,6 +54,8 @@
   type="submit" 
   color="primary" 
   (click)="onLogin()" 
-  expand="block"> LOGIN</ion-button>
+  expand="block"
+  [disabled]="!f.valid"
+  > LOGIN</ion-button>
 </form>
 </ion-content>
