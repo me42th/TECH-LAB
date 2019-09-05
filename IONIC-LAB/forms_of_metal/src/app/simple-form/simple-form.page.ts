@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
+
 @Component({
   selector: 'app-simple-form',
   templateUrl: './simple-form.page.html',
@@ -16,14 +17,20 @@ export class SimpleFormPage implements OnInit {
   }
 
   onSubmit(form: NgForm) {
-    console.log(form);
+    if (!form.valid) {
+      return;
+    }
+    const email = form.value.email;
+    if (this.isLogin) {
+      alert('LOGGED WITH ' + email);
+    } else {
+      alert('SIGNUP WITH ' + email);
+    }
+
   }
 
-  onSwitch(){
+  onSwitch() {
     this.isLogin = !this.isLogin;
   }
 
-  onLogin(){
-    alert('hello');
-  }
 }
