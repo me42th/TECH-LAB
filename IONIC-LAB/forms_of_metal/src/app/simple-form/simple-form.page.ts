@@ -8,6 +8,8 @@ import { NgForm } from '@angular/forms';
 })
 export class SimpleFormPage implements OnInit {
 
+  isLogin: boolean = true;
+
   constructor() { }
 
   ngOnInit() {
@@ -15,6 +17,10 @@ export class SimpleFormPage implements OnInit {
 
   onSubmit(form: NgForm) {
     console.log(form);
+  }
+
+  onSwitch(){
+    this.isLogin = !this.isLogin;
   }
 
   onLogin(){

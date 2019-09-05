@@ -3,7 +3,7 @@
         <ion-buttons slot="primary">
             <ion-back-button defaultHref="home"></ion-back-button>
           </ion-buttons>
-      <ion-title>SIMPLE FORM</ion-title>
+      <ion-title>SIMPLE FORM - {{ isLogin ? 'LOGIN' : 'SIGNUP'}}</ion-title>
     </ion-toolbar>
   </ion-header>
 
@@ -49,7 +49,8 @@
   <ion-button 
   color="primary" 
   fill="clear" 
-  expand="block"> SWITCH</ion-button>
+  (click)="onSwitch()"
+  expand="block"> SWITCH TO {{ isLogin ? 'SIGNUP' : 'LOGIN' }}</ion-button>
   <ion-button 
   type="submit" 
   color="primary" 
