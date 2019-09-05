@@ -1,5 +1,7 @@
 {
   "name": "forms_of_metal",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

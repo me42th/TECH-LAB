@@ -1,9 +1,30 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>simpleForm</ion-title>
-  </ion-toolbar>
-</ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="primary">
+            <ion-back-button defaultHref="home"></ion-back-button>
+          </ion-buttons>
+      <ion-title>SIMPLE FORM</ion-title>
+    </ion-toolbar>
+  </ion-header>
 
 <ion-content>
-
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+  <ion-item>
+    <ion-label position="floating">Email</ion-label>
+    <ion-input type="email" name="email" ngModel required minLength="6"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Password</ion-label>
+    <ion-input type="password" name="password" ngModel required minLength="5"></ion-input>
+  </ion-item>
+  <ion-button 
+  color="primary" 
+  fill="clear" 
+  expand="block"> SWITCH</ion-button>
+  <ion-button 
+  type="submit" 
+  color="primary" 
+  (click)="onLogin()" 
+  expand="block"> LOGIN</ion-button>
+</form>
 </ion-content>
