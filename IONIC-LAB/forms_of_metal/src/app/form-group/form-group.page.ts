@@ -30,11 +30,11 @@ export class FormGroupPage implements OnInit {
         updateOn: 'blur',
         validators: [Validators.required, Validators.min(1)]
        }),
-      fromDate: new FormControl(null, { 
+      fromDate: new FormControl(null, {
         updateOn: 'blur',
         validators: [Validators.required]
       }),
-      toDate: new FormControl(null, { 
+      toDate: new FormControl(null, {
         updateOn: 'blur',
         validators: [Validators.required]
       })

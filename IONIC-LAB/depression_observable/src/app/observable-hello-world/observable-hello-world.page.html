@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>HELLO OBSERVABLE WORLD</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item (click)="onClick()" detail button> 
+     HIT THE ROAD
+    </ion-item>
+    <ion-item >
+        {{obsVar}}
+    </ion-item>
+  </ion-list>
+</ion-content>
