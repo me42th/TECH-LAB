@@ -22,7 +22,7 @@ export class ObservableHelloWorldPage implements OnInit {
   }
 
   onClick() {
-    console.log('a');
+    console.log('thread main | start 0');
     interval(1000).pipe(
      take(12),
      skipLast(10),
@@ -30,8 +30,12 @@ export class ObservableHelloWorldPage implements OnInit {
       v => Date.now()
      )
     ).subscribe(
-      value => this.var0 = this.var0 + value + ' | '
-    );
+      value => {
+      console.log('thread 0 | before alter');
+      this.var0 = this.var0 + value + ' | ';
+      console.log('thread 0 | after alter');
+    });
+    console.log('thread main | start 1');
     interval(1000).pipe(
       take(12),
       skip(2),
@@ -40,8 +44,12 @@ export class ObservableHelloWorldPage implements OnInit {
         v => Date.now()
       )
     ).subscribe(
-       value => this.var1 = this.var1 + value + ' | '
-    );
+      value => {
+        console.log('thread 1 | before alter');
+        this.var1 = this.var1 + value + ' | ';
+        console.log('thread 1 | after alter');
+      });
+    console.log('thread main | start 2');
     interval(1000).pipe(
       take(12),
       skip(4),
@@ -50,8 +58,12 @@ export class ObservableHelloWorldPage implements OnInit {
         v => Date.now()
       )
     ).subscribe(
-      value => this.var2 = this.var2 + value + ' | '
-    );
+      value => {
+        console.log('thread 2 | before alter');
+        this.var2 = this.var2 + value + ' | ';
+        console.log('thread 2 | after alter');
+      });
+    console.log('thread main | start 3');
     interval(1000).pipe(
       take(12),
       skip(6),
@@ -60,18 +72,28 @@ export class ObservableHelloWorldPage implements OnInit {
         v => Date.now()
       )
     ).subscribe(
-      value => this.var3 = this.var3 + value + ' | '
+      value => {
+        console.log('thread 3 | before alter');
+        this.var3 = this.var3 + value + ' | ';
+        console.log('thread 3 | after alter');
+      }
     );
+    console.log('thread main | start 4');
     interval(1000).pipe(
       take(12),
       skip(8),
       skipLast(2),
-      map( 
+      map(
         v => Date.now()
       )
     ).subscribe(
-      value => this.var4 = this.var4 + value + ' | '
+      value => {
+        console.log('thread 4 | before alter');
+        this.var4 = this.var4 + value + ' | ';
+        console.log('thread 4 | after alter');
+      }
     );
+    console.log('thread main | start 5');
     interval(1000).pipe(
       take(12),
       skip(10),
@@ -79,7 +101,11 @@ export class ObservableHelloWorldPage implements OnInit {
         v => Date.now()
       )
     ).subscribe(
-      value => this.var5 = this.var5 + value + ' | '
+      value => {
+        console.log('thread 5 | before alter');
+        this.var5 = this.var5 + value + ' | ';
+        console.log('thread 5 | after alter');
+      }
     );
   }
 
