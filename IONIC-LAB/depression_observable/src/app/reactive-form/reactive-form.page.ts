@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { Subscription } from 'rxjs';
 
 
 @Component({
@@ -10,19 +11,27 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 export class ReactiveFormPage implements OnInit {
 
   form: FormGroup;
+  subs: Subscription[];
+  variavelTexto: FormControl;
+  variavelNumerica: FormControl;
   constructor() { }
 
   ngOnInit() {
-    this.form = new FormGroup({
-      variavelTexto: new FormControl(null, {
-        updateOn: 'blur',
-        validators: [Validators.required]
-       }),
-      variavelNumerica: new FormControl(null,{
-        updateOn: 'blur',
-        validators: [Validators.required, Validators.min(1)]
-      })
+    this.variavelTexto = new FormControl(null, {
+      updateOn: 'blur',
+      validators: [Validators.required]
+     });
+    this.variavelNumerica = new FormControl(null, {
+      updateOn: 'change',
+      validators: [Validators.required, Validators.min(1)]
     });
+    this.form = new FormGroup({
+      variavelTexto: this.variavelTexto,
+      variavelNumerica: this.variavelNumerica
+    });
+    this.subs = [
+      this.variavelTexto.valueChanges.subscribe(value => console.log(value)),
+      this.variavelNumerica.valueChanges.subscribe(value => console.log(value))
+    ];
   }
-
 }
