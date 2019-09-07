@@ -6,6 +6,7 @@ const routes: Routes = [
   { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
   { path: 'observable-hello-world', loadChildren: './observable-hello-world/observable-hello-world.module#ObservableHelloWorldPageModule' },
   { path: 'dummy', loadChildren: './dummy/dummy.module#DummyPageModule' },
+  { path: 'reactive-form', loadChildren: './reactive-form/reactive-form.module#ReactiveFormPageModule' },
 ];
 
 @NgModule({

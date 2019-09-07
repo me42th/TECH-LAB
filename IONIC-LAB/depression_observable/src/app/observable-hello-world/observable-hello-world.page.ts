@@ -15,7 +15,7 @@ export class ObservableHelloWorldPage implements OnInit {
   var3 = ' ';
   var4 = ' ';
   var5 = ' ';
-  
+
   constructor() { }
 
   ngOnInit() {
@@ -68,7 +68,7 @@ export class ObservableHelloWorldPage implements OnInit {
       take(12),
       skip(6),
       skipLast(4),
-      map( 
+      map(
         v => Date.now()
       )
     ).subscribe(
