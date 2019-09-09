@@ -7,6 +7,7 @@ const routes: Routes = [
   { path: 'observable-hello-world', loadChildren: './observable-hello-world/observable-hello-world.module#ObservableHelloWorldPageModule' },
   { path: 'dummy', loadChildren: './dummy/dummy.module#DummyPageModule' },
   { path: 'reactive-form', loadChildren: './reactive-form/reactive-form.module#ReactiveFormPageModule' },
+  { path: 'input-form', loadChildren: './input-form/input-form.module#InputFormPageModule' },
 ];
 
 @NgModule({

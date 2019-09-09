@@ -17,7 +17,7 @@ export class ReactiveFormPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.variavelTexto = new FormControl(null, {
+    this.variavelTexto = new FormControl('victor', {
       updateOn: 'blur',
       validators: [Validators.required]
      });

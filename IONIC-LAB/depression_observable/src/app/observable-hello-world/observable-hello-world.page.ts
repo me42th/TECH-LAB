@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { map, take, skipLast, skip } from "rxjs/operators";
-import { interval, pipe } from "rxjs";
+import { map, take, skipLast, skip } from 'rxjs/operators';
+import { interval, pipe } from 'rxjs';
 
 @Component({
   selector: 'app-observable-hello-world',
