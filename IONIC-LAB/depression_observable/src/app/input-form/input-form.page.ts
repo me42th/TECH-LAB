@@ -13,15 +13,15 @@ export class InputFormPage implements OnInit, OnDestroy {
   subs: Subscription[];
   form: FormGroup;
   commentField: FormControl = new FormControl(null, {
-    updateOn: "change",
+    updateOn: 'change',
     validators: [Validators.required]
   });
   emailField: FormControl = new FormControl(null, {
-    updateOn: "change",
-    validators: [Validators.required, Validators.pattern("[^ @]*@[^ @]*")]
+    updateOn: 'change',
+    validators: [Validators.required, Validators.pattern('[^ @]*@[^ @]*')]
   });
   nameField: FormControl = new FormControl(null, {
-    updateOn: "change",
+    updateOn: 'change',
     validators: [Validators.required]
   });
 

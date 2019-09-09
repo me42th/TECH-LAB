@@ -8,6 +8,7 @@ const routes: Routes = [
   { path: 'dummy', loadChildren: './dummy/dummy.module#DummyPageModule' },
   { path: 'reactive-form', loadChildren: './reactive-form/reactive-form.module#ReactiveFormPageModule' },
   { path: 'input-form', loadChildren: './input-form/input-form.module#InputFormPageModule' },
+  { path: 'distinct-until-change', loadChildren: './distinct-until-change/distinct-until-change.module#DistinctUntilChangePageModule' },
 ];
 
 @NgModule({
