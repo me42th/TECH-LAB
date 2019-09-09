@@ -25,7 +25,7 @@ export class InputFormPage implements OnInit, OnDestroy {
     validators: [Validators.required]
   });
 
-  ngOnDestroy(){
+  ngOnDestroy() {
     this.subs.forEach(
       value => value.unsubscribe()
     );
