@@ -15,28 +15,35 @@
       </ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      <form [formGroup]="form">
+      
       <ion-list>
+          <form [formGroup]="form">
         <ion-item>
           <ion-label position="floating">
             Nome
           </ion-label>
           <ion-input formControlName="name"></ion-input>
         </ion-item>
+        </form>
+        <form [formGroup]="form">
+
         <ion-item>
           <ion-label position="floating">
             Email
           </ion-label>
           <ion-input formControlName="email"></ion-input>
         </ion-item>
+        </form>
+        <form [formGroup]="form">
+
         <ion-item>
           <ion-label position="floating">
             Comentário  
           </ion-label>
           <ion-textarea formControlName="comment"></ion-textarea>
         </ion-item>
-      </ion-list>
       </form>
+      </ion-list>
     </ion-card-content>
   </ion-card>
 </ion-content>

@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Subscription } from 'rxjs';
+import { map, filter } from 'rxjs/operators'
 
 @Component({
   selector: 'app-input-form',
@@ -32,16 +33,20 @@ export class InputFormPage implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    this.subs = [
-      this.emailField.valueChanges.subscribe(value => console.log(value)),
-      this.commentField.valueChanges.subscribe(value => console.log(value)),
-      this.nameField.valueChanges.subscribe(value => console.log(value))
-    ];
     this.form = new FormGroup({
       comment: this.commentField,
       email: this.emailField,
       name: this.nameField
     });
+    this.subs = [
+      this.emailField.valueChanges.subscribe(value => console.log(value)),
+      this.commentField.valueChanges.subscribe(value => console.log(value)),
+      this.nameField.valueChanges.subscribe(value => console.log(value)),
+      this.form.valueChanges.pipe(
+        map(value => JSON.stringify(value)),
+        filter( data => this.form.valid)
+        ).subscribe(data => console.log(data))
+    ];
   }
 
 }
