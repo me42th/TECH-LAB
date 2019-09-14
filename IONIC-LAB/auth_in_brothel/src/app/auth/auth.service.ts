@@ -46,8 +46,8 @@ export class AuthService {
   signup(email: string) {
     this.http.get(this.url)
     .pipe(
-      map( valor => {
-        console.log(valor.results[0]);
+      map( v  => {
+        const valor = (v as any);
         let mapUser: User = {
             name: valor.results[0].name.first.toUpperCase(),
             cidade: valor.results[0].location.city.toUpperCase(),
