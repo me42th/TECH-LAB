@@ -3,10 +3,37 @@
     <ion-title>PERFIL</ion-title>
   </ion-toolbar>
 </ion-header>
+
 <ion-content>
-<ion-card>
+    <ion-slides padding-top>
+        <ion-slide *ngFor="let number of [1,2,3,4,5,6]">
+          <img [src]="'https://picsum.photos/400/10'+number"/>
+        </ion-slide>
+    </ion-slides>
+  <ion-card padding-top>
   <ion-card-header>
-    Nome
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4">
+          <ion-img [src]="user.photo"></ion-img>
+      </ion-col>
+    <ion-col>
+        <ion-card-title>{{user.name}}</ion-card-title>
+        <ion-card-subtitle>{{user.cidade}}</ion-card-subtitle>
+        
+    </ion-col>
+
+      </ion-row>
+    </ion-grid>
+    
   </ion-card-header>
+  <ion-card-content>
+      <ion-list>         
+          <ion-item><sub><b><ion-icon name="phone-portrait"></ion-icon> </b> {{user.cell}}</sub></ion-item>
+          <ion-item><sub><b><ion-icon name="call"></ion-icon> </b> {{user.phone}}</sub></ion-item>
+          <ion-item><sub><b><ion-icon name="mail"></ion-icon> </b> {{user.email}}</sub></ion-item>
+        </ion-list>
+  </ion-card-content>
 </ion-card>
+
 </ion-content>

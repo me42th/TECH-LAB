@@ -61,6 +61,7 @@ export class AuthService {
     )
     .subscribe(
       valor => {
+        this._user = valor;
         this._boss.next(valor);
       }
     );
