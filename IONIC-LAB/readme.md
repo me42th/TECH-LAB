@@ -27,6 +27,9 @@ https://ionicthemes.com/product/ionic4-full-starter-app/live-preview
 # EXTENSIONS VSCODE
 
 > Angular Essentials
+
 > Browser Preview
+
 > Material Icon
+
 > REST Client
