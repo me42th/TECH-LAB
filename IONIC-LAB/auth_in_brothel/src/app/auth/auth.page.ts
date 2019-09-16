@@ -3,6 +3,7 @@ import { FormControl, Validators, FormGroup } from '@angular/forms';
 import { AuthService } from './auth.service';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
+import { LoadingController } from '@ionic/angular';
 
 @Component({
   selector: 'app-auth',
@@ -13,10 +14,11 @@ export class AuthPage implements OnInit {
 
   constructor(
     private authSRV: AuthService,
-    private router: Router
+    private router: Router,
+    private loadCTRL: LoadingController
   ) { }
 
-  private subscription: Subscription;
+  private subs: Subscription[] = [null];
 
   emailF: FormControl = new FormControl(
     '', {
@@ -36,20 +38,27 @@ export class AuthPage implements OnInit {
 
 
   ngOnInit() {
-    this.subscription = this.authSRV.observable.subscribe(
-      valor => {
-        if (typeof valor !== 'undefined'){
-          this.router.navigateByUrl('/profile');
-        }
-      });
-    this.form = new FormGroup({
+   this.form = new FormGroup({
         emailF: this.emailF,
         password: this.password
       });
   }
 
-  login() {
-    this.authSRV.signup(this.emailF.value);
-    ;
-  }
+  async login() {
+    const load = this.loadCTRL.create()
+    .then(
+      loadEl => {
+        loadEl.present();
+        this.subs.push(
+          this.authSRV.signup(this.emailF.value).subscribe(
+             valor => {
+            if (typeof valor !== 'undefined'){
+              this.router.navigateByUrl('/profile');
+              loadEl.dismiss();
+            }
+          }
+         )
+        );
+      });
+}
 }

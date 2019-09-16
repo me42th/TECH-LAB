@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { BehaviorSubject } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { map, flatMap } from 'rxjs/operators';
 
 
 export interface User {
@@ -43,7 +43,7 @@ export class AuthService {
     return this._boss.asObservable();
   }
   signup(email: string) {
-    this.http.get(this.url)
+    return this.http.get(this.url)
     .pipe(
       map( v  => {
         const valor = (v as any);
@@ -56,13 +56,13 @@ export class AuthService {
             photo: valor.results[0].picture.medium
         };
         return mapUser;
-      })
-    )
-    .subscribe(
-      valor => {
+      }),
+      flatMap(valor => {
         this._user = valor;
         this._boss.next(valor);
-      }
+        return this._boss.asObservable();
+      })
     );
+
   }
 }
