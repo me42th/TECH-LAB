@@ -29,8 +29,7 @@ export class AuthService {
 
   constructor(
     private http: HttpClient,
-    
-    ) { }
+  ) { }
 
   get login() {
     return this._logged;
@@ -48,7 +47,7 @@ export class AuthService {
     .pipe(
       map( v  => {
         const valor = (v as any);
-        let mapUser: User = {
+        const mapUser: User = {
             name: valor.results[0].name.first.toUpperCase(),
             cidade: valor.results[0].location.city.toUpperCase(),
             email,
@@ -56,7 +55,7 @@ export class AuthService {
             phone: valor.results[0].phone,
             photo: valor.results[0].picture.medium
         };
-         return mapUser;
+        return mapUser;
       })
     )
     .subscribe(
