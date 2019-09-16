@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormControl, Validators, FormGroup } from '@angular/forms';
 import { AuthService } from './auth.service';
 import { Router } from '@angular/router';
@@ -10,7 +10,7 @@ import { LoadingController } from '@ionic/angular';
   templateUrl: './auth.page.html',
   styleUrls: ['./auth.page.scss'],
 })
-export class AuthPage implements OnInit {
+export class AuthPage implements OnInit, OnDestroy {
 
   constructor(
     private authSRV: AuthService,
@@ -44,6 +44,10 @@ export class AuthPage implements OnInit {
       });
   }
 
+  ngOnDestroy() {
+    this.subs.forEach(sub => sub.unsubscribe);
+  }
+
   async login() {
     const load = this.loadCTRL.create()
     .then(
@@ -52,7 +56,7 @@ export class AuthPage implements OnInit {
         this.subs.push(
           this.authSRV.signup(this.emailF.value).subscribe(
              valor => {
-            if (typeof valor !== 'undefined'){
+            if (typeof valor !== 'undefined') {
               this.router.navigateByUrl('/profile');
               loadEl.dismiss();
             }
