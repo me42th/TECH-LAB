@@ -17,7 +17,6 @@ export class ProfilePage implements OnInit {
   ngOnInit() {
     this.user = this.authSRV.user;
     this.dbSRV.getDatabaseState().subscribe(arg => this.dbSRV.select());
-
   }
 
 }

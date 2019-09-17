@@ -7,6 +7,7 @@ const routes: Routes = [
   { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
   { path: 'simple-form', loadChildren: './simple-form/simple-form.module#SimpleFormPageModule' },
   { path: 'form-group', loadChildren: './form-group/form-group.module#FormGroupPageModule' },
+  { path: 'navrout', loadChildren: './navrout/navrout.module#NavroutPageModule' },
 ];
 
 @NgModule({
