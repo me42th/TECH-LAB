@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tux.component.scss'],
 })
 export class TuxComponent implements OnInit {
-
+  
   constructor() { }
 
   ngOnInit() {}

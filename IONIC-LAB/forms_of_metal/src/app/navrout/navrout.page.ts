@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TuxComponent } from './tux/tux.component';
 
 @Component({
   selector: 'app-navrout',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class NavroutPage implements OnInit {
 
   constructor() { }
-
+  root: TuxComponent;
   ngOnInit() {
   }
 
