@@ -8,3 +8,12 @@
 npm install --save ngx-webstorage-service
 
 ```
+
+## APP.MODULE
+
+```
+import { StorageServiceModule } from ‘  ngx-webstorage-service’;
+@NgModule({
+ imports: [ StorageServiceModule ]
+})
+```
