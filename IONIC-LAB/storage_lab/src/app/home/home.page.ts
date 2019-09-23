@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DbService } from '../db.service';
 
 
 @Component({
@@ -9,9 +10,13 @@ import { Component } from '@angular/core';
 export class HomePage {
 
 
-  constructor() {
+  constructor(private db: DbService) {
 
   }
 
+  onClick() {
+    this.db.store('u1', 'David');
+    this.db.show();
+  }
 
 }
