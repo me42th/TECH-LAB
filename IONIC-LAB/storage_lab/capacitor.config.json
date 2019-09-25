@@ -1,0 +1,7 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "storage_lab",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}
