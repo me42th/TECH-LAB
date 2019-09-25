@@ -14,8 +14,9 @@ DOC - https://capacitor.ionicframework.com/docs/ios
 - [X] xcode-select --install
 - [X] ionic capacitor add ios
 - [X] ionic capacitor copy ios
-- [X] ionic capacitor run ios
+- [X] ionic capacitor run ios [-l]
 ```
+> run ios -l + git push+pull bate certo
 
 ## XCODE
 
