@@ -43,7 +43,7 @@ export class AppComponent {
   }
 
   setuPush() {
-    this.signal.startInit(/*ONE SIGNAL CODE*/, /*GOOGLE CODE*/);
+    this.signal.startInit(/*ONE SIGNAL CODE*/'', /*GOOGLE CODE*/'');
 
     this.signal.inFocusDisplaying(this.signal.OSInFocusDisplayOption.Notification);
 
