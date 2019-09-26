@@ -1,7 +1,10 @@
 {
-  "appId": "io.ionic.starter",
+  "appId": "com.infocraft.egrafite.aluno.com",
   "appName": "push_lab",
   "bundledWebRuntime": false,
   "npmClient": "npm",
-  "webDir": "www"
+  "webDir": "www",
+  "server": {
+    "url": "http://localhost:8100"
+  }
 }

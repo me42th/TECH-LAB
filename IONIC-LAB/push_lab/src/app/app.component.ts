@@ -20,12 +20,14 @@ export class AppComponent {
     private alertCTRL: AlertController
   ) {
     this.initializeApp();
+
   }
 
   initializeApp() {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
+      this.setuPush();
     });
   }
 
@@ -54,7 +56,7 @@ export class AppComponent {
 
     this.signal.handleNotificationOpened().subscribe(data =>  {
       const additionalData = data.notification.payload.additionalData;
-      this.showAlert('Notificações','Você leu isso', additionalData.task);
+      this.showAlert('Notificações', 'Você leu isso', additionalData.task);
     });
 
 
