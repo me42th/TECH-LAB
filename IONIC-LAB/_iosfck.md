@@ -13,6 +13,7 @@ DOC - https://capacitor.ionicframework.com/docs/ios
 ```
 - [X] xcode-select --install
 - [X] ionic capacitor add ios
+- [X] ng build
 - [X] ionic capacitor copy ios
 - [X] ionic capacitor run ios [-l]
 ```
