@@ -1,5 +1,7 @@
 {
   "name": "push_lab",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
