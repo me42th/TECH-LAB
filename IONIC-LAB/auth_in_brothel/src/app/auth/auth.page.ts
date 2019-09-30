@@ -35,9 +35,9 @@ export class AuthPage implements OnInit, OnDestroy {
   );
 
   form: FormGroup;
-
-
+  
   ngOnInit() {
+
    this.form = new FormGroup({
         emailF: this.emailF,
         password: this.password
@@ -60,7 +60,8 @@ export class AuthPage implements OnInit, OnDestroy {
               this.router.navigateByUrl('/profile');
               loadEl.dismiss();
             }
-          }
+          },
+          erro => alert('erro')
          )
         );
       });
