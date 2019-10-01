@@ -4,7 +4,6 @@ LABEL Vendor="CentOS" \
       License=GPLv2 \
       Version=2.4.6-40
 
-
 RUN yum -y --setopt=tsflags=nodocs update && \
     yum -y --setopt=tsflags=nodocs install http://rpms.remirepo.net/enterprise/remi-release-7.rpm && \
     yum -y --setopt=tsflags=nodocs install epel-release yum-utils && \
@@ -14,7 +13,9 @@ RUN yum -y --setopt=tsflags=nodocs update && \
     yum-config-manager --enable remi-php73 && \
     yum -y install php php-cli php-fpm php-mysqlnd php-zip php-devel php-gd php-mcrypt php-mbstring php-curl php-xml php-pear php-bcmath php-json && \
     yum clean all && \
-    rm -rf /run/httpd/* /tmp/httpd* && \
-    exec /usr/sbin/apachectl -DFOREGROUND
+    php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && \
+    php composer-setup.php && \
+    php -r "unlink('composer-setup.php');" && \
+    php composer.phar create-project laravel/laravel --prefer-dist
 
 EXPOSE 80
