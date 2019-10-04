@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  data = 'empty';
-  error = 'empty';
+  data = ':D ';
+  error = ':P ';
   constructor(private uuid: UniqueDeviceID) {
     this.uuid.get()
     .then( value => this.data = '' + value)
