@@ -1,0 +1,8 @@
+{
+  "name": "uuid_yum",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
