@@ -7,6 +7,7 @@
 ## ERR: Your Node.js version is v4.2.6. Please update to the latest Node LTS version.
 
 #### Solution 1
+- sudo apt-get purge --auto-remove nodejs
 - sudo npm cache clean -f
 - sudo npm install -g n
 - sudo n stable
@@ -14,6 +15,7 @@
 #### Solution 2
 - [NVM](https://medium.com/collabcode/como-instalar-node-js-no-linux-corretamente-ubuntu-debian-elementary-os-729fb4c92f2d)
 
+- nvm use node
 
 ## Error: Cannot find module '@angular/compiler-cli
 
