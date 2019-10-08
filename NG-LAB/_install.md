@@ -1,5 +1,14 @@
 # NG STUFF
 
+## SHELL
+
+```
+[sudo?] npm install -g @angular/cli
+ng new name
+cd name
+ng serve
+```
+
 **Updating npm:**
 ```
 Run [sudo] npm install -g npm  (sudo  is only required on Mac/ Linux)
