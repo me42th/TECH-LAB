@@ -12,3 +12,6 @@
 
 > READ TIME
 >> CTRL+SHIFT+V
+
+> Kitty Time =(＾● ⋏ ●＾)= ෆ
+>> CTRL+SHIFT+P => >
