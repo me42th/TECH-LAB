@@ -1,6 +1,44 @@
 # TECH-LAB
 
+> ATUALIZAR COM URGENCIA
+>> SÉRIO
+>>> MINHA CARREIRA TOMOU OUTRO CURSO
+>>>> POR EXEMPLO
+>>>>> JÁ COMPREI MEIO MUNDO DE CURSO NA UDEMY
+>>>>>> E NENHUM DELES TA NESSA LISTA
 
+```
+MUITO EM BREVE FAREI UMA LIMPA NESTE ARQUIVO, ATÉ LÁ IGNORE ISSO AQUI
+```
+## NÃO DESÇA **↓**  :sweat_smile:
+-------------------------------------
+
+![sério](https://picsum.photos/3200/500)
+
+## POR FAVOR NÃO DESÇA **↓**  :anguished:
+-------------------------------------
+
+![sério](https://picsum.photos/3201/500)
+
+## ULTIMO AVISO **↓**  :disappointed:
+-------------------------------------
+
+![sério](https://picsum.photos/3202/500)
+
+## POR SUA CONTA E RISCO, DESISTO **↓**  :fearful:
+-------------------------------------
+
+![sério](https://picsum.photos/3203/500)
+
+## ISSO AQUI TA DESATUALIZADO **↓**   :scream:
+-------------------------------------
+
+![sério](https://picsum.photos/3204/500)
+
+## AHHHH DESISTO, VÁ E VEJA Q SOU DESORGANIZADO **↓**    :unamused:
+-------------------------------------
+
+![sério](https://picsum.photos/3205/500)
 
 ## Desafios
 
