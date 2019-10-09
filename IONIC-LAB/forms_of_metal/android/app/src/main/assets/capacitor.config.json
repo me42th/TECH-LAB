@@ -1,0 +1,7 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "forms_of_metal",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}

@@ -1,7 +1,8 @@
 {
   "name": "forms_of_metal",
   "integrations": {
-    "cordova": {}
+    "cordova": {},
+    "capacitor": {}
   },
   "type": "angular"
 }
