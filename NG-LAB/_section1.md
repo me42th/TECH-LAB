@@ -7,7 +7,7 @@
     
 </details>  
 
-> angular.json
+> angular.json 
 
 ```
 "styles": [
