@@ -1,29 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import { interval } from 'rxjs';
-import { tap } from 'rxjs/operators';
+
 
 @Component({
   selector: '[app-servers]',
   template: `
+  <label>Server Name</label>
+  <input
+  type="text"
+  class="form-control"
+  (input)="onUpdateServerName($event)">
   <button class="btn btn-primary"
-  [disabled]="allowNewServer"
-  (click)="flagui(0)">Add Server</button>
-  &nbsp;<button class="btn btn-primary"
-  [disabled]="!allowNewServer"
-  (click)="flagui(1)">Add Server</button>
-  &nbsp;<button class="btn btn-primary"
-  [disabled]="allowNewServer"
-  (click)="flagui(2)">Add Server</button>
-  &nbsp;<button class="btn btn-primary"
-  [disabled]="!allowNewServer"
-  (click)="flagui(3)">Add Server</button>
-  &nbsp;<button class="btn btn-primary"
-  [disabled]="allowNewServer"
-  (click)="flagui(4)">Add Server</button>
-  &nbsp;<button class="btn btn-primary"
   [disabled]="!allowNewServer"
   (click)="flagui(5)">Add Server</button>
-  <div class="app-server" (=> (click))></div>
+  <div class="app-server" ></div>
   <div class="app-server"></div>
   <div class="app-server"></div>
   <div [innerText]="variavel+' '+numero"></div>`,
@@ -32,17 +21,16 @@ import { tap } from 'rxjs/operators';
 export class ServersComponent implements OnInit {
   variavel = 'VALOR ';
   numero = 0;
-  allowNewServer = false;
+  allowNewServer = true;
   constructor() {
-    // interval(100)
-    // .subscribe(
-    //  value => {
 
-    //    this.numero = value;
-    //    this.flag();
-    //  }
-   // );
   }
+
+  onUpdateServerName(event: any) {
+    console.log(event);
+    this.variavel = 'VALOR ' + (event.target as HTMLInputElement).value;
+  }
+
   flagui(value: number) {
 
     alert('triggered by ' + value);
