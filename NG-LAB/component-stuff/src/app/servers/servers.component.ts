@@ -21,7 +21,13 @@ import { Component, OnInit } from '@angular/core';
   <div class="app-server" ></div>
   <div class="app-server"></div>
   <div class="app-server"></div>
-  <div [innerText]="variavel" *ngIf="loser"></div>`,
+  <div [innerText]="variavel" *ngIf="loser; else noServer"></div>
+  <ng-template #noServer>
+    <div>
+      No Click
+    </div>
+  </ng-template>
+  `,
   styleUrls: ['./servers.component.css']
 })
 export class ServersComponent implements OnInit {
