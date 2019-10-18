@@ -8,19 +8,25 @@ import { Component, OnInit } from '@angular/core';
   <input
   type="text"
   class="form-control"
-  (input)="onUpdateServerName($event)">
+  (input)="onUpdateServerName($event)"
+  placeholder="event binding">
+  <input
+  type="text"
+  class="form-control"
+  [(ngModel)]="variavel"
+  placeholder="two way">
   <button class="btn btn-primary"
   [disabled]="!allowNewServer"
   (click)="flagui(5)">Add Server</button>
   <div class="app-server" ></div>
   <div class="app-server"></div>
   <div class="app-server"></div>
-  <div [innerText]="variavel+' '+numero"></div>`,
+  <div [innerText]="variavel"></div>`,
   styleUrls: ['./servers.component.css']
 })
 export class ServersComponent implements OnInit {
-  variavel = 'VALOR ';
-  numero = 0;
+  variavel: string;
+
   allowNewServer = true;
   constructor() {
 
