@@ -21,12 +21,12 @@ import { Component, OnInit } from '@angular/core';
   <div class="app-server" ></div>
   <div class="app-server"></div>
   <div class="app-server"></div>
-  <div [innerText]="variavel"></div>`,
+  <div [innerText]="variavel" *ngIf="loser"></div>`,
   styleUrls: ['./servers.component.css']
 })
 export class ServersComponent implements OnInit {
   variavel: string;
-
+  loser: true | false = false;
   allowNewServer = true;
   constructor() {
 
@@ -38,8 +38,7 @@ export class ServersComponent implements OnInit {
   }
 
   flagui(value: number) {
-
-    alert('triggered by ' + value);
+    this.loser = true;
     this.flag();
   }
   flag() {
