@@ -15,6 +15,6 @@
               "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/admin-lte-css/dist/css/AdminLTE.min.css",
-              "node_modules/ionicons/dist/css/ionicons.min.css"
+              "node_modules/ionicons/dist/scss/ionicons.scss"
             ],
 ```
