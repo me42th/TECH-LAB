@@ -8,6 +8,9 @@ import { ListComponent } from './recipe/list/list.component';
 import { DetailComponent } from './recipe/detail/detail.component';
 import { ItemComponent } from './recipe/list/item/item.component';
 import { EditComponent } from './shopp/edit/edit.component';
+import { ShoopComponent } from './shopp/shoop.component';
+import { ShoopListComponent } from './shopp/list/shoop-list.component';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +20,9 @@ import { EditComponent } from './shopp/edit/edit.component';
     ListComponent,
     DetailComponent,
     ItemComponent,
-    EditComponent
+    EditComponent,
+    ShoopComponent,
+    ShoopListComponent
   ],
   imports: [
     BrowserModule
