@@ -4,3 +4,6 @@
   <summary>SHELL</summary>
     <p>ng g c [NAME] --spec false</p>
 </details>  
+
+**EMMET**
+> ul.nav.navbar-nav
