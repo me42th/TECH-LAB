@@ -15,11 +15,11 @@ import { Component, OnInit } from '@angular/core';
   [(ngModel)]="variavel"
   placeholder="two way">
   <button class="btn btn-primary"
-  [disabled]="!allowNewServer"
-  (click)="flagui(5)">Add Server</button>
-  <div class="app-server" ></div>
-  <div class="app-server"></div>
-  <div class="app-server"></div>
+  [disabled]="false"
+  (click)="flagui($event)">Add Server</button>
+  <div class="app-server" *ngFor="let server of servers">
+    {{server}}
+  </div>
   <div [innerText]="variavel" *ngIf="loser; else noServer"></div>
   <ng-template #noServer>
     <div>
@@ -33,6 +33,7 @@ export class ServersComponent implements OnInit {
   variavel: string;
   loser: true | false = false;
   allowNewServer = true;
+  servers = ['Teste', 'Outro Teste'];
   constructor() {
 
   }
@@ -42,8 +43,9 @@ export class ServersComponent implements OnInit {
     this.variavel = 'VALOR ' + (event.target as HTMLInputElement).value;
   }
 
-  flagui(value: number) {
+  flagui(value: any) {
     this.loser = true;
+    this.servers.push(value);
     this.flag();
   }
   flag() {
