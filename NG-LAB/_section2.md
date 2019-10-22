@@ -1,4 +1,5 @@
 # THE BASICS
+> **REPOSITORIO COMPONENT-STUFF**
 
 <details>
   <summary>SHELL</summary>
@@ -25,3 +26,23 @@
 
 ## NGCLASS
 > ADD OU REMOVE UMA CLASSE DADO UMA CONDIÇÃO
+
+
+```
+@Component({
+  selector: '.app-server',
+  //templateUrl: './server.component.html'
+  template: `
+  <p
+  [ngClass]="{
+    online: serverStatus === 'online'
+  }"
+  >Server with ID {{id}} IS {{serverStatus}}
+  </p>`,
+  styles: [`
+  .online{
+    color: white
+  }
+  `]
+})
+```
