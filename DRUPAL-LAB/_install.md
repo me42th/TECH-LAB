@@ -1,7 +1,7 @@
 # NEWBIE STUFF
 
 ## INSTALAÇÃO
-
+> User name: admin  User password: RVayyEHpmZ
 
 <details>
   <summary>DRUSH</summary>
@@ -18,7 +18,7 @@
   <p>drush site-install</p>
   <p>composer require drupal/module</p>  
 </details>
-
+ 
 
 
 ------
