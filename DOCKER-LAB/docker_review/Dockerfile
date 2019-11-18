@@ -12,3 +12,6 @@ RUN touch ./testfile_3.txt
 
 COPY ./pasta /root
 
+# ENTRYPOINT ls
+
+CMD ls
