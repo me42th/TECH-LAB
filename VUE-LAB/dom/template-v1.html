@@ -1,25 +1,22 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
-<div id='app'>
-    <p>
-        {{titulo}}
-    </p>
+<div id="app">
+    <p>{{titulo}}</p>
     <input type="text" v-on:input="alterarTitulo">
-    <div class="estilo-1"></div>
-    <div id="id" class="classe"></div>
-    
 </div>
+
 
 <script>
     new Vue({
         el: '#app',
         data: {
-            titulo: 'Imagine Algo Aqui'
+            titulo: 'Valor'
         },
         methods: {
             alterarTitulo(event){
                 this.titulo = event.target.value;
             }
+            
         } 
     });
 </script>
