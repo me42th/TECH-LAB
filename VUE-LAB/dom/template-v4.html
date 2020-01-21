@@ -1,0 +1,31 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id="app">
+    <a v-bind:href="link">Google</a>
+    <p v-once>{{titulo}}</p>
+    <p>{{saudacao()}}</p>
+    <input type="text" v-on:input="alterar">
+    <p v-html="linkHtml"></p>
+</div>
+
+<script>
+    new Vue(
+        {
+            el: '#app',
+            data: {
+                titulo: 'Imagine dragons here',
+                link: 'http://google.com.br',
+                linkHtml: '<a href="http://google.com.br">Link</a>'
+            },
+            methods: {
+                alterar(event){
+                  this.titulo = event.target.value;   
+                },
+                saudacao: function(){ 
+                    console.log(this);
+                    return this.titulo+' ABC';
+                }
+            }
+        }
+    );
+</script>
