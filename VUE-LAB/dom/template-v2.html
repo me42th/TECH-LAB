@@ -1,0 +1,24 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id="app">
+    <p>{{titulo}}</p>
+    <p>{{saudacao()}}</p>
+    <input type="" v-on:input="alterarTitulo">
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            titulo: 'Filma eu'
+        },
+        methods: {
+            alterarTitulo(event){
+                this.titulo = event.target.value
+            },
+            saudacao: function(){
+                return 'Boa semana';
+            }
+        }
+    });
+</script>
