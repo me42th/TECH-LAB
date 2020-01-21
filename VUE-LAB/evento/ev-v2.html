@@ -2,6 +2,7 @@
 
 <div id="app">
     <p>{{contador}}</p>
+    <p v-on:mousemove="mouse">Mouse X: {{x}} Y: {{y}}</p>
     <button v-on:click="somar">SOMAR 1</button>
 </div>
 
@@ -9,12 +10,20 @@
     new Vue({
         el: '#app',
         data: {
-            contador: 0
+            contador: 0,
+            x: 0,
+            y: 0
         },
         methods: {
             somar(event){
                 console.log(event);
                 this.contador++;
+                this.x = event.screenX;
+                this.y = event.screenY;
+            },
+            mouse(){
+                this.x = event.screenX;
+                this.y = event.screenY;
             }
         }
     })
