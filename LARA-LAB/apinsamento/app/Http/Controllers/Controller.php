@@ -13,6 +13,7 @@ class Controller extends BaseController
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
     public function random(){
+
         $texto = Texto::random();
 
         return response()->json([

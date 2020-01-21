@@ -1,0 +1,8 @@
+# FIRST STEPS
+
+``` 
+npm install -g @vue/cli
+npm install -g @vue/cli-service-global
+vue ui
+
+```
