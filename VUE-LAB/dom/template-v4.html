@@ -2,9 +2,10 @@
 
 <div id="app">
     <a v-bind:href="link">Google</a>
-    <p>{{titulo}}</p>
+    <p v-once>{{titulo}}</p>
     <p>{{saudacao()}}</p>
     <input type="text" v-on:input="alterar">
+    <p v-html></p>
 </div>
 
 <script>
@@ -13,7 +14,8 @@
             el: '#app',
             data: {
                 titulo: 'Imagine dragons here',
-                link: 'http://google.com.br'
+                link: 'http://google.com.br',
+                linkHtml: '<a href="http://google.com.br">Link</a>'
             },
             methods: {
                 alterar(event){
