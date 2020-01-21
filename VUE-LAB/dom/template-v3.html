@@ -1,0 +1,24 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id="app">
+    <p>{{titulo}}</p>
+    <p>{{saudacao()}}</p>
+    <input type="text" v-on:input="alterar">
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            titulo: 'Imagine algo bonito aqui'
+        },
+        methods: {
+                saudacao(){ return this.titulo; },
+                alterar(event){ this.titulo = event.target.value;
+                console.log(this);
+                }  
+            },
+            
+        }
+    );
+</script>
