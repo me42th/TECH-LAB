@@ -3,7 +3,7 @@
 <div id="app">
     <p>{{contador}}</p>
     <p v-on:mousemove="mouse">Mouse X: {{x}} Y: {{y}}</p>
-    <button v-on:click="somar">SOMAR 1</button>
+    <button v-on:click="somar(Math.random()*10,$event)">SOMAR 1</button>
 </div>
 
 <script>
@@ -15,11 +15,9 @@
             y: 0
         },
         methods: {
-            somar(event){
+            somar(passo,event){
                 console.log(event);
-                this.contador++;
-                this.x = event.screenX;
-                this.y = event.screenY;
+                this.contador += passo;
             },
             mouse(){
                 this.x = event.screenX;
