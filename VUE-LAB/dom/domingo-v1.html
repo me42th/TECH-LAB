@@ -2,6 +2,7 @@
 
 <div id="app">
     <p>{{titulo}}</p>
+    <p>{{saudacao()}}</p>
 </div>
 
 <script>
@@ -9,6 +10,10 @@
        el:  '#app',
        data: {
            titulo: 'Brenda'
+       }, methods:{
+           saudacao (){
+               return 'Domingo é dia de codar ué';
+           }
        }
     });
 </script>
