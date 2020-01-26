@@ -1,9 +1,10 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
-<div id="app">
-    <p>{{ titulo }}</p>
+<div id="app" >
+    <p v-once>{{ titulo }}</p>
     <p>{{ saudacao() }}</p>
-    <a v-bind:href="link"> Google</a>
+    <a v-bind:href="link">Google</a>
+    <div v-html="html"></div>
 </div>
 
 <script>
@@ -11,11 +12,12 @@
         el: '#app',
         data: {
             titulo: 'Usando VueJS',
-            link: 'http://google.com.br'
+            link: 'http://google.com.br',
+            html:'<a href="http://google.com.br">ABV</a>'
         },
         methods: { 
             saudacao: function(){
-                console.log(this);
+                this.titulo = 'Bom dia';
                 return this.titulo;
             }
         }
