@@ -1,21 +1,40 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
-<div id="app">
+<div id="app" v-on:mousemove="tela">
+<p>{{contador}}</p>    
 <p>{{x}} e {{y}}</p>
-<p v-on:mousemove="atualizarCoordenadas"> &nbsp;</p>
+<button v-on:click="somar(5, $event)">Add 5</button>
+<button v-on:click="somar(1, $event)">Add 1</button>
+<button v-on:click="zerar">Zerar</button>
 </div>
 
 <script>
     new Vue({
         el: '#app',
         data: {
+            contador: 0,
             x: 0,
-            y: 0
+            y: 0,
+            flag: true
         },
         methods: {
-            atualizarCoordenadas(event){
+            somar(valor, event){
+                this.flag = !this.flag;
                 this.x = event.clientX;
                 this.y = event.clientY;
+                this.contador += valor;
+            },
+            zerar(){
+                this.flag = true;
+                this.x = 0;
+                this.y = 0;
+                this.contador = 0;
+            },
+            tela(event){
+                if(this.flag){
+                    this.x = event.clientX;
+                    this.y = event.clientY;
+                }    
             }
         }
     });
