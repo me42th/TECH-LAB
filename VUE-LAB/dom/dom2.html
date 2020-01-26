@@ -1,25 +1,26 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
-<div id="app" >
-    <p v-once>{{ titulo }}</p>
-    <p>{{ saudacao() }}</p>
-    <a v-bind:href="link">Google</a>
-    <div v-html="html"></div>
+<div id="app">
+    <p>
+        {{contador}}
+    </p>
+    <button v-on:click="somar">Add</button>
 </div>
 
 <script>
     new Vue({
         el: '#app',
         data: {
-            titulo: 'Usando VueJS',
-            link: 'http://google.com.br',
-            html:'<a href="http://google.com.br">ABV</a>'
+            contador: 0
         },
-        methods: { 
-            saudacao: function(){
-                this.titulo = 'Bom dia';
-                return this.titulo;
+        methods: {
+            somar(){
+                if(this.contador == 3)
+                    this.contador = 0;
+                else    
+                    this.contador++;
             }
         }
+
     })
 </script>
