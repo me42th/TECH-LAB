@@ -1,7 +1,6 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 <div id="app" v-on:mousemove="tela">
-
 <p v-on:mousemove.stop="">{{contador}}</p>    
 <p v-on:mousemove="parar">{{x}} e {{y}}<br><br><br><br></p>
 <button v-on:click="somar(5, $event)">Add 5</button>
@@ -12,7 +11,6 @@
 <div v-html="html"></div>
 <a href="http://google.com.br" v-on:click="naoNavegar">Google 4</a>
 </div>
-
 <script>
     new Vue({
         el: '#app',
