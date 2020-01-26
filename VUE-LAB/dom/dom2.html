@@ -1,0 +1,51 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id="app" v-on:mousemove="tela">
+<p v-on:mousemove.stop="">{{contador}}</p>    
+<p v-on:mousemove="parar">{{x}} e {{y}}<br><br><br><br></p>
+<button v-on:click="somar(5, $event)">Add 5</button>
+<button v-on:click="somar(1, $event)">Add 1</button>
+<button v-on:click="zerar">Zerar</button>
+<a v-on:click.prevent  href="http://google.com.br">Google 1</a>
+<a v-on:mousemove.stop="" href="http://google.com.br">Google 2</a>
+<div v-html="html"></div>
+<a href="http://google.com.br" v-on:click="naoNavegar">Google 4</a>
+</div>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            contador: 0,
+            x: 0,
+            y: 0,
+            flag: true,
+            html: '<a href="http://google.com.br" v-on:click="naoNavegar">Google 3</a>'
+        },
+        methods: {
+            somar(valor, event){
+                this.flag = !this.flag;
+                this.x = event.clientX;
+                this.y = event.clientY;
+                this.contador += valor;
+            },
+            zerar(){
+                this.flag = true;
+                this.x = 0;
+                this.y = 0;
+                this.contador = 0;
+            },
+            tela(event){
+                if(this.flag){
+                    this.x = event.clientX;
+                    this.y = event.clientY;
+                }    
+            },
+            parar(event){
+                event.stopPropagation();
+            },
+            naoNavegar(event){
+                event.preventDefault();
+            }
+        }
+    });
+</script>

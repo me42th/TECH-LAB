@@ -2,6 +2,8 @@
 
 > Angular Essentials
 
+> Vue VS Code Extension Pack
+
 > Browser Preview
 >> CTRL+SHIFT+P => >
 
