@@ -3,6 +3,7 @@
 <div id="app">
     <p>{{titulo}}</p>
     <input type="text" v-model="titulo">
+    <input type="text" v-bind:value="titulo" v-on:input="titulo = $event.target.value">
 </div>
 
 <script>
