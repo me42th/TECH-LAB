@@ -17,6 +17,14 @@
             contador: 0,
             contador2: 0
         },
+        watch:{
+            contador(novo, antigo){
+                console.log(novo, antigo);
+                setTimeout(() => {
+                    this.contador = 0;
+                }, 2000);
+            }
+        },
         computed: {
             resultado(){
                 console.log('Computed');
