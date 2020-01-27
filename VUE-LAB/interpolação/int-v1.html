@@ -1,0 +1,25 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id="app">
+<p>{{(1 + 2) * 1000 - 1000}}</p>
+<p>{{contador}}</p>
+<p>{{contador < 4 ? 'Contador menor que quatro' : 'Contador com valor máximo'}}</p>
+<button v-on:click="somar">Cont</button>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            contador: 0
+        },
+        methods: {
+            somar(){
+                if(this.contador == 4)
+                    this.contador = 0;
+                else
+                    this.contador++;
+            }
+        }
+    })
+</script>
