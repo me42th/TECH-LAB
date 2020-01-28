@@ -1,45 +1,54 @@
 <script src="https://unpkg.com/vue"></script>
 <style>
-    #app {
+    .caixas {
         display: flex;
         justify-content: space-around;
-    
     }
     .demo{
         width: 100px;
         height: 100px;
         background-color: gray;
     }
-    .c1{
+    .girar{
+        transform: rotate(45deg);
+    }
+    .girarNeg{
+        transform: rotate(-45deg);
+    }
+    .a{
         background-color: red;
     }
-    .c2{
+    .b{
         background-color: green;
     }
-    .c3{
+    .c{
         background-color: blue;
     }
 </style>
 
 <div id="app">
-    <div class="demo" :class="estilo1" @click="aplicarC1 = !aplicarC1"></div>
-    <div class="demo" :class="{c2: aplicarC1}" @click="aplicarC1 = !aplicarC1"></div>
-    <div class="demo" :class="{c3: aplicarC1}" @click="aplicarC1 = !aplicarC1"></div>
+    <br> <br>  <br> <br>
+    <div class="caixas">
+        <div class="demo" :class="[css1, 'girar']">
+            <input type="text" v-model="css1">
+        </div>
+        <div class="demo" :class="css2">
+            <input type="text" v-model="css2">
+        </div>
+        <div class="demo" :class="[css3, 'girarNeg']">
+            <input type="text" v-model="css3">
+        </div>
+    </div>
 </div>
 
 <script>
     new Vue({
         el: '#app',
-        data: {
-            aplicarC1: false
-        },
-        computed: {
-            estilo1(){
-                return {
-                    c1: this.aplicarC1,
-                    c2: !this.aplicarC1
-                }
+            data: {
+                css1: '',
+                css2: '',
+                css3: ''
             }
         }
-    });
+    );
 </script>
