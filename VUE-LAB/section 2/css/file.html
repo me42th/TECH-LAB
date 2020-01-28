@@ -27,17 +27,14 @@
 </style>
 
 <div id="app">
-    <br> <br>  <br> <br>
     <div class="caixas">
-        <div class="demo" :class="[css1, 'girar']">
-            <input type="text" v-model="css1">
+        <div class="demo" :style="{'background-color': cor}">
         </div>
-        <div class="demo" :class="css2">
-            <input type="text" v-model="css2">
+        <div class="demo" :style="backGC">
         </div>
-        <div class="demo" :class="[css3, 'girarNeg']">
-            <input type="text" v-model="css3">
+        <div class="demo" :style="{'backgroundColor': cor}">
         </div>
+        <input type="text" v-model="cor">
     </div>
 </div>
 
@@ -45,9 +42,15 @@
     new Vue({
         el: '#app',
             data: {
-                css1: '',
-                css2: '',
-                css3: ''
+               cor: ''
+            },
+            computed: {
+                backGC(){
+                    return {
+                        backgroundColor : this.cor,
+                        transform: 'rotate(-45deg)'
+                        };
+                }
             }
         }
     );
