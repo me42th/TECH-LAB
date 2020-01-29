@@ -1,23 +1,28 @@
 <script src="http://unpkg.com/vue"></script>
 
 <div id="app">
-    <p c3r-bind="abc">{{ titulo }}</p>
-    <p>{{ saudacao() }}</p>
+    <p c3r-bind="abc">{{ variavel }}</p>
+    <p v-once>{{ saudacao() }}</p>
     <a :href="link"> Google</a>
 </div>
 
 <!--document.querySelector('[c3r-bind]').getAttribute('c3r-bind')-->
+
 <script>
     new Vue({
         el: '#app',
         data: { 
-            titulo: 'Titulo',
+            titulo: 'Contador: ',
+            contador: 0,
             link: 'http://google.com.br'
         },
         computed: { 
             variavel(){
-                console.log(this);
-                return this.titulo;
+                setTimeout(
+                    () => this.contador++,
+                    2000 
+                );
+                return this.titulo+this.contador;
             }
         },
         methods: { 
