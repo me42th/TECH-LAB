@@ -1,11 +1,12 @@
 <script src="http://unpkg.com/vue"></script>
 
 <div id="app">
-    <p>{{ titulo }}</p>
+    <p c3r-bind="abc">{{ titulo }}</p>
     <p>{{ saudacao() }}</p>
     <a :href="link"> Google</a>
 </div>
 
+<!--document.querySelector('[c3r-bind]').getAttribute('c3r-bind')-->
 <script>
     new Vue({
         el: '#app',
