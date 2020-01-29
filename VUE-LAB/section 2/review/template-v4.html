@@ -4,6 +4,10 @@
     <p c3r-bind="abc">{{ variavel }}</p>
     <p v-once>{{ saudacao() }}</p>
     <a :href="link"> Google</a>
+    <hr>
+    <span v-html="linkHtml"></span>
+    <hr>
+    {{linkHtml}}
 </div>
 
 <!--document.querySelector('[c3r-bind]').getAttribute('c3r-bind')-->
@@ -14,7 +18,8 @@
         data: { 
             titulo: 'Contador: ',
             contador: 0,
-            link: 'http://google.com.br'
+            link: 'http://google.com.br',
+            linkHtml: '<a href="http://google.com.br"> Google </a>'
         },
         computed: { 
             variavel(){
