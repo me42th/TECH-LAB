@@ -1,0 +1,28 @@
+<script src="http://unpkg.com/vue"></script>
+
+<div id="app">
+    <p>{{ titulo }}</p>
+    <p>{{ saudacao() }}</p>
+    <a :href="link"> Google</a>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: { 
+            titulo: 'Titulo',
+            link: 'http://google.com.br'
+        },
+        computed: { 
+            variavel(){
+                console.log(this);
+                return this.titulo;
+            }
+        },
+        methods: { 
+            saudacao(){
+                return this.variavel;
+            }
+        }
+    })
+</script>
