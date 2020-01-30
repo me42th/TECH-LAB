@@ -13,7 +13,17 @@
         },
         computed:{
             resultado(){
-               return this.contador >= 5 ? 'Maior ou igual a 5' : 'Menor que 5';
+                return this.contador >= 5 ? 
+                    'Maior ou igual a 5' : 
+                    'Menor que 5';
+            }
+        },
+        watch: {
+            resultado(antigo, novo){
+                setTimeout(
+                    () => console.log(antigo+' '+novo),
+                    2000
+                );                
             }
         },
         methods: {
