@@ -1,0 +1,49 @@
+<script src="http://unpkg.com/vue"></script>
+
+<style>
+    .caixas{
+        display: flex;
+        justify-content: space-between;
+    }
+    .demo{
+        width: 100px;
+        height: 100px;
+        background-color: gray;
+    }
+    .git{
+        background-color: red;
+        transform: rotate(-45deg);
+    }
+    .crm{
+        background-color: green;
+    }
+    .s2{
+        background-color: blue;
+        transform: rotate(45deg);
+    }
+</style>
+
+<div id="app">
+    <div class="caixas">
+        <div class="demo" :style="{'background-color': A}">
+            <input type="text" v-model="A">
+        </div>
+        <div class="demo" :class="B">
+            <input type="text" v-model="B">
+        </div>
+        <div class="demo" :class="C">
+            <input type="text" v-model="C">
+        </div>
+    </div>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            A: '',
+            B: '',
+            C: ''
+        }
+    });
+</script>
