@@ -1,0 +1,15 @@
+<script src="http://unpkg.com/vue"></script>
+
+<div id="app">
+    <p>{{contador}}</p>
+    <button @click="contador++">GO GO GO</button>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            contador: 0
+        }
+    })
+</script>

@@ -1,0 +1,26 @@
+<script src="http://unpkg.com/vue"></script>
+
+<div id="app">
+    <p>{{ titulo }}</p>
+    <p>{{ saudacao() }}</p>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: { 
+            titulo: 'Titulo'
+        },
+        computed: { 
+            variavel(){
+                console.log(this);
+                return this.titulo;
+            }
+        },
+        methods: { 
+            saudacao(){
+                return this.variavel;
+            }
+        }
+    })
+</script>
