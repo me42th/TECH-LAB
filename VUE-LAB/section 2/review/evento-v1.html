@@ -1,7 +1,7 @@
 <script src="http://unpkg.com/vue"></script>
 
 <div id="app">
-    <p>{{contador}}</p>
+    <p v-on:mousemove="contador=0">{{contador}}</p>
     <button @click="contador++">GO GO GO</button>
 </div>
 
