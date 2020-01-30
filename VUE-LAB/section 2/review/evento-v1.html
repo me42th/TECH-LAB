@@ -4,9 +4,29 @@
     <p v-on:mousemove="contador=0">{{contador}}</p>
     <button @click="contador++">GO GO GO</button>
     <button @click="somar(5, $event)">Somar</button>
-    <p @mousemove="eventoMouse">
+    <div @mousemove="eventoMouse">
+        -------- <br>
         Mouse {{x}} e {{y}}
-    </p>
+        <br>
+        --------
+        <div @mousemove.stop>
+            ~~~~~~~~
+            <br><br>
+            <br><br>
+            <br> 
+            ~~~~~~~~
+        </div>
+        <div @mousemove="parar">
+            ````````
+            <br><br>
+            <br><br>
+            <br> 
+            ````````
+        </div>
+        <a href="http://google.com.br" @click.prevent>Google</a>
+        <a href="http://google.com.br" @click="noNav">Google</a>
+        
+    </div>
 </div>
 
 <script>
@@ -18,6 +38,9 @@
             y: 0
         },
         methods: {
+            parar(e){
+                e.stopPropagation();
+            },
             somar(passo, evento){
                 this.contador += passo;
                 console.log(evento);
@@ -25,6 +48,9 @@
             eventoMouse(event){
                 this.x = event.clientX;
                 this.y = event.clientY;
+            },
+            noNav(event){
+                event.preventDefault();
             }
         }
     })
