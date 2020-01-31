@@ -1,0 +1,64 @@
+<script src="http://unpkg.com/vue"></script>
+
+<style>
+    .caixas {
+        display: flex;
+        justify-content: space-around;
+    }
+    .demo{
+        width: 100px;
+        height: 100px;
+        background-color: gray;
+    }
+</style>
+
+<div id="app">
+    <div class="caixas">
+        <div class="demo" :style="{'background-color': A}">
+            <input type="text" v-model="A">
+        </div>
+        <div class="demo" :style="{'background-color': B}">
+            <input type="text" v-model="B">
+        </div>
+        <div class="demo" :style="{'background-color': C}">
+            <input type="text" v-model="C">
+        </div>
+    </div>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            A: '',
+            B: '',
+            C: ''
+        },
+        computed: {
+
+        },
+        watch: {
+            A(novo, antigo){
+                setTimeout(
+                    () => {
+                        this.B = antigo;
+                        setTimeout(
+                            () => {
+                                this.B = novo;
+                                this.C = antigo;
+                                setTimeout(
+                                    () => {
+                                        this.C = novo;
+                                    },
+                                    2000
+                                );
+                            },
+                            2000
+                        );
+                    },
+                    2000
+                );
+            }
+        }
+    });
+</script>
