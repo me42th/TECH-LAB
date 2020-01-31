@@ -14,16 +14,18 @@
 
 <div id="app">
     <div class="caixas">
-        <div class="demo" :style="{'background-color': A}">
-            <input type="text" v-model="A">
-        </div>
-        <div class="demo" :style="{'background-color': B}">
-            <input type="text" v-model="B">
-        </div>
-        <div class="demo" :style="{'background-color': C}">
-            <input type="text" v-model="C">
+        <div class="demo" :style="[{'background-color': A},adcional]">
+            <input type="text" v-model="A" placeholder="cor">
+        </div> 
+        <div class="demo" :style="[{'background-color': B},adcional]">
+            <input type="text" v-model="B" disabled>
+        </div> 
+        <div class="demo" :style="[{'background-color': C},adcional]">
+            <input type="text" v-model="C" disabled>
         </div>
     </div>
+    <hr>
+    Largura: <input type="text" v-model="largura">
 </div>
 
 <script>
@@ -32,10 +34,15 @@
         data: {
             A: '',
             B: '',
-            C: ''
+            C: '',
+            largura: 150
         },
         computed: {
-
+            adcional(){
+                return {
+                    width: this.largura+'px' 
+                };
+            }
         },
         watch: {
             A(novo, antigo){
