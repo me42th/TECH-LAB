@@ -1,0 +1,31 @@
+###########
+# GET ALL #
+###########
+GET http://localhost:8000/api/users
+
+############
+# NEW USER #
+############
+POST http://localhost:8000/api/users HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Murilo",
+    "email": "lilo@email.com",
+    "password": "123123"
+}
+
+############
+# GET USER #
+############
+GET http://localhost:8000/api/users/2 HTTP/1.1
+
+############
+# DEL USER #
+############
+DELETE http://localhost:8000/api/users/1
+
+#############
+# EDIT USER #
+#############
+GET http://localhost:8000/api/users/3/edit?name=Guri
