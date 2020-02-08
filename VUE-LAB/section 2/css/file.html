@@ -1,0 +1,57 @@
+<script src="https://unpkg.com/vue"></script>
+<style>
+    .caixas {
+        display: flex;
+        justify-content: space-around;
+    }
+    .demo{
+        width: 100px;
+        height: 100px;
+        background-color: gray;
+    }
+    .girar{
+        transform: rotate(45deg);
+    }
+    .girarNeg{
+        transform: rotate(-45deg);
+    }
+    .a{
+        background-color: red;
+    }
+    .b{
+        background-color: green;
+    }
+    .c{
+        background-color: blue;
+    }
+</style>
+
+<div id="app">
+    <div class="caixas">
+        <div class="demo" :style="{'background-color': cor}">
+        </div>
+        <div class="demo" :style="backGC">
+        </div>
+        <div class="demo" :style="{'backgroundColor': cor}">
+        </div>
+        <input type="text" v-model="cor">
+    </div>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+            data: {
+               cor: ''
+            },
+            computed: {
+                backGC(){
+                    return {
+                        backgroundColor : this.cor,
+                        transform: 'rotate(-45deg)'
+                        };
+                }
+            }
+        }
+    );
+</script>

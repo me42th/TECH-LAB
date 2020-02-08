@@ -1,0 +1,19 @@
+<script src="http://unpkg.com/vue"></script>
+
+<div id="app">
+    <p>{{titulo}}</p>
+    <input type="text" 
+        v-bind:value="titulo" 
+        v-on:input="titulo = $event.target.value"
+    >
+    <input type="text" v-model="titulo">
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            titulo : "Imagine um titulo bacana para a pagina"
+        }
+    });
+</script>

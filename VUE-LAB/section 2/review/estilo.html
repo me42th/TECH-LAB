@@ -1,0 +1,55 @@
+<script src="http://unpkg.com/vue"></script>
+
+<style>
+    #app{
+        display: flex;
+        justify-content: space-between;
+    }
+    .demo{
+        width: 100px;
+        height: 100px;
+        background-color: gray;
+    }
+    .c1{
+        background-color: red;
+    }
+    .c2{
+        background-color: green;
+    }
+    .c3{
+        background-color: blue;
+    }
+</style>
+
+<div id="app">
+    <div class="demo" :class="cor"></div>
+    <div class="demo" :class="cor"></div>
+    <div class="demo" :class="cor"></div>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data:{
+            innerCont: 0,
+            flag: true
+        },
+        computed: {
+            cor(){
+                const cores = ['c1','c2','c3'];
+                console.log(this.innerCont);
+                let cor = cores[this.contador];
+                console.log(this.innerCont);
+                return cor;
+            },
+            contador(){
+                console.log(this.innerCont);
+                if(this.innerCont == 2)
+                    return this.innerCont = 0;
+                else    
+                    return this.innerCont++;
+            }
+        }
+        
+    })
+</script>

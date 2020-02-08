@@ -1,0 +1,56 @@
+<script src="http://unpkg.com/vue"></script>
+
+<div id="app">
+    <p v-on:mousemove="contador=0">{{contador}}</p>
+    <button @click="contador++">GO GO GO</button>
+    <button @click="somar(5, $event)">Somar</button>
+    <div @mousemove="eventoMouse">
+        -------- <br>
+        Mouse {{x}} e {{y}}
+        <br>
+        --------
+        <div @mousemove.stop>
+            ~~~~~~~~
+            <br><br>
+            <br><br>
+            ~~~~~~~~
+        </div>
+        <div @mousemove="parar">
+            ````````
+            <br><br>
+            <br><br>
+            ````````
+        </div>
+        <a href="http://google.com.br" @click.prevent>Google</a>
+        <a href="http://google.com.br" @click="noNav">Google</a>
+        <hr>
+        <input type="text" @keyup.enter="contador = $event.target.value">
+    </div>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            contador: 0,
+            x: 0,
+            y: 0
+        },
+        methods: {
+            parar(e){
+                e.stopPropagation();
+            },
+            somar(passo, evento){
+                this.contador += passo;
+                console.log(evento);
+            },
+            eventoMouse(event){
+                this.x = event.clientX;
+                this.y = event.clientY;
+            },
+            noNav(event){
+                event.preventDefault();
+            }
+        }
+    })
+</script>
