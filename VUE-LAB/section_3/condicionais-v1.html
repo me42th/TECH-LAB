@@ -2,7 +2,10 @@
 <script src="http://unpkg.com/vue"></script>
 
 <div id="app">
-    <p v-if="logado">Usuario logado: {{nome}}</p>
+    <template v-if="logado">
+        <p>Usuario logado: {{nome}}</p>
+        <p>Perfil: admin</p>
+    </template>
     <p v-else-if="anonimo">Navegando como Anônimo</p>
     <p v-else>Nenhum usuario logado</p>
     <button @click="logado = !logado"> {{logado?'Sair':'Entrar'}}</button>
