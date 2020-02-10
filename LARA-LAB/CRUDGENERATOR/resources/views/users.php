@@ -4,7 +4,9 @@
 <div id="app">
 <ul>
   <li v-for="pessoa in info.data.data">
-    {{ pessoa.name }}
+    <template v-for="(valor, chave) in pessoa">
+      {{chave}}: {{valor}},  
+    </template>
   </li>
 </ul>
 </div>
@@ -21,7 +23,7 @@ new Vue({
       () =>  axios
               .get('http://localhost:8000/api/users')
               .then(response => (this.info = response))
-      ,200
+      ,4000
     )
   }
 })
