@@ -4,7 +4,9 @@
 <div id="app">
 <ul>
   <li v-for="pessoa in info.data.data">
-    {{ pessoa.name }}
+    <template v-for="(valor, chave) in pessoa">
+      {{chave}}: {{valor}},  
+    </template>
   </li>
 </ul>
 </div>

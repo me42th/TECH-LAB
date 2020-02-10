@@ -16,6 +16,13 @@
         </p> <br>
     </template>
 </ul>
+<ul>
+    <li v-for="pessoa in pessoas">
+        <div v-for="(valor,chave) in pessoa">
+            {{chave}} | {{valor}}
+        </div>
+    </li>
+</ul>
 </div>
 
 <script>
