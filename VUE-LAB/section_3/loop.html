@@ -3,8 +3,8 @@
 
 <div id="app">
 <ul>
-    <li v-for="cor in cores">
-        {{cor}}
+    <li v-for="(cor,i) in cores" >
+        {{i+1}}) {{cor}}
     </li>
 </ul>
 </div>
@@ -21,3 +21,9 @@
         }
     })
 </script>
+
+<style>
+    ul {
+        list-style: none;
+    }
+</style>
