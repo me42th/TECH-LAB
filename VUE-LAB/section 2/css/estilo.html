@@ -1,0 +1,76 @@
+<script src="http://unpkg.com/vue"></script>
+
+<style>
+    .caixas {
+        display: flex;
+        justify-content: space-around;
+    }
+    .demo{
+        width: 100px;
+        height: 100px;
+        background-color: gray;
+    }
+</style>
+
+<div id="app">
+    <div class="caixas">
+        <div class="demo" :style="[{'background-color': A, width: largura+'px'}]">
+            <input type="text" v-model="A" placeholder="cor">
+        </div> 
+        <div class="demo" :style="[{'background-color': B, width: largura+'px'}]">
+            <input type="text" v-model="B" disabled>
+        </div> 
+        <div class="demo" :style="[{'background-color': C, width: largura+'px'}]">
+            <input type="text" v-model="C" disabled>
+        </div>
+    </div>
+    <hr>
+    Largura: <input type="text" v-model="largura">
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            A: '',
+            B: '',
+            C: '',
+            largura: 150
+        },
+        watch: {
+            A(novo, antigo){
+                setTimeout(
+                    () => {
+                        this.B = antigo;
+                        setTimeout(
+                            () => {
+                                this.B = novo;
+                                this.C = antigo;
+                                setTimeout(
+                                    () => {
+                                        this.C = novo;
+                                    },
+                                    2000
+                                );
+                            },
+                            2000
+                        );
+                    },
+                    2000
+                );
+            },
+            C(){
+                for(;this.largura > 10;)
+                setTimeout(() => 
+                    { 
+                        console.log(this.largura);
+                        this.largura--;
+                    }, 4000);
+                //for(var i = 1;i < 100;i++)
+                //    setTimeout(() => this.largura = i, 1000);
+                   
+                
+            }
+        }
+    });
+</script>
