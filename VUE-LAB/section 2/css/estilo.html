@@ -14,13 +14,13 @@
 
 <div id="app">
     <div class="caixas">
-        <div class="demo" :style="[{'background-color': A},adcional]">
+        <div class="demo" :style="[{'background-color': A, width: largura+'px'}]">
             <input type="text" v-model="A" placeholder="cor">
         </div> 
-        <div class="demo" :style="[{'background-color': B},adcional]">
+        <div class="demo" :style="[{'background-color': B, width: largura+'px'}]">
             <input type="text" v-model="B" disabled>
         </div> 
-        <div class="demo" :style="[{'background-color': C},adcional]">
+        <div class="demo" :style="[{'background-color': C, width: largura+'px'}]">
             <input type="text" v-model="C" disabled>
         </div>
     </div>
@@ -36,13 +36,6 @@
             B: '',
             C: '',
             largura: 150
-        },
-        computed: {
-            adcional(){
-                return {
-                    width: this.largura+'px' 
-                };
-            }
         },
         watch: {
             A(novo, antigo){
@@ -65,6 +58,18 @@
                     },
                     2000
                 );
+            },
+            C(){
+                for(;this.largura > 10;)
+                setTimeout(() => 
+                    { 
+                        console.log(this.largura);
+                        this.largura--;
+                    }, 4000);
+                //for(var i = 1;i < 100;i++)
+                //    setTimeout(() => this.largura = i, 1000);
+                   
+                
             }
         }
     });
