@@ -7,7 +7,7 @@
         {{i+1}}) {{cor}}
     </li>
     <hr>
-    <template v-for="(cor,i) in cores">
+    <template  v-for="(cor,i) in cores" :key="cor">
         <h1>
             {{cor}}
         </h1>
@@ -16,6 +16,7 @@
         </p> <br>
     </template>
 </ul>
+<button @click="cores.push('Branca')">Branca</button>
 <ul>
     <li v-for="pessoa in pessoas">
         <div v-for="(valor,chave) in pessoa">
