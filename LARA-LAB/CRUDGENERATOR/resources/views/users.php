@@ -21,7 +21,7 @@ new Vue({
       () =>  axios
               .get('http://localhost:8000/api/users')
               .then(response => (this.info = response))
-      ,200
+      ,4000
     )
   }
 })
