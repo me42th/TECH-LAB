@@ -3,7 +3,7 @@ var otherstring = "                             My Brother                   ";
 console.log(mystring.charAt(0));
 console.log(otherstring);
 console.log(mystring);
-console.log(otherstring = ' ' + otherstring.trimRight());
+console.log(otherstring = ' ' + otherstring.trim());
 console.log(mystring = mystring.concat(otherstring));
 console.log(mystring = mystring.replace('Type', 'Java'));
 console.log(mystring.split(' '));
