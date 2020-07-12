@@ -10,6 +10,12 @@
         h1{
             color: red;
         }
+		.azul{
+			color: blue;
+		}
+		#verde{
+			color: green;
+		}
     </style>
     <link rel="stylesheet" href="./css/style.css">
 </head>
