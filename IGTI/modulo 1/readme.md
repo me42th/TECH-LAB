@@ -25,6 +25,17 @@
 </p>
 ```
 
+### FIRA CODE
+https://github.com/tonsky/FiraCode
+
+### EXTENSIONS
+- WINTER IS COMING
+- VSCODE ICONS
+- DEBUGGER FOR CHROME
+- PRETTIER - CODE FORMATTER
+- COLOR HIGHLIGHT
+
+
 ### CSS RESET
 ```
 /* http://meyerweb.com/eric/tools/css/reset/ 
