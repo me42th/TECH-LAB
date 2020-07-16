@@ -46,6 +46,11 @@ DIV.NOME_CLASSE /* <DIV CLASS='NOME_CLASSE'> */
 CLICK+F2 /* RENOMEIA TODAS OCORRENCIAS */
 ```
 
+### LIVE SERVER
+```
+npm install -g live-server
+```
+
 ### CSS RESET
 ```
 /* http://meyerweb.com/eric/tools/css/reset/ 
