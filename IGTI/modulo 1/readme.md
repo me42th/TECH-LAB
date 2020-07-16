@@ -35,6 +35,16 @@ https://github.com/tonsky/FiraCode
 - PRETTIER - CODE FORMATTER
 - COLOR HIGHLIGHT
 
+### VSCODE TIPS
+```
+>settings /* CONFIGURAÇÕES */
+
+!+TAB /* HTML VIA EMMET */
+
+DIV.NOME_CLASSE /* <DIV CLASS='NOME_CLASSE'> */
+
+CLICK+F2 /* RENOMEIA TODAS OCORRENCIAS */
+```
 
 ### CSS RESET
 ```
