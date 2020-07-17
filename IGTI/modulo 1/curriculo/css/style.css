@@ -1,0 +1,17 @@
+h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+body{
+    padding: 10px;
+}
+.dados-pessoais{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+#dados{
+    margin: 1rem;
+} 
