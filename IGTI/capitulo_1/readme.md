@@ -1,4 +1,4 @@
-# Módulo 1
+# Capitulo 1 | [VOLTAR](../readme.md)
 
 
 ## CSS
@@ -50,6 +50,8 @@ CLICK+F2 /* RENOMEIA TODAS OCORRENCIAS */
 ```
 npm install -g live-server
 ```
+
+>>  rem: medidade relativa de tamanho
 
 ### CSS RESET
 ```
