@@ -18,3 +18,12 @@
 
 // true, 1, [1], {id: 1} == truthy
 ```
+
+## CONSOLE
+```
+console.log(123)
+console.error(456)
+console.warn(789)
+console.table({id: 23})
+console.dir(document.getElementById('id'))
+```
