@@ -56,3 +56,39 @@ var array_all_content = Array.from(all_content);
 var titulo = document.querySelector('.page-title');
 titulo.style.color = 'green';
 ```
+## EVENTOS
+| EVENTO | ATIVAÇÃO | CATEGORIA |
+| --- | --- | --- |
+| onload | Após o carregamento | document/window/body |
+| onchange | Conteúdo do elemento alterado | form |
+| onfocus | Elemento recebe o foco | form |
+| onblur | Elemento perde o foco | form |
+| onselect | Elemento é selecionado | form |
+| onsubmit | Dados do formulário são enviados | form |
+| onkeydown | Tecla pressionada | teclado |
+| onkeypress | Tecla pressionada e solta | teclado |
+| onkeyup | Tecla solta | teclado |
+| onclick | Click do mouse no elemento | mouse |
+| ondbclick | Click duplo do mouse no elemento | mouse |
+| onmousemove | Mouse se moveu sobre o elemento | mouse |
+| onmouseout | Mouse saiu do elemento | mouse |
+| onmouseover | Mouse passou sobre o elemento | mouse |
+| onmouseup | Botão do mouse solto sobre o elemento | mouse |
+
+**EXEMPLO**
+```
+window.addEventListener('load',
+    () => {
+        const span = document.querySelector('#nameLength');
+        const input = document.querySelector('#nameInput');
+        const form = document.querySelector('form');
+        form.addEventListener(
+            'submit',
+            (event) => event.preventDefault()
+        );
+        input.addEventListener(
+            'keyup', 
+            () => span.textContent = input.value.length
+        );
+    });
+```
