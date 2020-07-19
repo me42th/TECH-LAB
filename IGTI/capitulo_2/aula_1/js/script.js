@@ -13,6 +13,27 @@ switch(texto = equals_a_b(a,b)?a_menor_b():equals_b_a(a,b)?b_menor_a():isonomia(
     break
 }
 
+var i_for;
+
+function init_i(){
+    console.log('init_i');
+    i_for = 0;
+}
+
+function equals_i(){
+    console.log('equals_i');
+    return i_for < 5
+}
+
+function inc_i(){
+    console.log('inc_i');
+    i_for++;
+}
+
+for(init_i();equals_i();inc_i())
+    console.log('__________in_for');
+
+texto = a < b ? 'A MENOR QUE B' : a === b ? 'SÃO IGUAIS' : 'B MENOR QUE A';
 
 if (a < b || b < a){
     console.error(texto);
