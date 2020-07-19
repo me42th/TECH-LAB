@@ -50,3 +50,9 @@ content.textContent = 'Novo Valor';
 var all_content = document.querySelectorAll('p');
 var array_all_content = Array.from(all_content);
 ```
+
+## MANIPULAR CSS COM JS
+```
+var titulo = document.querySelector('.page-title');
+titulo.style.color = 'green';
+```
