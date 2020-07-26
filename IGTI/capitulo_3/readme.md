@@ -148,3 +148,24 @@ function varargs(...values){
 
 ## [CALL STACK](https://medium.com/reactbrasil/como-o-javascript-funciona-o-event-loop-e-o-surgimento-da-programa%C3%A7%C3%A3o-ass%C3%ADncrona-5-maneiras-de-18d0b8d6849a)
 ![CALL STACK](https://miro.medium.com/max/700/1*TozSrkk92l8ho6d8JxqF_w.gif)
+
+
+## HTTP
+
+**PROMISE**
+```
+const programador = fetch('https://api.github.com/users/me42th')
+.then(
+    res => res
+        .json()
+        .then(data => console.log(data))
+        .catch(data => console.error(data))
+    )
+.catch(
+    data => console.error(data)
+);
+```
+
+**ASYNC/AWAIT**
+```
+```
