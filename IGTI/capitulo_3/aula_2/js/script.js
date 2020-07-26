@@ -1,12 +1,19 @@
 'use strict';
 
-console.log('hey');
-funcao();
-function funcao(){
-    for(var i = 0;i < 20; i++)
+window.addEventListener(
+    'load',
+    () => {
+        funcao();
+    }
+);
+
+const funcao = (valor = 10) => {
+    for(var i = 0;i < valor; i++){
         console.log(i);
-    console.error(`OLHA EU AQUI ${i}`);
-    for(let j = 0;j < 20; j++)
+    }
+    console.error(`VAR ${i}`);
+    for(let j = 0;j < valor; j++){
         console.log(j);
-    console.error(`OLHA EU AQUI ${j}`);
+    }
+    console.error(`LET ${j}`);
 }
