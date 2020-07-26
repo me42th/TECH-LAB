@@ -168,4 +168,9 @@ const programador = fetch('https://api.github.com/users/me42th')
 
 **ASYNC/AWAIT**
 ```
+const dev = async (nick) => {
+    let dados = await fetch(`https://api.github.com/users/${nick}`); 
+    dados = await dados.json();
+    console.log(dados);
+}
 ```
