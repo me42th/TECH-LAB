@@ -54,11 +54,11 @@ function colorSquare(){
     let hexaRed = Number(red).toString(16);
     hexaRed = hexaRed.length == 2 ? hexaRed 
             : hexaRed.length == 1 ? '0'+hexaRed
-            :'00';  
+            : '00';  
     let hexaGreen = Number(green).toString(16);
     hexaGreen = hexaGreen.length == 2 ? hexaGreen
-                : hexaGreen.length == 1 ? '0'+hexaGreen
-                : '00';
+            : hexaGreen.length == 1 ? '0'+hexaGreen
+            : '00';
     let hexaBlue = Number(blue).toString(16);
     hexaBlue= hexaBlue.length == 2 ? hexaBlue
             : hexaBlue.length == 1 ? '0'+hexaBlue
