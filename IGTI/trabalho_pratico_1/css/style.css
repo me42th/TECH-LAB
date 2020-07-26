@@ -1,0 +1,23 @@
+.alinhamento{
+    display: flex;
+}
+
+.inputTexto{
+    padding-right: 0;
+    width: 2rem;
+   
+}
+
+.distancia{
+    padding: 10px;
+}
+.meio{
+    margin-left: 5px;
+}
+
+.quadrado{
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    align-items: center;
+}
