@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Pesquisa de Usuário</title>
+  </head>
+  <body>
+    <h2>Pesquisa de usuários</h2>
+
+    <div class="busca">
+      <input type="search" id='searchInput'/>
+      <a class="waves-effect waves-light btn">Buscar</a>
+    </div>
+
+    <div class="organizacaoResultado">
+      <div class="resultado">
+        <p>Usuário(s) encontrado(s) <span id='spanQuantidade'> </span></p>
+        <ul id='ulLeft'>
+          
+        </ul>
+      </div>
+
+      <div class="estatistica">
+        <p>Estatísticas</p>
+        <ul>
+          <li>Homem <span id='homem'></span></li>
+          <li>Mulher <span id='mulher'></span></li>
+          <li>Sum Idade <span id='sum'></span></li>
+          <li>Avg Idade <span id='avg'></span></li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
