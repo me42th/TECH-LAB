@@ -17,6 +17,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::prefix('/app')->group(function(){
+    Route::get('/',function(){
+        return view('app');
+    })->name('app');
+    Route::get('/user',function(){
+        return view('user');
+    })->name('app.user');
+    Route::get('/profile',function(){
+        return view('profile');
+    })->name('app.profile');
+});
+
 Route::get('/opcional/{nome}/{sobrenome?}',function($nome,$sobrenome = ''){
     return "Olá $nome $sobrenome ";
 });
