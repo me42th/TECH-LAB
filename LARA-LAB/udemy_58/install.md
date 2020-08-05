@@ -1,3 +1,4 @@
+# INSTALL STUFF | [VOLTAR](./readme.md)
 
 ## PHP, MYSQL, APACHE
 ```
@@ -46,4 +47,12 @@ sudo nano /etc/redis/redis.conf
     supervised no >> supervised systemd
 
 sudo systemctl restart redis 
+```
+
+**EXTENSIONS**
+```
+> dotenv
+> Laravel 5 Snippets
+> Laravel Blade Snippets
+> PHP Intelephense
 ```
