@@ -17,6 +17,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/ola/{nome}/{sobrenome?}',function($nome,$sobrenome = ''){
+Route::get('/opcional/{nome}/{sobrenome?}',function($nome,$sobrenome = ''){
     return "Olá $nome $sobrenome ";
 });
+
+Route::get('/regra/{nome}/{qtd}',function($nome,$qtd){
+    for($cont = 0; $cont <= $qtd; $cont++){
+        echo " $nome <br> $cont $qtd \n";
+    }
+})->where('qtd','[1-9]+')->where('nome','[a-zA-Z]+');
