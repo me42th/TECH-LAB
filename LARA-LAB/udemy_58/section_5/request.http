@@ -1,0 +1,18 @@
+POST http://localhost:8000/req
+content-type: application/json
+
+###############
+PUT http://localhost:8000/req
+content-type: application/json
+
+###############
+DELETE http://localhost:8000/req
+content-type: application/json
+
+###############
+PATCH http://localhost:8000/req
+content-type: application/json
+
+###############
+OPTIONS http://localhost:8000/req
+content-type: application/json
