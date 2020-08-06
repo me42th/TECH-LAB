@@ -38,3 +38,20 @@ Route::get('/regra/{nome}/{qtd}',function($nome,$qtd){
         echo " $nome <br> $cont $qtd \n";
     }
 })->where('qtd','[1-9]+')->where('nome','[a-zA-Z]+');
+
+Route::get('/produtos', function() {
+    echo "
+        <h1>Produtos</h1>
+        <ol>
+            <li>Notebook</li>
+            <li>Impressora</li>
+            <li>Mouse</li>
+        </ol>
+    ";
+})->name('meusprodutos');
+
+Route::redirect('products','produtos',301);
+
+Route::get('productos', function(){
+    return redirect()->route('meusprodutos');
+});
