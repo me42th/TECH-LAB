@@ -57,11 +57,7 @@ Route::get('productos', function(){
     return redirect()->route('meusprodutos');
 });
 
-Route::put('req',
-    function(Request $request){
-        return 'Rellou PUT';
-    }
-);
+Route::put('req','MeuControlador@index');
 
 Route::delete('req',
     function(Request $request){
@@ -88,3 +84,4 @@ Route::options('req',
 );
 
 
+require_once('resource.php');
