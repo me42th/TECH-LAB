@@ -72,7 +72,9 @@ class ControladorCliente extends Controller
      */
     public function show($id)
     {
-        print_r($this->clientes[$id-1]);
+        $clientes = session('clientes');
+        $cliente = $clientes[$id-1];
+        return view('clientes.info',compact('cliente'));
     }
 
     /**
