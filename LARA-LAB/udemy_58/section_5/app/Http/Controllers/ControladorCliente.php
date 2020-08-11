@@ -58,7 +58,7 @@ class ControladorCliente extends Controller
     public function store(Request $request)
     {
         $clientes = session('clientes');
-        $cliente = ['id' => count($clientes)+1,'dados' => [ 'nome' => $request->nome ] ];
+        $cliente = ['id' => end($clientes)['id']+1,'dados' => [ 'nome' => $request->nome ] ];
         $clientes[count($clientes)] = $cliente;
         session(['clientes' => $clientes]);
         return redirect()->route('cliente.index');
@@ -73,7 +73,8 @@ class ControladorCliente extends Controller
     public function show($id)
     {
         $clientes = session('clientes');
-        $cliente = $clientes[$id-1];
+        $index = $this->getIndex($id);
+        $cliente = $clientes[$index];
         return view('clientes.info',compact('cliente'));
     }
 
@@ -86,7 +87,8 @@ class ControladorCliente extends Controller
     public function edit($id)
     {
         $clientes = session('clientes');
-        $cliente = $clientes[$id-1];
+        $index = $this->getIndex($id);
+        $cliente = $clientes[$index];
         return view('clientes.edit',compact('cliente'));
     }
 
@@ -101,7 +103,8 @@ class ControladorCliente extends Controller
     {
         $clientes = session('clientes');
         $cliente = ['id' => $id,'dados' => [ 'nome' => $request->nome ] ];
-        $clientes[$id-1] = $cliente;
+        $index = $this->getIndex($id);
+        $clientes[$index] = $cliente;
         session(['clientes' => $clientes]);
         return redirect()->route('cliente.index');
     }
@@ -115,10 +118,15 @@ class ControladorCliente extends Controller
     public function destroy($id)
     {
         $clientes = session('clientes');
-        $cols = array_column($clientes,'id');
-        $index = array_search($id,$cols);
+        $index = $this->getIndex($id);
         $clientes = array_splice($clientes,$index,1);
         session(['clientes' => $clientes]);
         return redirect()->route('cliente.index');
+    }
+
+    private function getIndex($id){
+        $clientes = session('clientes');
+        $cols = array_column($clientes,'id');
+        return array_search($id,$cols);
     }
 }
