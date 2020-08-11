@@ -61,7 +61,6 @@ class ControladorCliente extends Controller
         $cliente = ['id' => count($clientes)+1,'dados' => [ 'nome' => $request->nome ] ];
         $clientes[count($clientes)] = $cliente;
         session(['clientes' => $clientes]);
-        dd(session('clientes'));
         return redirect()->route('cliente.index');
     }
 
@@ -115,6 +114,11 @@ class ControladorCliente extends Controller
      */
     public function destroy($id)
     {
-        return ':)';
+        $clientes = session('clientes');
+        $cols = array_column($clientes,'id');
+        $index = array_search($id,$cols);
+        $clientes = array_splice($clientes,$index,1);
+        session(['clientes' => $clientes]);
+        return redirect()->route('cliente.index');
     }
 }
