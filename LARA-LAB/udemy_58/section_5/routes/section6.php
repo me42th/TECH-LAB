@@ -15,3 +15,6 @@ Route::get('/produtos','MeuControlador@produtos');
 Route::get('/idade','MeuControlador@getIdade');
 Route::get('/nome','MeuControlador@getNome');
 Route::get('/multiplicar/{numeroX}/{numeroY}','MeuControlador@multiplicar')->where('numeroX','[0-9]+')->where('numeroY','[0-9]+');
+
+
+Route::resource('cliente','ControladorCliente');

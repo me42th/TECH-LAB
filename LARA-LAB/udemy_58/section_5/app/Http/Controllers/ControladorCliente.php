@@ -1,0 +1,100 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class ControladorCliente extends Controller
+{
+    private $clientes = [
+        ['id' => 1,'dados' => [ 'nome' => 'Fulano' ] ],
+        ['id' => 2,'dados' => [ 'nome' => 'Beltrano' ] ],
+        ['id' => 3,'dados' => [ 'nome' => 'Cicrano' ] ]
+    ];
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        if(false){
+            echo "<ol>";
+            foreach($this->clientes as $cliente)
+            {
+                echo "<li> {$cliente['dados']['nome']}</li>";
+            }
+            echo "</ol>";
+        }
+        $clientes = $this->clientes;
+        //return view('clientes.index',['clientes' => $this->clientes]);
+        return view('clientes.index',compact(['clientes']));
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        return ':)';
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        return ':)';
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        print_r($this->clientes[$id-1]);
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        return ':)';
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        return ':)';
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        return ':)';
+    }
+}
