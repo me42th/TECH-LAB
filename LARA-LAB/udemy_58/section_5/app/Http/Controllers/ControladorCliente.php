@@ -39,7 +39,7 @@ class ControladorCliente extends Controller
      */
     public function create()
     {
-        return ':)';
+        return view('clientes.create');
     }
 
     /**
@@ -50,7 +50,8 @@ class ControladorCliente extends Controller
      */
     public function store(Request $request)
     {
-        return ':)';
+
+        return redirect()->route('cliente.index');
     }
 
     /**
