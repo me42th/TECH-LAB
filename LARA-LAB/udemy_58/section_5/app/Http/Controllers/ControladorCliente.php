@@ -7,9 +7,7 @@ use Illuminate\Http\Request;
 class ControladorCliente extends Controller
 {
     private $clientes = [
-        ['id' => 1,'dados' => [ 'nome' => 'Fulano' ] ],
-        ['id' => 2,'dados' => [ 'nome' => 'Beltrano' ] ],
-        ['id' => 3,'dados' => [ 'nome' => 'Cicrano' ] ]
+
     ];
 
     public function __construct(){
@@ -120,8 +118,13 @@ class ControladorCliente extends Controller
     {
         $clientes = session('clientes');
         $index = $this->getIndex($id);
-        $clientes = array_splice($clientes,$index,1);
-        session(['clientes' => $clientes]);
+
+        $novo_clientes = [];
+        foreach($clientes as $key => $cliente){
+            if($key == $index) continue;
+            $novo_clientes[$key] = $cliente;
+        }
+        session(['clientes' => $novo_clientes]);
         return redirect()->route('cliente.index');
     }
 
