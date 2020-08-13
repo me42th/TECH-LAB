@@ -1,3 +1,6 @@
+@extends('layouts.principal')
+
+@section('conteudo')
 <h1>{{$titulo}}</h1>
 <h3><a href="{{route('cliente.create')}}">NOVO</a></h3>
 @if(count($clientes) > 0)
@@ -21,3 +24,4 @@
     Não existem clientes cadastrados
 </h4>
 @endempty
+@endsection
