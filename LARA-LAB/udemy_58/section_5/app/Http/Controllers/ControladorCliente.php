@@ -34,9 +34,10 @@ class ControladorCliente extends Controller
             echo "</ol>";
         }
         $clientes = session('clientes');
-
-        //return view('clientes.index',['clientes' => $this->clientes]);
-        return view('clientes.index',compact(['clientes']));
+        $titulo = 'Cli&nt3s';
+        //return view('clientes.index',['clientes' => $clientes,'titulo' => $titulo]);
+        return view('clientes.index',compact(['clientes','titulo']));
+        //return view('clientes.index')->with('clientes',$clientes)->with('titulo','Cli&nt3s');
     }
 
     /**

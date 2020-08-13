@@ -1,4 +1,4 @@
-<h1>Clientes</h1>
+<h1>{{$titulo}}</h1>
 <h3><a href="{{route('cliente.create')}}">NOVO</a></h3>
 <ol>
     @foreach($clientes as $cliente)
