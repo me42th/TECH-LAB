@@ -5,6 +5,9 @@ content-type: application/json
 PUT http://localhost:8000/req
 content-type: application/json
 
+{
+    "valor":"123"
+}
 ###############
 DELETE http://localhost:8000/req
 content-type: application/json
