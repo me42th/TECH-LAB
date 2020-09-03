@@ -63,3 +63,22 @@ Route::prefix('/agrupamento')->group(
     }
 
 );
+
+Route::get('/destiny', function() {
+    echo "
+        <h1>Produtos</h1>
+        <ol>
+            <li>Notebook</li>
+            <li>Impressora</li>
+            <li>Mouse</li>
+        </ol>
+    ";
+})->name('target');
+
+Route::redirect('/redirect','destiny','301');
+
+Route::get('/redirect2',
+    function(){
+        return redirect()->route('target');
+    }
+);
