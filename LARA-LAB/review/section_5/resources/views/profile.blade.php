@@ -7,5 +7,10 @@
 </head>
 <body>
     <h1>Profile</h1>
+    <div>
+        <a href="{{route('agrupamento')}}">Root</a>
+        <a href="{{route('agrupamento.user')}}">User</a>
+        <a href="{{route('agrupamento.profile')}}">Profile</a>
+    </div>
 </body>
 </html>

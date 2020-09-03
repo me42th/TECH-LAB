@@ -41,17 +41,20 @@ Route::prefix('/agrupamento')->group(
             function(){
                 return view('root');
             }
-        );
+        )->name('agrupamento');
+
         Route::get('/user',
             function(){
                 return view('user');
             }
-        );
+        )->name('agrupamento.user');
+
         Route::get('/profile',
             function(){
                 return view('profile');
             }
-        );
+        )->name('agrupamento.profile');
+
         Route::get('/{valor}',
             function($valor){
                 return "Não implementado";

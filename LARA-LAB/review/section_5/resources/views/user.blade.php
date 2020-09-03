@@ -6,6 +6,11 @@
     <title>User</title>
 </head>
 <body>
-<h1>User</h1>
+    <h1>User</h1>
+    <div>
+        <a href="{{route('agrupamento')}}">Root</a>
+        <a href="{{route('agrupamento.user')}}">User</a>
+        <a href="{{route('agrupamento.profile')}}">Profile</a>
+    </div>
 </body>
 </html>
