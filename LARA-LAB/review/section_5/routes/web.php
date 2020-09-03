@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Http\Request;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -80,5 +80,40 @@ Route::redirect('/redirect','destiny','301');
 Route::get('/redirect2',
     function(){
         return redirect()->route('target');
+    }
+);
+
+Route::post('/request',
+    function(Request $request){
+        echo "post ";
+        print_r($request->value);
+    }
+);
+
+Route::delete('/request',
+    function(Request $request){
+        echo "delete ";
+        print_r($request->value);
+    }
+);
+
+Route::put('/request',
+    function(Request $request){
+        echo "put ";
+        print_r($request->value);
+    }
+);
+
+Route::patch('/request',
+    function(Request $request){
+        echo "patch ";
+        print_r($request->value);
+    }
+);
+
+Route::options('/request',
+    function(Request $request){
+        echo "options ";
+        print_r($request->value);
     }
 );
