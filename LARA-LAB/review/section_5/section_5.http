@@ -1,2 +1,2 @@
-GET http://localhost:8000/ola/David/Meth
+GET http://localhost:8000/ola/David
 Content-Type: application/json

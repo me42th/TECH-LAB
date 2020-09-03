@@ -18,8 +18,8 @@ Route::get('/', function () {
 });
 
 
-Route::get('/ola/{nome}/{sobrenome}',
-    function($nome, $sobrenome){
+Route::get('/ola/{nome}/{sobrenome?}',
+    function($nome, $sobrenome = ''){
         return "Olá $nome $sobrenome seja bem vindo!";
     }
 );
