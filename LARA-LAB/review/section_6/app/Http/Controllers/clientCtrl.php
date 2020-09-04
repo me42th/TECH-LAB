@@ -50,7 +50,7 @@ class clientCtrl extends Controller
      */
     public function create()
     {
-        //
+        return view('client.create');
     }
 
     /**
@@ -61,7 +61,11 @@ class clientCtrl extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $id = count($this->clientes);
+        $nome = $request->nome;
+        $dados = ['id' => $id,'nome' => $nome];
+        $this->clientes[]  = $dados;
+        dd($this->clientes);
     }
 
     /**
