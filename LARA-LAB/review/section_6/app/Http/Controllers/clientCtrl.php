@@ -32,13 +32,17 @@ class clientCtrl extends Controller
      */
     public function index()
     {
+        $clients = $this->clientes;
+        return view('client.index',compact(['clients']));
+    }
+
+    public function index_a(){
         $lista = '';
         foreach($this->clientes as $cliente){
             $lista .= "<li>{$cliente['nome']}</li>";
         }
         echo "<ol>$lista</ol>";
     }
-
     /**
      * Show the form for creating a new resource.
      *
