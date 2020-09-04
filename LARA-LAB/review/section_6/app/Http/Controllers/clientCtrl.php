@@ -32,7 +32,11 @@ class clientCtrl extends Controller
      */
     public function index()
     {
-        //
+        $lista = '';
+        foreach($this->clientes as $cliente){
+            $lista .= "<li>{$cliente['nome']}</li>";
+        }
+        echo "<ol>$lista</ol>";
     }
 
     /**

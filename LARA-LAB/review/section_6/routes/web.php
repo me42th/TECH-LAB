@@ -13,10 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::redirect('/','/clients');
 
 Route::get('/produtos','ctrl@produtos');
 
 Route::get('/produto/{nome}/{preco}','ctrl@produto');
+
+Route::resource('/clients','clientCtrl');
