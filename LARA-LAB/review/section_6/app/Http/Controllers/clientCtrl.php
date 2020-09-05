@@ -98,7 +98,10 @@ class clientCtrl extends Controller
      */
     public function edit($id)
     {
-        //
+        $clientes = session('clientes');
+        $client = $clientes[$id];
+
+        return view('client.edit',compact(['client']));
     }
 
     /**
@@ -110,7 +113,10 @@ class clientCtrl extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $clientes = session('clientes');
+        $clientes[$id]['nome'] = $request->nome;
+        session(['clientes' => $clientes]);
+        return redirect()->route('client.index');
     }
 
     /**

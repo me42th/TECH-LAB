@@ -1,6 +1,6 @@
 <sub><a href="{{route('client.create')}}">Novo</a></sub>
 <ol>
     @foreach ($clients as $client)
-<li><a href="{{route('client.show',$client['id'])}}"> {{$client['nome']}} </a></li>
+<li><a href="{{route('client.edit',$client['id'])}}">EDITAR</a> <a href="{{route('client.show',$client['id'])}}"> {{$client['nome']}} </a></li>
     @endforeach
 </ol>
