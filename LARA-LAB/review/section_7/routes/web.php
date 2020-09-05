@@ -18,3 +18,6 @@ Route::get('/', function () {
 });
 
 Route::resource('sete','ctrl');
+
+Route::view('vogais', 'vogais.index')->name('vogais');
+Route::view('numbers','numbers.index')->name('numbers');

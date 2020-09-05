@@ -13,9 +13,9 @@
         <div class="col1">
             <div class="menu">
                 <ul>
-                    <li><a href="">Vogais</a></li>
-                    <li><a class="active" href="{{route('sete.index')}}">Letras</a></li>
-                    <li><a href="">Numeros</a></li>
+                    <li><a class="{{request()->routeIs('vogais')?'active':''}}" href="{{route('vogais')}}">Vogais</a></li>
+                    <li><a class="{{request()->routeIs('sete.*')?'active':''}}" href="{{route('sete.index')}}">Letras</a></li>
+                    <li><a class="{{request()->routeIs('numbers')?'active':''}}" href="{{route('numbers')}}">Numeros</a></li>
                 </ul>
             </div>
         </div>
