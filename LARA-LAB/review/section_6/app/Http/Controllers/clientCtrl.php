@@ -9,19 +9,19 @@ class clientCtrl extends Controller
 
     private $clientes = [
         [
-            'id' => '1',
+            'id' => '0',
             'nome' => 'David'
         ],
         [
-            'id' => '2',
+            'id' => '1',
             'nome' => 'Felipe'
         ],
         [
-            'id' => '3',
+            'id' => '2',
             'nome' => 'Chiclete'
         ],
         [
-            'id' => '4',
+            'id' => '3',
             'nome' => 'Pé de Pranta'
         ]
     ];
@@ -85,7 +85,9 @@ class clientCtrl extends Controller
      */
     public function show($id)
     {
-        //
+        $clientes = session('clientes');
+        $client = $clientes[$id];
+        return view('client.show',compact('client'));
     }
 
     /**
