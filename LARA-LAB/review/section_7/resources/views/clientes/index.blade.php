@@ -1,10 +1,9 @@
 <title>{{$titulo}}</title>
 <h1>{{$titulo}}</h1>
+@if (count($itens) > 0)
 <ol>
-
-    @forelse ($itens as $item)
+    @foreach ($itens as $item)
         <li>{{$item}}</li>
-    @empty
-        <li>Vazio</li>
-    @endforelse
+    @endforeach
 </ol>
+@endif
