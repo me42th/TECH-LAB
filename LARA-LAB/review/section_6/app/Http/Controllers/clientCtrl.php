@@ -25,6 +25,13 @@ class clientCtrl extends Controller
             'nome' => 'Pé de Pranta'
         ]
     ];
+
+    public function __construct(){
+        $clientes = session('clientes');
+        if(!isset($clientes)){
+            session(['clientes' => $this->clientes]);
+        }
+    }
     /**
      * Display a listing of the resource.
      *
@@ -32,7 +39,7 @@ class clientCtrl extends Controller
      */
     public function index()
     {
-        $clients = $this->clientes;
+        $clients = session('clientes');
         return view('client.index',compact(['clients']));
     }
 
@@ -61,11 +68,13 @@ class clientCtrl extends Controller
      */
     public function store(Request $request)
     {
-        $id = count($this->clientes);
+        $clientes = session('clientes');
+        $id = count($clientes);
         $nome = $request->nome;
         $dados = ['id' => $id,'nome' => $nome];
-        $this->clientes[]  = $dados;
-        dd($this->clientes);
+        $clientes[]  = $dados;
+        session(['clientes' => $clientes]);
+        return redirect()->route('client.index');
     }
 
     /**
