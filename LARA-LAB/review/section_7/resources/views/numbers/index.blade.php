@@ -6,4 +6,7 @@
     {{$i}}
 @endfor
 <hr>
+@component('components.alert')
+
+@endcomponent
 @endsection
