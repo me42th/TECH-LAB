@@ -27,9 +27,10 @@ class clientCtrl extends Controller
     ];
 
     public function __construct(){
+        $count = session('count');
         $clientes = session('clientes');
         if(!isset($clientes)){
-            session(['clientes' => $this->clientes]);
+            session(['clientes' => $this->clientes, 'count' => count($this->clientes)]);
         }
     }
     /**
@@ -40,6 +41,7 @@ class clientCtrl extends Controller
     public function index()
     {
         $clients = session('clientes');
+
         return view('client.index',compact(['clients']));
     }
 
@@ -68,12 +70,13 @@ class clientCtrl extends Controller
      */
     public function store(Request $request)
     {
+        $count = session('count');
         $clientes = session('clientes');
-        $id = count($clientes);
+        $id = ++$count;
         $nome = $request->nome;
         $dados = ['id' => $id,'nome' => $nome];
         $clientes[]  = $dados;
-        session(['clientes' => $clientes]);
+        session(['clientes' => $clientes, 'count' => $count]);
         return redirect()->route('client.index');
     }
 
@@ -86,7 +89,9 @@ class clientCtrl extends Controller
     public function show($id)
     {
         $clientes = session('clientes');
-        $client = $clientes[$id];
+        $ids = array_column($clientes,'id');
+        $index = array_search($id,$ids);
+        $client = $clientes[$index];
         return view('client.show',compact('client'));
     }
 
@@ -99,7 +104,9 @@ class clientCtrl extends Controller
     public function edit($id)
     {
         $clientes = session('clientes');
-        $client = $clientes[$id];
+        $ids = array_column($clientes,'id');
+        $index = array_search($id,$ids);
+        $client = $clientes[$index];
 
         return view('client.edit',compact(['client']));
     }
@@ -114,7 +121,9 @@ class clientCtrl extends Controller
     public function update(Request $request, $id)
     {
         $clientes = session('clientes');
-        $clientes[$id]['nome'] = $request->nome;
+        $ids = array_column($clientes,'id');
+        $index = array_search($id,$ids);
+        $clientes[$index]['nome'] = $request->nome;
         session(['clientes' => $clientes]);
         return redirect()->route('client.index');
     }
@@ -127,6 +136,11 @@ class clientCtrl extends Controller
      */
     public function destroy($id)
     {
-        //
+        $clientes = session('clientes');
+        $ids = array_column($clientes,'id');
+        $index = array_search($id,$ids);
+        array_splice($clientes, $index, 1);
+        session(['clientes' => $clientes]);
+        return redirect()->route('client.index');
     }
 }
