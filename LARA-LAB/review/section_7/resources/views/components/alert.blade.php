@@ -1,8 +1,4 @@
-<style>
 
-
-
-</style>
 
 <div class="box {{$tipo}}">
     <div class="title">{{$titulo}}</div>
