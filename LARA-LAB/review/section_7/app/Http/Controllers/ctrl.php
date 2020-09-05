@@ -23,7 +23,7 @@ class ctrl extends Controller
     {
         $itens = session('alfabet');
         $titulo = 'Alfabeto';
-        return view('clientes.index')->with('itens',$itens)->with('titulo',$titulo);
+        return view('alfabet.index')->with('itens',$itens)->with('titulo',$titulo);
     }
 
     /**
@@ -33,7 +33,7 @@ class ctrl extends Controller
      */
     public function create()
     {
-        //
+        return view('alfabet.create');
     }
 
     /**
@@ -44,7 +44,10 @@ class ctrl extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $alfabet = session('alfabet');
+        $alfabet[] = $request->letter;
+        session(['alfabet' => $alfabet]);
+        return redirect()->route('sete.index');
     }
 
     /**
