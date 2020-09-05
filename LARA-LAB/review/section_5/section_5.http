@@ -1,0 +1,42 @@
+GET http://localhost:8000/ola/David/asd/asd
+Content-Type: application/json
+###############
+GET http://localhost:8000/regra/abc/4
+Content-Type: application/json
+###############
+GET http://localhost:8000/agrupamento/asauser
+###############
+POST http://localhost:8000/request HTTP/1.1
+content-type:application/json
+
+{
+    "value": "something"
+}
+###############
+DELETE http://localhost:8000/request HTTP/1.1
+content-type:application/json
+
+{
+    "value": "something"
+}
+###############
+PATCH http://localhost:8000/request HTTP/1.1
+content-type:application/json
+
+{
+    "value": "something"
+}
+###############
+PUT http://localhost:8000/request HTTP/1.1
+content-type:application/json
+
+{
+    "value": "something"
+}
+###############
+OPTIONS http://localhost:8000/request HTTP/1.1
+content-type:application/json
+
+{
+    "value": "something"
+}
