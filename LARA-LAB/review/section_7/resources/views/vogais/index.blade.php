@@ -10,4 +10,12 @@
         {{$vogal}} | Index {{$loop->index}} | Count {{$loop->count}} | Iteration {{$loop->iteration}}  @if($loop->first) | First @endif  @if($loop->last) | Last @endif
     </p>
 @endforeach
+<div>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
 @endsection
