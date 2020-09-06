@@ -7,3 +7,5 @@
 > php artisan migrate:rollback
 
 > select * from migrations;
+
+> php artisan make:migration add_brand_to_products --table=products
