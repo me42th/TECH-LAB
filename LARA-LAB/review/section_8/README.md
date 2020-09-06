@@ -9,3 +9,11 @@
 > select * from migrations;
 
 > php artisan make:migration add_brand_to_products --table=products
+
+> php artisan migrate:refresh
+
+> php artisan migrate:fresh 
+
+> php artisan migrate:status
+
+> php artisan migrate:reset
