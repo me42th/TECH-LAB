@@ -54,3 +54,12 @@ $brands = Brand::all()->min('id');
 $brands = Brand::all()->sum('id');
 $brands = Brand::all()->chunk(2)->random();
 ```
+
+**Update Stuff**
+```
+$brand = Brand::find(2);
+$brand->fill(['name' => 'Pé de Pranta']);
+$brand->save();
+
+Brand::where('id',3)->update(['name' => 'Le Novo']);
+```
