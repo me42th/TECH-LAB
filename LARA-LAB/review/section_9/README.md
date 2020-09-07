@@ -63,3 +63,13 @@ $brand->save();
 
 Brand::where('id',3)->update(['name' => 'Le Novo']);
 ```
+
+**Delete Stuff**
+```
+$brand = Brand::find(1);
+$brand->delete();
+
+Brand::destroy(2);
+
+Brand::where('id','>','3')->delete();
+```
