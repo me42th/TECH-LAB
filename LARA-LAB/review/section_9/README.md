@@ -73,3 +73,13 @@ Brand::destroy(2);
 
 Brand::where('id','>','3')->delete();
 ```
+
+**SoftDelete**
+```
+Brand::find(7)->delete();
+Brand::withTrashed()->get();
+Brand::onlyTrashed()->get();
+Brand::onlyTrashed()->get()[0]->trashed();
+Brand::onlyTrashed()->get()[0]->restore();
+Brand::find(0)->forceDelete();
+```
