@@ -22,6 +22,8 @@ $brands = Brand::whereIn('id',[1,4])->get();
 $brands = Brand::where('name','like','%e%')->get();
 $brands = Brand::where('id','>',2)->where('name','like','%e%')->get();
 $brands = Brand::where('id',1)->orWhere('id',3)->get();
+$brands = Brand::orderBy('name','desc')->desc();
+$brands = Brand::whereNotIn('id',[2,4])->orderBy('name','desc')->get();
 ``` 
 
 **Select: (id>1 and id<4) and (name='lg' or name='apple')**
