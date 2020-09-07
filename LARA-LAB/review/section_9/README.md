@@ -19,4 +19,5 @@ $brands = Brand::whereBetween('id',[1,2])->get();
 $brands = Brand::whereNotBetween('id',[1,2])->get();
 $brands = Brand::whereNotIn('id',[2,4])->get();
 $brands = Brand::whereIn('id',[1,4])->get();
+$brands = Brand::where('name','like','%e%')->get();
 ``` 
