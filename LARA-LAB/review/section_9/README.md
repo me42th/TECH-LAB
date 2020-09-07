@@ -39,3 +39,18 @@ Brand::where(
         }
     )->get();
 ```
+
+**[Collections](https://laravel.com/docs/7.x/collections)**
+```
+$brands = Brand::all()->last();
+$brands = Brand::all()->first();
+$brands = Brand::all()->toJson();
+$brands = Brand::all()->pluck('name')->reverse();
+$brands = Brand::all()->toArray();
+$brands = Brand::all()->random();
+$brands = Brand::all()->avg();
+$brands = Brand::all()->max('id');
+$brands = Brand::all()->min('id');
+$brands = Brand::all()->sum('id');
+$brands = Brand::all()->chunk(2)->random();
+```
