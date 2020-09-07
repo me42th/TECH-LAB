@@ -23,3 +23,17 @@ $brands = Brand::where('name','like','%e%')->get();
 $brands = Brand::where('id','>',2)->where('name','like','%e%')->get();
 $brands = Brand::where('id',1)->orWhere('id',3)->get();
 ``` 
+
+**Select: (id>1 and id<4) and (name='lg' or name='apple')**
+```
+Brand::where(
+        function($query){
+            $query->where('id','>',1)->where('id','<',4);
+        }
+    )
+    ->where(
+        function($query){
+            $query->where('name','lg')->orWhere('name','apple');
+        }
+    )->get();
+```
