@@ -25,7 +25,7 @@ class CategoryCTRL extends Controller
      */
     public function create()
     {
-        return view('category.create');
+        return view('category.form');
     }
 
     /**
@@ -59,7 +59,8 @@ class CategoryCTRL extends Controller
      */
     public function edit($id)
     {
-        //
+        $category = Category::findOrFail($id);
+        return view('category.form')->with(compact(['category']));
     }
 
     /**
@@ -71,7 +72,8 @@ class CategoryCTRL extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        Category::where('id',$id)->update(['name' => $request->name]);
+        return redirect()->route('category.index');
     }
 
     /**
