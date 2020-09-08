@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::redirect('/', '/index','300');
 
+Route::view('index','index')->name('index');
 
-Route::view('index','index');
+Route::resource('product','ProductCTRL');
+Route::resource('category','CategoryCTRL');
