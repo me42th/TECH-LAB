@@ -23,7 +23,7 @@
                         <p class="card-text">
                             Aqui você cadastra as categorias dos seus produtos
                         </p><br>
-                        <a href="" class="btn btn-primary">Cadastre suas categorias</a>
+                        <a href="{{route('category.create')}}" class="btn btn-primary">Cadastre suas categorias</a>
                     </div>
                 </div>
             </div>
