@@ -35,7 +35,7 @@
     @endif
     </div>
     <div class="card-footer">
-        <a href="{{route('category.create')}}" role="button" class="btn btn-success">Novo</a>
+        <a href="{{route('category.create')}}" role="button" class="btn btn-success">Nova Categoria</a>
     </div>
 </div>
 @endsection
