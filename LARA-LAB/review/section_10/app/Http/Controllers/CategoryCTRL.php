@@ -14,7 +14,8 @@ class CategoryCTRL extends Controller
      */
     public function index()
     {
-        return view('category.index');
+        $categories = Category::all();
+        return view('category.index',compact(['categories']));
     }
 
     /**
@@ -81,6 +82,7 @@ class CategoryCTRL extends Controller
      */
     public function destroy($id)
     {
-        //
+        Category::find($id)->delete();
+        return redirect()->route('category.index');
     }
 }
