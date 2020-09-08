@@ -5,14 +5,14 @@
 
     <div class="collapse navbar-collapse" id="navbar">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
+      <li class="nav-item @if($current == 'home') active @endif">
             <a class="nav-link" href="{{route('index')}}">Home</a>
         </li>
         <li class="nav-item ">
-            <a class="nav-link" href="{{route('product.index')}}">Produtos</a>
+            <a class="nav-link @if($current == 'product') active @endif" href="{{route('product.index')}}">Produtos</a>
         </li>
         <li class="nav-item ">
-            <a class="nav-link" href="{{route('category.index')}}">Categorias</a>
+            <a class="nav-link @if($current == 'category') active @endif" href="{{route('category.index')}}">Categorias</a>
         </li>
       </ul>
 
