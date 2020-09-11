@@ -9,3 +9,5 @@
 > [section_9: models](./section_9/README.md)
 
 > [section_10: projeto](./section_10/README.md)
+
+https://www.youtube.com/watch?v=zVRz9tUxX4E

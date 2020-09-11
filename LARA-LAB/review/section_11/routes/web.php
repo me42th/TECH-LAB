@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ClienteCTRL;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,7 +16,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::view('cliente','cliente.index');
-
-Route::view('novo','cliente.new');
+Route::resource('cliente',ClienteCTRL::class);
