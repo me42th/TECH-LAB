@@ -21,4 +21,6 @@ config/auth >> api/driver >> passport
 php artisan passport:client
 
 php artisan make:model Passport/Client
+
+php artisan passport:client --password
 ```

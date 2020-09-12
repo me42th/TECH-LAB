@@ -21,8 +21,8 @@ Route::get('/prepare-login',function(){
 $state = Str::random(40);
 
 $query = http_build_query([
-    'client_id' => env('CLIENT_ID'),
-    'redirect_url' => env('REDIRECT_URL'),
+    'client_id' => env('CLIENT_ID_AUTH_CODE'),
+    'redirect_url' => env('REDIRECT_URL_AUTH_CODE'),
     'response_type' => 'code',
     'scope' => '',
     'state' => $state
@@ -33,13 +33,12 @@ return redirect($url.$query);
 })->name('prepare.login');
 
 Route::get('/callback',function(Request $request){
-    echo "LOGADO <br>";
 
     $url = env('API_URL').'oauth/token';
     $data = [
         'grant_type' => 'authorization_code',
-        'client_id' => env('CLIENT_ID'),
-        'client_secret' => env('CLIENT_SECRET'),
+        'client_id' => env('CLIENT_ID_AUTH_CODE'),
+        'client_secret' => env('CLIENT_SECRET_AUTH_CODE'),
         'redirect_url' => env('REDIRECT_URL'),
         'code' => $request->code
     ];
@@ -48,3 +47,17 @@ Route::get('/callback',function(Request $request){
     dd($response->json());
 
 });
+
+Route::get('grant-password',function(){
+    $url = env('API_URL').'oauth/token';
+    $data = [
+        'grant_type' => 'password',
+        'client_id' => env('CLIENT_ID_PASSWORD'),
+        'client_secret' => env('CLIENT_SECRET_PASSWORD'),
+        'username' => 'd@d.d',
+        'password' => '123123123',
+        'scope' => ''
+    ];
+    $response = Http::post($url,$data);
+    dd($response->json());
+})->name('password');
