@@ -2,21 +2,23 @@
 
 **Auth Sccafold Laravel 8**
 ```
-composer require laravel/ui
-php artisan ui vue --auth
+composer require laravel/ui && php artisan ui vue --auth && npm install && npm run dev
 ```
 
 **Passport Stuff**
 ```
-composer require laravel/passport
-php artisan passport:install
+composer require laravel/passport 
 php artisan migrate
+php artisan passport:install
 
-UserModel >> use HasApiTokens
 
-AuthServiceProvider >> boot() >> Passport::routes()
+UserModel >> use Laravel\Passport\HasApiTokens, use HasApiTokens
+
+AuthServiceProvider >> boot() >> use Laravel\Passport\Passport; Passport::routes()
 
 config/auth >> api/driver >> passport
 
 php artisan passport:client
+
+php artisan make:model Passport/Client
 ```
