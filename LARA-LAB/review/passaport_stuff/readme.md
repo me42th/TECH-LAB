@@ -23,4 +23,9 @@ php artisan passport:client
 php artisan make:model Passport/Client
 
 php artisan passport:client --password
+
+php artisan passport:client --client
+
+Hash
+AppServiceProvider >> boot() >> Passport::hashClientSecrets();
 ```

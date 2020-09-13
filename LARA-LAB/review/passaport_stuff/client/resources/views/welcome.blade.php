@@ -23,8 +23,10 @@
     <body class="antialiased">
     <h1>
         <a href="{{route('prepare.login')}}" target="_blank">AUTHORIZATION CODE</a>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="{{route('password')}}">PASSWORD</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="{{route('password')}}">PASSWORD</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="{{route('client_credentials')}}">CLIENT CREDENTIALS</a>
     </h1>
     </body>
 </html>
