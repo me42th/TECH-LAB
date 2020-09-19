@@ -99,8 +99,7 @@ class ProductsController extends Controller
         }catch(\Exception $ex){
             return response()->json(['status'=>'not found']);
         }
-        $product_backup = $product;
         $product->delete();
-        return response()->json(['status' => 'deleted','product'=>$product_backup]);
+        return response()->json(['status' => 'deleted','product' => $product]);
     }
 }

@@ -25,3 +25,5 @@ accept: application/json
     "description": "Refrigerante de cola",
     "slug": "coca"
 }
+###################
+DELETE http://localhost:8000/api/products/2
