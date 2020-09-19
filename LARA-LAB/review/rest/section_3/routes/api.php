@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Response;
+use \App\Http\Controllers\ProductsController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -25,3 +27,6 @@ Route::get('test',function(Request $request){
     $response->header('David','Meth');
     return $response;
 });
+
+Route::resource('products', ProductsController::class);
+
