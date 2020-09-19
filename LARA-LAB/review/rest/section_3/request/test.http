@@ -13,6 +13,15 @@ accept: application/json
     "slug": "pepsi"
 }
 ###################
-GET http://localhost:8000/api/products/1
+GET http://localhost:8000/api/products/2
 ###################
-PUT http://localhost:8000/api/products/1
+PUT http://localhost:8000/api/products/2
+content-type: application/json
+accept: application/json
+
+{
+    "name": "Coca Cola",
+    "price": "10",
+    "description": "Refrigerante de cola",
+    "slug": "coca"
+}

@@ -15,9 +15,7 @@ class ProductsController extends Controller
      */
     public function index()
     {
-        $response = new Response(json_encode(['products' => Product::all()]));
-        $response->header('content-type','application/json');
-        return $response;
+        return response()->json(['status' => 'find','products' => Product::all()]);
     }
 
     /**
@@ -38,9 +36,7 @@ class ProductsController extends Controller
     public function store(Request $request)
     {
         $product = Product::firstOrCreate($request->all());
-        $response = new Response(json_encode(['status' => 'persisted','product' => $product]));
-        $response->header('content-type','application/json');
-        return $response;
+        return response()->json(['status' => 'persisted','product' => $product]);
     }
 
     /**
@@ -51,9 +47,12 @@ class ProductsController extends Controller
      */
     public function show($id)
     {
-        $response = new Response(json_encode(['get_id' => 'ok']));
-        $response->header('content-type','application/json');
-        return $response;
+        try{
+            $product = Product::findOrFail($id);
+        }catch(\Exception $ex){
+            return response()->json(['status'=>'not found']);
+        }
+        return response()->json(['status' => 'find','product' => $product]);
     }
 
     /**
@@ -76,10 +75,15 @@ class ProductsController extends Controller
      */
     public function update(Request $request, $id)
     {
+        try{
+            $product = Product::findOrFail($id);
+        }catch(\Exception $ex){
+            return response()->json(['status' => 'not found']);
+        }
+        $product->fill($request->all());
+        $product->save();
 
-        $response = new Response(json_encode(['put'=>'ok']));
-        $response->header('content-type','application/json');
-        return $response;
+        return response()->json(['status'=>'persisted','product'=>$product]);
     }
 
     /**
@@ -90,6 +94,13 @@ class ProductsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        try{
+            $product = Product::findOrFail($id);
+        }catch(\Exception $ex){
+            return response()->json(['status'=>'not found']);
+        }
+        $product_backup = $product;
+        $product->delete();
+        return response()->json(['status' => 'deleted','product'=>$product_backup]);
     }
 }
