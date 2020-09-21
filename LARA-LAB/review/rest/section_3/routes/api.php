@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Response;
 use \App\Http\Controllers\ProductsController;
+use \App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +28,8 @@ Route::get('test',function(Request $request){
     $response->header('David','Meth');
     return $response;
 });
+
+Route::resource('users',UserController::class);
 
 Route::resource('products', ProductsController::class);
 
