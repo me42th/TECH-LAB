@@ -1,0 +1,39 @@
+GET http://localhost:8000/api/test
+###################
+GET http://localhost:8000/api/products?page=1
+###################
+POST http://localhost:8000/api/products
+content-type: application/json
+accept: application/json
+
+{
+    "name": "Fanta Tangerina",
+    "price": "8",
+    "description": "Refrigerante de Cola",
+    "slug": "pepsi"
+}
+###################
+GET http://localhost:8000/api/products/3
+###################
+PUT http://localhost:8000/api/products/2
+content-type: application/json
+accept: application/json
+
+{
+    "name": "Jesus Cola",
+    "price": "10",
+    "description": "Refrigerante do Maranhão",
+    "slug": "coca"
+}
+###################
+DELETE http://localhost:8000/api/products/2
+###################
+GET http://localhost:8000/api/users
+###################
+POST http://localhost:8000/api/users
+###################
+GET http://localhost:8000/api/users/1
+###################
+PUT http://localhost:8000/api/users/1
+###################
+DELETE http://localhost:8000/api/users/1
