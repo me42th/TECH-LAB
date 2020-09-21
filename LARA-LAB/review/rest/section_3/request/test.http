@@ -1,28 +1,28 @@
 GET http://localhost:8000/api/test
 ###################
-GET http://localhost:8000/api/products
+GET http://localhost:8000/api/products?page=1
 ###################
 POST http://localhost:8000/api/products
 content-type: application/json
 accept: application/json
 
 {
-    "name": "Pepsi Cola",
+    "name": "Fanta Tangerina",
     "price": "8",
     "description": "Refrigerante de Cola",
     "slug": "pepsi"
 }
 ###################
-GET http://localhost:8000/api/products/2
+GET http://localhost:8000/api/products/3
 ###################
 PUT http://localhost:8000/api/products/2
 content-type: application/json
 accept: application/json
 
 {
-    "name": "Coca Cola",
+    "name": "Jesus Cola",
     "price": "10",
-    "description": "Refrigerante de cola",
+    "description": "Refrigerante do Maranhão",
     "slug": "coca"
 }
 ###################
