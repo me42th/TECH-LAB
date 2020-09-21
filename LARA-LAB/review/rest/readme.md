@@ -6,4 +6,5 @@
 **SHELL**
 ```
     php artisan make:controller UserController --resource --api
+    php artisan make:resource ProductResource
 ```
