@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use App\Models\Product;
 use App\Http\Resources\ProductResource;
+use App\Http\Resources\ProductCollection;
 
 class ProductsController extends Controller
 {
@@ -16,7 +17,7 @@ class ProductsController extends Controller
      */
     public function index()
     {
-        return response()->json(['status' => 'find','products' => Product::paginate(3)]);
+        return new ProductCollection(Product::paginate(3));
     }
 
     /**
