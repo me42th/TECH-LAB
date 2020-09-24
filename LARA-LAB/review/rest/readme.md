@@ -11,4 +11,10 @@
 
     php artisan make:resource ProductCollection
     php artisan make:resource Product --collection
+
+    composer require laravel/legacy-factories
+    php artisan make:seeder UsersTableSeeder
+    php artisan db:seed
+
+    b64(email@email.com:secret)
 ```

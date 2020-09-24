@@ -29,7 +29,7 @@ Route::get('test',function(Request $request){
     return $response;
 });
 
-Route::resource('users',UserController::class);
+Route::resource('products', ProductsController::class)->middleware('auth.basic');
 
-Route::resource('products', ProductsController::class);
+Route::resource('users',UserController::class);
 
