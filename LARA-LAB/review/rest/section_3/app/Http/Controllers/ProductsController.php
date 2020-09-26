@@ -7,17 +7,24 @@ use Illuminate\Http\Response;
 use App\Models\Product;
 use App\Http\Resources\ProductResource;
 use App\Http\Resources\ProductCollection;
+use App\Repository\ProductRepository;
 
 class ProductsController extends Controller
 {
+
+    private $product;
+    public function __construct(Product $product){
+            $this->product = $product;
+    }
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        return new ProductCollection(Product::paginate(3));
+        $products = (new ProductRepository($this->product,$request))->products;
+        return new ProductCollection($products->paginate(10));
     }
 
     /**
