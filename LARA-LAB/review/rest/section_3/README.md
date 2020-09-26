@@ -14,8 +14,6 @@
     php artisan make:seeder UsersTableSeeder
     php artisan db:seed
 
-   
-
     php artisan make:factory ProductFactory
     php artisan make:seeder ProductSeeder
 ```

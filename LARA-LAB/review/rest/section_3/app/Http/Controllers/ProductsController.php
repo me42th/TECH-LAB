@@ -7,6 +7,7 @@ use Illuminate\Http\Response;
 use App\Models\Product;
 use App\Http\Resources\ProductResource;
 use App\Http\Resources\ProductCollection;
+use App\Http\Requests\ProductRequest;
 use App\Repository\ProductRepository;
 
 class ProductsController extends Controller
@@ -33,7 +34,7 @@ class ProductsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ProductRequest $request)
     {
         return new ProductResource(
             Product::firstOrCreate($request->all())
@@ -64,7 +65,7 @@ class ProductsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(ProductRequest $request, $id)
     {
         try{
             $product = Product::findOrFail($id);
