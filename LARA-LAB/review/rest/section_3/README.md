@@ -18,4 +18,7 @@
     content-type: application/json
     accept: application/json
     Authorization: Basic c21pdGgubWFyY0BleGFtcGxlLmNvbTpwYXNzd29yZA==
+
+    php artisan make:factory ProductFactory
+    php artisan make:seeder ProductSeeder
 ```
