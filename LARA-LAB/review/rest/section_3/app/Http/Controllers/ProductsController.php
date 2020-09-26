@@ -7,6 +7,7 @@ use Illuminate\Http\Response;
 use App\Models\Product;
 use App\Http\Resources\ProductResource;
 use App\Http\Resources\ProductCollection;
+use App\Repository\ProductRepository;
 
 class ProductsController extends Controller
 {
@@ -22,25 +23,7 @@ class ProductsController extends Controller
      */
     public function index(Request $request)
     {
-        $products = $this->product;
-
-        if($request->has('conditions')){
-            $conditions = explode(';',$request->get('conditions'));
-            foreach($conditions as $condition){
-                $condition = explode(':',$condition);
-                if(count($condition) == 2){
-                    $products = $products->where($condition[0],$condition[1]);
-                } else if (count($condition) == 3){
-                    $products = $products->where($condition[0],$condition[1],$condition[2]);
-                }
-            }
-        }
-
-        if($request->has('fields')){
-            $fields = $request->get('fields');
-            $products = $products->selectRaw($fields);
-        }
-
+        $products = (new ProductRepository($this->product,$request))->products;
         return new ProductCollection($products->paginate(10));
     }
 
