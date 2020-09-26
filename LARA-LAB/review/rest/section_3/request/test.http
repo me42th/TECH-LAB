@@ -1,6 +1,10 @@
 GET http://localhost:8000/api/test
 ###################
-GET http://localhost:8000/api/products?page=1
+GET http://localhost:8000/api/products?page=1&fields=name,price
+content-type: application/json
+accept: application/json
+Authorization: Basic c21pdGgubWFyY0BleGFtcGxlLmNvbTpwYXNzd29yZA==
+
 ###################
 POST http://localhost:8000/api/products
 content-type: application/json
