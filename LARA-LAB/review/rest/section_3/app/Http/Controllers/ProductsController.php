@@ -10,6 +10,11 @@ use App\Http\Resources\ProductCollection;
 
 class ProductsController extends Controller
 {
+
+    private $product;
+    public function __construct(Product $product){
+            $this->product = $product;
+    }
     /**
      * Display a listing of the resource.
      *
@@ -17,14 +22,23 @@ class ProductsController extends Controller
      */
     public function index(Request $request)
     {
-        if($request->has('fields')){
-            $fields = $request->get('fields');
-            $products = Product::selectRaw($fields)->paginate(10);
-        } else {
-            $products = Product::paginate(10);
+        $products = $this->product;
+
+        if($request->has('conditions')){
+            $conditions = explode(';',$request->get('conditions'));
+
+            foreach($conditions as $condition){
+                $condition = explode('=',$condition);
+                $products = $products->where($condition[0],$condition[1]);
+            }
         }
 
-        return new ProductCollection($products);
+        if($request->has('fields')){
+            $fields = $request->get('fields');
+            $products = $products->selectRaw($fields);
+        }
+
+        return new ProductCollection($products->paginate(10));
     }
 
     /**
