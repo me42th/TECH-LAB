@@ -26,10 +26,13 @@ class ProductsController extends Controller
 
         if($request->has('conditions')){
             $conditions = explode(';',$request->get('conditions'));
-
             foreach($conditions as $condition){
-                $condition = explode('=',$condition);
-                $products = $products->where($condition[0],$condition[1]);
+                $condition = explode(':',$condition);
+                if(count($condition) == 2){
+                    $products = $products->where($condition[0],$condition[1]);
+                } else if (count($condition) == 3){
+                    $products = $products->where($condition[0],$condition[1],$condition[2]);
+                }
             }
         }
 
