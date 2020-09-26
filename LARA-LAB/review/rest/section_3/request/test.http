@@ -31,6 +31,7 @@ Authorization: Basic c21pdGgubWFyY0BleGFtcGxlLmNvbTpwYXNzd29yZA==
 PUT http://localhost:8000/api/products/2
 content-type: application/json
 accept: application/json
+Authorization: Basic c21pdGgubWFyY0BleGFtcGxlLmNvbTpwYXNzd29yZA==
 
 {
     "name": "Jesus Cola",
