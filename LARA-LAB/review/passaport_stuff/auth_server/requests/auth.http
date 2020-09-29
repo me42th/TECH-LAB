@@ -5,8 +5,8 @@ accept: application/json
 
 {
     "grant_type": "password",
-    "client_id": "4",
-    "client_secret": "3NFC9uszjecZbq0fFCShmZm1scLOB9JFify0Mbnm",
+    "client_id": "2",
+    "client_secret": "ZVjVfs9UhHGsg6V658RRt91tbufo2rSe7tY9AhuF",
     "username": "m@m.m",
     "password": "123123123"
 }
