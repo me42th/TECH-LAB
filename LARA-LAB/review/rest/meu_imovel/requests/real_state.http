@@ -44,7 +44,7 @@ Content-Type: application/json
 Accept: application/json
 Authorization: Basic d@d.d:123123123
 ##########
-GET http://localhost:8000/api/v1/real-state/1
+GET http://localhost:8000/api/v1/real-state/2
 Content-Type: application/json
 Accept: application/json
 Authorization: Basic d@d.d:123123123

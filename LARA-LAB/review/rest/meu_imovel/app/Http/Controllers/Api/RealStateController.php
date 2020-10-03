@@ -22,7 +22,12 @@ class RealStateController extends Controller
     }
 
     public function show($id){
-        return response()->json(['location' => __METHOD__]);
+        try{
+            $realState = RealState::findOrFail($id);
+        }catch(\Exception $ex){
+            return response()->json(['msg'=>$ex->getMessage()],422);
+        }
+        return new RealStateResource($realState,200,'Ok');
     }
 
     public function store(RealStateStoreRequest $request){
@@ -42,13 +47,17 @@ class RealStateController extends Controller
         } catch(\Exception $ex){
             return response()->json(['msg' => $ex->getMessage()],422);
         }
-
         return new RealStateResource($realState,202,'Updated');
-
     }
 
     public function destroy($id){
-        return response()->json(['location' => __METHOD__]);
+        try{
+            $realState = RealState::findOrFail($id);
+            $realState->delete();
+        } catch(\Exception $ex){
+            return response()->json(['msg' => $ex->getMessage()],422);
+        }
+        return new RealStateResource($realState,202,'Deleted');
     }
 
 
