@@ -29,7 +29,6 @@ class RealStateStoreRequest extends FormRequest
             'description' => 'required|max:255',
             'content' => 'required|max:255',
             'price' => 'required|numeric',
-            'slug' => 'required|max:255',
             'bedrooms' => 'required|numeric',
             'bathrooms' => 'required|numeric',
             'property_area' => 'required|numeric',

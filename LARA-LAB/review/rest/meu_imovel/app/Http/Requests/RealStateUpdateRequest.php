@@ -29,7 +29,6 @@ class RealStateUpdateRequest extends FormRequest
             'description' => 'max:255',
             'content' => 'max:255',
             'price' => 'numeric',
-            'slug' => 'max:255',
             'bedrooms' => 'numeric',
             'bathrooms' => 'numeric',
             'property_area' => 'numeric',
