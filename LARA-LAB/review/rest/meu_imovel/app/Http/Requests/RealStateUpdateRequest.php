@@ -13,7 +13,7 @@ class RealStateUpdateRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,16 @@ class RealStateUpdateRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'user_id' => 'exists:App\Models\User,id',
+            'title' => 'max:255',
+            'description' => 'max:255',
+            'content' => 'max:255',
+            'price' => 'numeric',
+            'slug' => 'max:255',
+            'bedrooms' => 'numeric',
+            'bathrooms' => 'numeric',
+            'property_area' => 'numeric',
+            'total_property_area' => 'numeric'
         ];
     }
 }

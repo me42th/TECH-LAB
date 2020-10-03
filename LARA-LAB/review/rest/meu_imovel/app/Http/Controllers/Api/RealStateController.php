@@ -8,6 +8,7 @@ use App\Models\RealState;
 use App\Http\Resources\RealStateCollection;
 use App\Http\Resources\RealStateResource;
 use App\Http\Requests\RealStateStoreRequest;
+use App\Http\Requests\RealStateUpdateRequest;
 
 class RealStateController extends Controller
 {
@@ -33,8 +34,17 @@ class RealStateController extends Controller
         return new RealStateResource($realState,201,'Created');
     }
 
-    public function update(Request $request){
-        return response()->json(['location' => __METHOD__]);
+    public function update($id,RealStateUpdateRequest $request){
+        try{
+            $realState = RealState::findOrFail($id);
+            $realState->fill($request->all());
+            $realState->save();
+        } catch(\Exception $ex){
+            return response()->json(['msg' => $ex->getMessage()],422);
+        }
+
+        return new RealStateResource($realState,202,'Updated');
+
     }
 
     public function destroy($id){

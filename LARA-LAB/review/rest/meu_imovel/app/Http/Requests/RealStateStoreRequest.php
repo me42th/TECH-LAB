@@ -24,16 +24,16 @@ class RealStateStoreRequest extends FormRequest
     public function rules()
     {
         return [
-            'user_id' => 'required',
-            'title' => 'required',
-            'description' => 'required',
-            'content' => 'required',
-            'price' => 'required',
-            'slug' => 'required',
-            'bedrooms' => 'required',
-            'bathrooms' => 'required',
-            'property_area' => 'required',
-            'total_property_area' => 'required'
+            'user_id' => 'required|exists:App\Models\User,id',
+            'title' => 'required|max:255',
+            'description' => 'required|max:255',
+            'content' => 'required|max:255',
+            'price' => 'required|numeric',
+            'slug' => 'required|max:255',
+            'bedrooms' => 'required|numeric',
+            'bathrooms' => 'required|numeric',
+            'property_area' => 'required|numeric',
+            'total_property_area' => 'required|numeric'
         ];
     }
 }
