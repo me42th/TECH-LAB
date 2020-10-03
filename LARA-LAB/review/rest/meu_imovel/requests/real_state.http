@@ -1,3 +1,37 @@
-GET http://localhost:8000/api/v1/real-states
+GET http://localhost:8000/api/v1/real-state
 Content-Type: application/json
 Accept: application/json
+Authorization: Basic d@d.d:123123123
+##########
+POST http://localhost:8000/api/v1/real-state
+Content-Type: application/json
+Accept: application/json
+Authorization: Basic d@d.d:123123123
+
+{
+  "user_id" : "1",
+  "title" :"Titulo",
+  "description":"Descricao",
+  "content":"Conteudo",
+  "price":"1",
+  "slug":"Slug",
+  "bedrooms":"1",
+  "bathrooms":"1",
+  "property_area":"1",
+  "total_property_area":"1"
+}
+##########
+PUT http://localhost:8000/api/v1/real-state/1
+Content-Type: application/json
+Accept: application/json
+Authorization: Basic d@d.d:123123123
+##########
+DELETE http://localhost:8000/api/v1/real-state/1
+Content-Type: application/json
+Accept: application/json
+Authorization: Basic d@d.d:123123123
+##########
+GET http://localhost:8000/api/v1/real-state/1
+Content-Type: application/json
+Accept: application/json
+Authorization: Basic d@d.d:123123123
