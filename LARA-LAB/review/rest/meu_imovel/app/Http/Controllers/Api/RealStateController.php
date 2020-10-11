@@ -23,11 +23,11 @@ class RealStateController extends Controller
     }
 
     public function show($id){
-        return ApiError::make('teste');
         try{
             $realState = RealState::findOrFail($id);
         }catch(\Exception $ex){
-            return response()->json(['msg'=>$ex->getMessage()],422);
+            return ApiError::make('teste');
+            //return response()->json(['msg'=>$ex->getMessage()],422);
         }
         return new RealStateResource($realState,200,'Ok');
     }

@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\RealStateController;
+use App\Http\Controllers\Api\UserController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -21,4 +22,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::middleware('auth.basic')->prefix('v1')->group(
     function(){
         Route::resource('real-state',RealStateController::class);
+});
+
+Route::middleware('auth.basic')->prefix('v1')->group(
+    function(){
+        Route::resource('user',UserController::class);
 });
