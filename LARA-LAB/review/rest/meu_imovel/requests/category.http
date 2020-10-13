@@ -1,0 +1,34 @@
+GET http://localhost:8000/api/v1/category
+Content-Type: application/json
+Accept: application/json
+Authorization: Basic d@d.d:123123123
+##########
+POST http://localhost:8000/api/v1/category
+Content-Type: application/json
+Accept: application/json
+Authorization: Basic d@d.d:123123123
+
+{
+  "name" : "David Meth",
+  "email" :"david.meth@laiave.com",
+  "password":"Descricao123123"
+}
+##########
+PUT http://localhost:8000/api/v1/category/10
+Content-Type: application/json
+Accept: application/json
+Authorization: Basic d@d.d:123123123
+
+{
+
+}
+##########
+DELETE http://localhost:8000/api/v1/category/1
+Content-Type: application/json
+Accept: application/json
+Authorization: Basic d@d.d:123123123
+##########
+GET http://localhost:8000/api/v1/category/1
+Content-Type: application/json
+Accept: application/json
+Authorization: Basic d@d.d:123123123
