@@ -15,6 +15,6 @@ class CategoryCollection extends ResourceCollection
     public function toArray($request)
     {
         static::withoutWrapping();
-        return $this;
+        return  $this->collection;
     }
 }

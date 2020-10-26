@@ -1,26 +1,28 @@
-GET http://localhost:8000/api/v1/category
+##########
+GET http://localhost:8001/api/v1/category
 Content-Type: application/json
 Accept: application/json
 Authorization: Basic d@d.d:123123123
 ##########
-POST http://localhost:8000/api/v1/category
+POST http://localhost:8001/api/v1/category
 Content-Type: application/json
 Accept: application/json
 Authorization: Basic d@d.d:123123123
 
 {
-  "name" : "David Meth",
-  "email" :"david.meth@laiave.com",
-  "password":"Descricao123123"
+  "name" : "categoria",
+  "description": "uma categoria qualquer",
+  "slug": "hi"
 }
 ##########
-PUT http://localhost:8000/api/v1/category/10
+PUT http://localhost:8001/api/v1/category/1
 Content-Type: application/json
 Accept: application/json
 Authorization: Basic d@d.d:123123123
 
 {
 
+  "name" : "123"
 }
 ##########
 DELETE http://localhost:8000/api/v1/category/1

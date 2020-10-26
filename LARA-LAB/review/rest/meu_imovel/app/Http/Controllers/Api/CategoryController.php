@@ -23,7 +23,7 @@ class CategoryController extends Controller
     public function index(CategoryIndexRequest $request)
     {
         $categories = Category::paginate(10);
-        return $categories;//new CategoryCollection($categories);
+        return new CategoryCollection($categories);
     }
 
     /**
@@ -34,7 +34,8 @@ class CategoryController extends Controller
      */
     public function store(CategoryStoreRequest $request)
     {
-        //
+        $category = Category::create($request->all());
+        return new CategoryResource($category);
     }
 
     /**
@@ -45,7 +46,12 @@ class CategoryController extends Controller
      */
     public function show(CategoryShowRequest $request,$id)
     {
-        //
+        try{
+            $category = Category::findOrFail($id);
+            return new CategoryResource($category);
+        }catch(\Exception $ex){
+            return response()->json(['status'=>'not found'],404);
+        }
     }
 
     /**
@@ -57,7 +63,13 @@ class CategoryController extends Controller
      */
     public function update(CategoryUpdateRequest $request, $id)
     {
-        //
+        try{
+            $category = Category::findOrFail($id);
+            $category->fill($request->all());
+            return new CategoryResource($category);
+        }catch(\Exception $ex){
+            return response()->json(['status'=>'not found'],404);
+        }
     }
 
     /**
@@ -68,6 +80,12 @@ class CategoryController extends Controller
      */
     public function destroy(CategoryDestroyRequest $request, $id)
     {
-        //
+        try{
+            $category = Category::findOrFail($id);
+            $category->delete();
+            return new CategoryResource($category);
+        }catch(\Exception $ex){
+            return response()->json(['msg'=>'not found'],404);
+        }
     }
 }
