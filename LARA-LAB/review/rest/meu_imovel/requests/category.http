@@ -22,15 +22,16 @@ Authorization: Basic d@d.d:123123123
 
 {
 
-  "name" : "123"
+  "name" : "name of category",
+  "description": "category"
 }
 ##########
-DELETE http://localhost:8000/api/v1/category/1
+DELETE http://localhost:8001/api/v1/category/1
 Content-Type: application/json
 Accept: application/json
 Authorization: Basic d@d.d:123123123
 ##########
-GET http://localhost:8000/api/v1/category/1
+GET http://localhost:8001/api/v1/category/1
 Content-Type: application/json
 Accept: application/json
 Authorization: Basic d@d.d:123123123
