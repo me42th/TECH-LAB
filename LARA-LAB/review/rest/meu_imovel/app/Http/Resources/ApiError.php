@@ -7,7 +7,6 @@ class ApiError {
         $this->message['status'] = $title;
         $this->code = $code;
         $this->message['errors'] = $data;
-
     }
 
     public static function make(string $title,int $code = 500,array $data = []){
