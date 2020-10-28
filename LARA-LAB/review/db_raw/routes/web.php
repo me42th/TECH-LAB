@@ -158,12 +158,87 @@ Route::get('/j',function(){
  * select store_details.*, payment_details.*
  *
  * from (
- *
+ *      select sto.store_id, city.city, country.country
+ *      from store as sto
+ *          left join address addr
+ *              on sto.address_id = addr.address_id
+ *          join city
+ *              on addr.city_id = city.city_id
+ *          join country
+ *              on country.country_id = city.country_id
  * ) as store_details
  * inner join (
- *
+ *      select cus.store_id, sum(pay.payment) as sales
+ *      from customer as cus
+ *          join paument as pay
+ *              on cus.customer_id = pay.customer_id
+ *      group by cus.store_id
  * ) as payment_details
  * on store_details.store_id = payment_details.store_id
  * order by store_details.store_id
- *
  */
+Route::get('/l',function(){
+    $store_details = \DB::query()->select(['sto.store_id', 'city.city', 'country.country'])
+        ->from('store as sto')
+        ->leftJoin('address as addr','sto.address_id','=','addr.address_id')
+        ->join('city','addr.city_id','=','city.city_id')
+        ->join('country','country.country_id','=','city.country_id');
+
+    $payment_details = \DB::query()->select(['cus.store_id',\DB::raw('sum(pay.amount) as sales')])
+        ->from('customer as cus')
+        ->join('payment as pay','cus.customer_id','=','pay.customer_id')
+        ->groupBy('cus.store_id');
+
+    $results = \DB::query()->select(['store_details.*','payment_details.*'])
+        ->fromSub($store_details, 'store_details')
+        ->joinSub($payment_details,'payment_details','store_details.store_id','=','payment_details.store_id')
+        ->orderBy('store_details.store_id')
+        ->get();
+
+    return $results;
+});
+
+/**
+ * select store_details.*, payment_details.*
+ *
+ * from (
+ *      select sto.store_id, city.city, country.country
+ *      from store as sto
+ *          left join address addr
+ *              on sto.address_id = addr.address_id
+ *          join city
+ *              on addr.city_id = city.city_id
+ *          join country
+ *              on country.country_id = city.country_id
+ * ) as store_details
+ * inner join (
+ *      select cus.store_id, sum(pay.payment) as sales
+ *      from customer as cus
+ *          join paument as pay
+ *              on cus.customer_id = pay.customer_id
+ *      group by cus.store_id
+ * ) as payment_details
+ * on store_details.store_id = payment_details.store_id
+ * order by store_details.store_id
+ */
+Route::get('/m',function(){
+
+    $results = \DB::query()->select(['store_details.*','payment_details.*'])
+        ->fromSub(function($query){
+            $query->select(['sto.store_id', 'city.city', 'country.country'])
+                ->from('store as sto')
+                ->leftJoin('address as addr','sto.address_id','=','addr.address_id')
+                ->join('city','addr.city_id','=','city.city_id')
+                ->join('country','country.country_id','=','city.country_id');
+        }, 'store_details')
+        ->joinSub(function($query){
+            $query->select(['cus.store_id',\DB::raw('sum(pay.amount) as sales')])
+            ->from('customer as cus')
+            ->join('payment as pay','cus.customer_id','=','pay.customer_id')
+            ->groupBy('cus.store_id');
+        },'payment_details','store_details.store_id','=','payment_details.store_id')
+        ->orderBy('store_details.store_id')
+        ->get();
+
+    return $results;
+});
