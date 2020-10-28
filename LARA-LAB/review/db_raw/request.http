@@ -1,0 +1,23 @@
+GET http://localhost:8000/a
+Accept: application/json
+################
+GET http://localhost:8000/b
+Accept: application/json
+################
+GET http://localhost:8000/c
+Accept: application/json
+################
+GET http://localhost:8000/d
+Accept: application/json
+################
+GET http://localhost:8000/e
+Accept: application/json
+################
+GET http://localhost:8000/f
+Accept: application/json
+################
+GET http://localhost:8000/g
+Accept: application/json
+################
+GET http://localhost:8000/h
+Accept: application/json

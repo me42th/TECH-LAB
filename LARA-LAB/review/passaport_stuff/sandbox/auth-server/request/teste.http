@@ -1,0 +1,22 @@
+# @name login
+POST http://localhost:8000/oauth/token  HTTP/1.1
+content-type: application/json
+accept: application/json
+x-requested-with: XMLHttpRequest
+
+{
+    "grant_type":"client_credentials",
+    "client_id":"6",
+    "client_secret":"p9pDmRpUpCBbN03hHTyege2RzdfwufOXHBAnGLjm",
+    "scope":""
+}
+
+######
+@token = {{login.response.body.access_token}}
+
+######
+GET http://localhost:8000/api/user HTTP/1.1
+Cookie: XDEBUG_SESSION=XDEBUG_ECLIPSE
+content-type: application/json
+accept: application/json
+Authorization: Bearer {{token}}
