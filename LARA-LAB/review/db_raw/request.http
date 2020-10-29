@@ -1,3 +1,4 @@
+################
 GET http://localhost:8000/a
 Accept: application/json
 ################
@@ -20,4 +21,13 @@ GET http://localhost:8000/g
 Accept: application/json
 ################
 GET http://localhost:8000/h
+Accept: application/json
+################
+GET http://localhost:8000/i
+Accept: application/json
+################
+GET http://localhost:8000/j
+Accept: application/json
+################
+GET http://localhost:8000/l
 Accept: application/json
