@@ -1,1 +1,4 @@
-<h3>O {{'Servidor'}} de id {{serverID}} está {{getServerStatus()}}</h3>
+<p
+[ngStyle]="{backgroundColor: getColor()}"
+[ngClass]="{online: getServerStatus() === 'online', offline: getServerStatus() === 'offline'}"
+>O {{'Servidor'}} de id {{serverID}} está {{getServerStatus()}}</p>
