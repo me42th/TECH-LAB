@@ -1,3 +1,4 @@
-<button [disabled]="isAllowedNewServer " class="btn btn-success">New Server</button>
+<button [disabled]="isAllowedNewServer " class="btn btn-success" (click)="onCreateServer()">New Server</button>
+<p>{{serverCreationStatus}}</p>
 <div app-server></div>
 <div app-server></div>
