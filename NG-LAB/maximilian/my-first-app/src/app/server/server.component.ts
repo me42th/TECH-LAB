@@ -3,9 +3,19 @@ import { Component } from '@angular/core';
   selector:"[app-server]",
   templateUrl:"./server.component.html",
   styles: [
-    `h3 {
-      color: red
-    }`
+    `p {
+      padding-left: 4px
+    }`,
+    `
+    .online {
+      color: white
+    }
+    `,
+    `
+    .offline {
+      color: blue
+    }
+    `
   ]
 })
 
