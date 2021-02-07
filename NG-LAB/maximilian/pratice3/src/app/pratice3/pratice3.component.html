@@ -1,0 +1,11 @@
+<div class="btn btn-primary" [ngStyle]="{margin:getMargin()}" (click)="onLogClick($event)">Display Details</div>
+<p [ngStyle]="{margin:getMargin()}">
+  Texto
+</p>
+<p
+  *ngFor="let timestamp of clicks; let i = index"
+  [attr.data-index]="i"
+  [ngStyle]="{backgroundColor: getBack(i)}"
+  [ngClass]="{white: i >= 5}"
+  >{{timestamp}}</p>
+
