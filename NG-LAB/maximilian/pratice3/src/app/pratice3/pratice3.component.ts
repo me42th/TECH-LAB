@@ -11,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Pratice3Component implements OnInit {
   clicks = [];
-  showSecret = false;
+  showSecret = true;
   content = 'Display';
 
   constructor() { }
