@@ -1,8 +1,8 @@
 <input type="text" class="form-control" [(ngModel)]="serverName">
 <p>{{serverName}}</p>
 <button [disabled]="!isAllowedNewServer " class="btn btn-success" (click)="onCreateServer()">New Server</button>
-<p *ngIf="serverCreated; else noServer">{{serverCreationStatus}}</p>
+<p *ngIf="true; else noServer">{{serverCreationStatus}}</p>
 <ng-template #noServer>
   <p>No server</p>
 </ng-template>
-<div app-server *ngFor="let server of serverList"></div>
+<div app-server *ngFor="let server of [1,2,3,4]"></div>
