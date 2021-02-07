@@ -11,6 +11,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Pratice3Component implements OnInit {
   clicks = [];
+  showSecret = false;
+  content = 'Display';
+
   constructor() { }
 
   ngOnInit(): void {
@@ -21,10 +24,12 @@ export class Pratice3Component implements OnInit {
   }
 
   onLogClick(event: MouseEvent){
-    this.clicks.push(event.timeStamp);
+    this.showSecret = !this.showSecret;
+    this.content = this.showSecret?'Hidden':'Display';
+    this.clicks.push(new Date());
   }
 
   getBack(i: number){
-    return i>=5?'blue':'white';
+    return i>=4?'blue':'white';
   }
 }
