@@ -1,46 +1,32 @@
-@username=l@l.l
+# @name client
+POST http://localhost:8000/oauth/token/
+Content-Type: application/json
+Accept: application/json
+
+{
+    "grant_type":"client_credentials",
+    "client_id":"5",
+    "client_secret":"dnifeTwdBe0GZyxR7HVbIHW3pdIzUwo0lERUbPBL"
+}
+######################
+@client_token = {{client.response.body.access_token}}
+########
+@username=
 ######
-@pazword=123123123
+@password=
+
 ######################
 # @name password
 POST http://localhost:8000/oauth/token HTTP/1.1
 content-type: application/json
-Accept: application/json
 
 {
     "grant_type":"password",
     "client_id":4,
     "client_secret":"TlQ1AQEDCnioF7eM4uLVL8o7jsCrhb7YFISBx3KD",
-    "username":"{{username}}",
-    "password":"{{pazword}}",
+    "username":"l@l.l",
+    "password":"123123123",
     "scope":""
 }
 #####################
 @password_token = {{password.response.body.access_token}}
-#######################
-GET http://localhost:8000/api/laratrust HTTP/1.1
-content-type: application/json
-Accept: application/json
-Authorization: Bearer {{password_token}}
-#######################
-GET http://localhost:8000/api/laratrust/1 HTTP/1.1
-content-type: application/json
-Accept: application/json
-Authorization: Bearer {{password_token}}
-#######################
-POST http://localhost:8000/api/laratrust HTTP/1.1
-content-type: application/json
-Accept: application/json
-Authorization: Bearer {{password_token}}
-#######################
-PUT http://localhost:8000/api/laratrust/1 HTTP/1.1
-content-type: application/json
-Accept: application/json
-Authorization: Bearer {{password_token}}
-#######################
-DELETE http://localhost:8000/api/laratrust/1 HTTP/1.1
-content-type: application/json
-Accept: application/json
-Authorization: Bearer {{password_token}}
-
-
