@@ -14,6 +14,13 @@ class User extends Authenticatable
     use LaratrustUserTrait;
     use HasApiTokens, HasFactory, Notifiable;
 
+    //$user->attachRoles([$sudo]);
+    //$user->detachRoles([$sudo]);
+    //$user->attachPermissions([$view_role]);
+    //$user->detachPermissions([$view_role]);
+
+    //$user->isAbleTo('edit-user') << tanto permissões diretas quanto de roles
+    //$user->hasRole('sudo')
     /**
      * The attributes that are mass assignable.
      *
