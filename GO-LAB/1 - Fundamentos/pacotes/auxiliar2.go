@@ -1,4 +1,4 @@
-package auxiliar
+package pacotes
 
 import "fmt"
 
