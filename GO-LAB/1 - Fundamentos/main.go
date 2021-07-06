@@ -1,7 +1,12 @@
 package main
 
-import "modulo/variaveis"
+import (
+	"fmt"
+	"modulo/variaveis"
+)
 
 func main() {
-	variaveis.Operadores()
+	u := variaveis.Objetos()
+	u.Str()
+	fmt.Println(u.Nome)
 }
