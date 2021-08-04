@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	u := variaveis.Objetos()
+	u := variaveis.New()
 	u.Str()
 	fmt.Println(u.Nome)
 }
